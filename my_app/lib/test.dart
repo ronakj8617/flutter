@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
   final formKey = GlobalKey<FormState>();
   final _id = TextEditingController();
   final _password = TextEditingController();
-
+  var ipv4 = null, ipv6 = null;
   @override
   void initState() {
     // TODO: implement initState
@@ -99,20 +99,31 @@ class _HomeState extends State<Home> {
                             ),
                             ElevatedButton(
                               onPressed: () async {
+                                 CircularProgressIndicator();
+                                ipv4 = await Ipify.ipv4();
+                                //print(ipv4);
+
+                                ipv6 = await Ipify.ipv64();
+                                //print(ipv6);
                                 // if(_id.text=='Ronak' && _password=='123')
-                                final ipv4 = await Ipify.ipv4();
-                                print(ipv4);
 
-                                final ipv6 = await Ipify.ipv64();
-                                print(ipv6);
-                                
+                                if (_id.text == '') {
 
-                                Alert(
-                                  context: context,
-                                  title: "IPV4: " + ipv4.toString(),
-                                  desc: "IPV6: " + ipv6.toString(),
-                                  image: Icon(Icons.supervised_user_circle),
-                                ).show();
+                                   (ipv4==null)?CircularProgressIndicator():Alert(
+                                    context: context,
+                                    title: "Enter ID and password: ",
+                                    desc:
+                                        "You can't sign in without entering ID and password",
+                                    image: Icon(Icons.supervised_user_circle),
+                                  ).show();
+                                } else {
+                                  (ipv4==null)?CircularProgressIndicator():Alert(
+                                    context: context,
+                                    title: "IPV4: " + ipv4.toString(),
+                                    desc: "IPV6: " + ipv6.toString(),
+                                    image: Icon(Icons.supervised_user_circle),
+                                  ).show();
+                                }
                               },
                               style: ButtonStyle(),
                               child: Text("Sign In"),
