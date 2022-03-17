@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/Updated%20Files/drawer.dart';
+import 'package:my_app/test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,12 +27,20 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Home'),
+      home:
+          isLoggedIn() == true ? const Home() : const MyHomePage(title: 'Home'),
+
       debugShowCheckedModeBanner: false,
       // routes: {
       //   TextField_Card.routeName:(context)=> TextField_Card()
       // },
     );
+  }
+
+  Future isLoggedIn() async {
+    final SharedPreferences preferences = await SharedPreferences.getInstance();
+    print("Main: " + preferences.getBool("isLoggedIn").toString());
+    return preferences.getBool("isLoggedIn");
   }
 }
 

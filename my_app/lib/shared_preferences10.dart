@@ -11,19 +11,19 @@ import 'dart:convert';
 
 void main() {
   runApp(MaterialApp(
-      home: Home(),
+      home: Shared_Preferences(),
       debugShowCheckedModeBanner: false,
       theme: (brightness == Brightness.dark ? darkThemeData : lightThemeData)));
 }
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class Shared_Preferences extends StatefulWidget {
+  const Shared_Preferences({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Shared_Preferences> createState() => _Shared_PreferencesState();
 }
 
-class _HomeState extends State<Home> {
+class _Shared_PreferencesState extends State<Shared_Preferences> {
   @override
   final formKey = GlobalKey<FormState>();
   final _id = TextEditingController();
@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Test'), backgroundColor: Colors.red),
+      appBar: AppBar(title: Text('Shared Preferences'), backgroundColor: Colors.red),
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -107,6 +107,7 @@ class _HomeState extends State<Home> {
 
                                 if (_id.text == 'Ronak' &&
                                     _password.text == '123') {
+
                                   pref.setBool("isLoggedIn", true);
                                   print(pref.getBool("isLoggedIn"));
 
