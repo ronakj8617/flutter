@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:dart_ipify/dart_ipify.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/Updated%20Files/my_styles.dart';
@@ -32,7 +31,7 @@ class _Future_BuildState extends State<Future_Build> {
   // var preferences;
   Uri url = Uri.parse("https://jsonplaceholder.typicode.com/photos");
 
-  fetchData() async {
+  Future fetchData() async {
     var res = await http.get(url);
     var data = jsonDecode(res.body);
     // print(data);
@@ -58,32 +57,7 @@ class _Future_BuildState extends State<Future_Build> {
     return Scaffold(
       appBar:
           AppBar(title: Text('Future Builder'), backgroundColor: Colors.red),
-      body: FutureBuilder(
-        future: fetchData(),
-        builder: (context, snapshot) {
-          switch (snapshot.connectionState) {
-            case ConnectionState.none:
-              return Center(child: Text('Nothing available'));
-            case ConnectionState.done:
-              return Center(child: Text('Error'));
-            case ConnectionState.active:
-              return Center(
-                  child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(snapshot.data![index]["title"]),
-                    subtitle: Text("ID: ${snapshot.data[index]['id']}"),
-                    // subtitle: snapshot.data[index]['id'],
-                    leading: Image.network(snapshot.data[index]['url']),
-                  );
-                },
-                itemCount: snapshot.data.length,
-              ));
-            case ConnectionState.waiting:
-              return Center(child: Text('Waiting'));
-          }
-        },
-      ),
+      body: Center(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           if (brightness == Brightness.dark) {

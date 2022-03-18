@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home:
-          isLoggedIn() == true ? const Home() : const MyHomePage(title: 'Home'),
+          isLoggedIn() == true ?  Home() : const MyHomePage(title: 'Home'),
 
       debugShowCheckedModeBanner: false,
       // routes: {
