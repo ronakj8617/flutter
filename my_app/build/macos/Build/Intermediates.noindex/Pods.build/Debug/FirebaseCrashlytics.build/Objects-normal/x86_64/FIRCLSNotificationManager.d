@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSNotificationManager.m \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSNotificationManager.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSGlobals.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSContext.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSBinaryImage.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFeatures.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSDefines.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFile.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSMachO/FIRCLSMachO.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSHost.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSUserLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSMachException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSSignal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSAllocate.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSInternalLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSLogger.h

@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
-options: "f4898c842babd886c998a1266f71f67f8f913e1b985d973e2b3cdb721e935f59"
-build_start_time: [1647628052, 90313911]
-build_end_time: [1647628052, 493884086]
+options: "fc42b7ddeb6dcb6e0ebe2f6a2db657d56156f7bfec8016561df577f75fd76295"
+build_start_time: [1647712383, 318279981]
+build_end_time: [1647712383, 710877895]
 inputs:
-  "/Users/ronak/Ronak/Git/flutter/my_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1647628043, 921018123]
+  "/Users/ronak/Ronak/Git/flutter/my_app/macos/Flutter/GeneratedPluginRegistrant.swift": [1647712368, 354433774]
   "/Users/ronak/Ronak/Git/flutter/my_app/macos/Runner/AppDelegate.swift": [1647452765, 378522634]
   "/Users/ronak/Ronak/Git/flutter/my_app/macos/Runner/MainFlutterWindow.swift": [1647452765, 382269620]

@@ -11,6 +11,13 @@ dependencies: \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FirebaseCrashlytics.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FIRStackFrame.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FIRExceptionModel.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FIRCrashlyticsReport.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FIRCrashlytics.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/FirebaseCrashlytics/FirebaseCrashlytics-umbrella.h \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FirebaseDatabase.h \
   /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseDatabase.build/module.modulemap \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRTransactionResult.h \
@@ -44,6 +51,12 @@ dependencies: \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/Source/Public/FirebaseFirestore/FIRQuery.h \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/Source/Public/FirebaseFirestore/FIRCollectionReference.h \
   /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/FirebaseFirestore/FirebaseFirestore-umbrella.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FirebaseInstallations.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseInstallations.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/FirebaseInstallations/FirebaseInstallations-umbrella.h \
   /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/firebase_core.build/module.modulemap \
   /Users/ronak/Ronak/FDevelopment/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Modules/module.modulemap \
   /Users/ronak/Ronak/FDevelopment/flutter/bin/cache/artifacts/engine/darwin-x64/FlutterMacOS.framework/Headers/FlutterViewController.h \

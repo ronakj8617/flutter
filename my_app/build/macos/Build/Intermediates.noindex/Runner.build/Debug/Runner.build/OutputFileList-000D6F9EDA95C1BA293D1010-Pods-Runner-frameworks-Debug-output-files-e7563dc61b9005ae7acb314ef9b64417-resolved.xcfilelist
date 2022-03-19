@@ -1,8 +1,10 @@
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/openssl_grpc.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseCore.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseCoreDiagnostics.framework
+/Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseCrashlytics.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseDatabase.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseFirestore.framework
+/Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FirebaseInstallations.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/GoogleDataTransport.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/GoogleUtilities.framework
 /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/my_app.app/Contents/Frameworks/FBLPromises.framework

@@ -345,6 +345,13 @@
     },
     {
       "kind": "Import",
+      "name": "firebase_crashlytics",
+      "printedName": "firebase_crashlytics",
+      "declKind": "Import",
+      "moduleName": "my_app"
+    },
+    {
+      "kind": "Import",
       "name": "firebase_database",
       "printedName": "firebase_database",
       "declKind": "Import",

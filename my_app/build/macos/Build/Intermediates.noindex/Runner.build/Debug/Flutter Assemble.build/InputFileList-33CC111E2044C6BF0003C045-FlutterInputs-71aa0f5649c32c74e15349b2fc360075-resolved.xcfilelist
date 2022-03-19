@@ -153,6 +153,8 @@
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.2.5/lib/src/platform_interface/platform_interface_firebase_app.dart
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.2.5/lib/src/platform_interface/platform_interface_firebase_plugin.dart
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.6.1/LICENSE
+/Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_crashlytics-2.5.3/LICENSE
+/Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_crashlytics_platform_interface-3.2.1/LICENSE
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-9.0.8/LICENSE
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database_platform_interface-0.2.1+1/LICENSE
 /Users/ronak/Ronak/FDevelopment/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database_web-0.2.0+7/LICENSE
@@ -1044,6 +1046,7 @@
 /Users/ronak/Ronak/Git/flutter/my_app/assets/img5.jpeg
 /Users/ronak/Ronak/Git/flutter/my_app/lib/Updated Files/drawer.dart
 /Users/ronak/Ronak/Git/flutter/my_app/lib/Updated Files/my_styles.dart
+/Users/ronak/Ronak/Git/flutter/my_app/lib/firebase_options.dart
 /Users/ronak/Ronak/Git/flutter/my_app/lib/future_build11.dart
 /Users/ronak/Ronak/Git/flutter/my_app/lib/gridview_http8.dart
 /Users/ronak/Ronak/Git/flutter/my_app/lib/listview_http7.dart

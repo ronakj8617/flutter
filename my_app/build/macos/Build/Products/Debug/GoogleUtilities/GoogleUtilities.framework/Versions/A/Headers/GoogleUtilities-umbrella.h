@@ -21,6 +21,7 @@
 #import "NSURLSession+GULPromises.h"
 #import "GULLogger.h"
 #import "GULLoggerLevel.h"
+#import "GULUserDefaults.h"
 
 FOUNDATION_EXPORT double GoogleUtilitiesVersionNumber;
 FOUNDATION_EXPORT const unsigned char GoogleUtilitiesVersionString[];
