@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home:
-          isLoggedIn() == true ?  Home() : const MyHomePage(title: 'Home'),
+      home:Home(),
+          // isLoggedIn() == true ?  Home() : const MyHomePage(title: 'Home'),
 
       debugShowCheckedModeBanner: false,
       // routes: {
