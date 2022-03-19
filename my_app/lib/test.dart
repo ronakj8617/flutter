@@ -8,24 +8,7 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //     options: FirebaseOptions(
-  //   appId: '1:71402755662:ios:3836f3c07c36ebc87d151f',
-  //   projectId: 'flutter-apps-d93d4',
-  //   messagingSenderId: '',
-  //   androidClientId: '',
-  //   appGroupId: '',
-  //   authDomain: '',
-  //   databaseURL: '',
-  //   deepLinkURLScheme: '',
-  //   measurementId: '',
-  //   trackingId: '',
-  //   apiKey: 'AIzaSyD_toge-ilTgrXUDaR5CEIN-CrbiE0gYes',
-  //   iosClientId:
-  //       '71402755662-ko63g8tlgn8m27t9kjhtklq58kev8r89.apps.googleusercontent.com',
-  //   storageBucket: 'flutter-apps-d93d4.appspot.com',
-  //   iosBundleId: 'com.example.myApp',
-  // ));
+
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
