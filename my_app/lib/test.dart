@@ -9,7 +9,6 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -20,8 +19,26 @@ void main() async {
       theme: (brightness == Brightness.dark ? darkThemeData : lightThemeData)));
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  Future<bool> init() async {
+    FirebaseApp instance = await Firebase.initializeApp();
+    return instance != null;
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    init();
+  }
 
   // final Future<FirebaseApp> _initialization=FirebaseApp.initializeApp();
   @override
@@ -29,37 +46,53 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar:
           AppBar(title: Text('Future Builder'), backgroundColor: Colors.red),
-      body: CircularProgressIndicator(),
-      // body: StreamBuilder(
-      //     stream: FirebaseFirestore.instance.collection('testing').snapshots(),
-      //     builder: (BuildContext buildContext,
-      //         AsyncSnapshot<QuerySnapshot> snapshot) {
-      //       if (!snapshot.hasData) print('success');
-      // if (snapshot.hasError) print('error');
-      // return ListView.builder(
-      //     itemCount: snapshot.data?.docs.length,
-      //     itemBuilder: (BuildContext buildContext, int index) {
-      //       final docData = snapshot.data?.docs[index].data();
-      //       final time = (docData as List<Timestamp>)[0].toDate();
+      // body: CircularProgressIndicator(),
+      body: StreamBuilder(
+          stream: FirebaseFirestore.instance.collection('testing').snapshots(),
+          builder: (BuildContext buildContext,
+              AsyncSnapshot<QuerySnapshot> snapshot) {
+            if (!snapshot.hasData) print('success');
+            if (snapshot.hasError) {
+              return Text('Error');
+            }
 
-      //       if (snapshot.hasData) {
-      //         return ListTile(
-      //           title: Text(time.toString()),
-      //         );
-      //       }
+            if (snapshot.connectionState == ConnectionState.active) {
+              return ListView(
+                children: snapshot.data!.docs.map((DocumentSnapshot document) {
+                  Map<String, dynamic> data =
+                      document.data()! as Map<String, dynamic>;
+                  DateTime txt = ((data['Timestamp'] as Timestamp).toDate());
+                  print(txt.toString());
+                  return ListTile(
+                    title: Text(txt.toString()),
+                    // subtitle: Text(data['company']),
+                  );
+                }).toList(),
+              );
+            }
+            // return ListView.builder(
+            //     itemCount: snapshot.data?.docs.length,
+            //     itemBuilder: (BuildContext buildContext, int index) {
+            //       final docData = snapshot.data?.docs[index].data();
+            //       final time = (docData!['Timestamp'] as Timestamp).toDate();
 
-      //       return CircularProgressIndicator();
-      //     });
+            //       if (snapshot.hasData) {
+            //         return ListTile(
+            //           title: Text(time.toString()),
+            //         );
+            //       }
 
-      // return CircularProgressIndicator();
+            //       return CircularProgressIndicator();
+            //     });
 
-      // }),
+            return CircularProgressIndicator();
+          }),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Firebase.initializeApp();
           FirebaseFirestore.instance
               .collection('testing')
-              .add({'Timestamp: ': Timestamp.fromDate(DateTime.now())});
+              .add({'Timestamp': Timestamp.fromDate(DateTime.now())});
 
           if (brightness == Brightness.dark) {
             brightness = Brightness.light;
