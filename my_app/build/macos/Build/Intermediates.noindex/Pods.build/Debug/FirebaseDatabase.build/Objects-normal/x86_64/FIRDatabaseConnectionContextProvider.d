@@ -1,0 +1,44 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Login/FIRDatabaseConnectionContextProvider.m \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseDatabase.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Login/FIRDatabaseConnectionContextProvider.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Api/Private/FTypedefs_Private.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/FTypedefs.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FirebaseCoreInternal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCore.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRAppInternal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRComponent.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRComponentContainer.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRComponentType.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRDependency.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRHeartbeatInfo.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRLibrary.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIRLogger.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseCore/Sources/Private/FIROptionsInternal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseAppCheck/Sources/Interop/FIRAppCheckInterop.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseAppCheck/Sources/Interop/FIRAppCheckTokenResultInterop.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/Interop/Auth/Public/FIRAuthInterop.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Api/Private/FIRDatabaseQuery_Private.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FQueryParams.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FRepo.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FPersistentConnection.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FRepoInfo.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Realtime/FConnection.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Realtime/FWebSocketConnection.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/FUtilities.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/FParsedUrl.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/Utilities/FPath.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/SocketRocket/FSRWebSocket.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataEventType.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseQuery.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataSnapshot.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/Tuples/FTupleUserCallback.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FRepoManager.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Api/FIRDatabaseConfig.h

@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/core/src/api/settings.cc \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/core/src/api/settings.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/core/src/util/hashing.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/core/src/objc/objc_type_traits.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseFirestore/Firestore/core/src/util/type_traits.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h
