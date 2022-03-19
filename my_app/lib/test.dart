@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dart_ipify/dart_ipify.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/Updated%20Files/drawer.dart';
 import 'package:my_app/Updated%20Files/my_styles.dart';
@@ -7,8 +8,6 @@ import 'package:firebase_core_platform_interface/firebase_core_platform_interfac
 import 'firebase_options.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -34,68 +33,39 @@ class _HomeState extends State<Home> {
   }
 
   @override
-  void initState() {
+  void initState() 
+  {
     // TODO: implement initState
     super.initState();
 
+    init();
+
+
     // ? init();
     main();
+    insert();
   }
 
-  // final Future<FirebaseApp> _initialization=FirebaseApp.initializeApp();
+  void insert() async{
+
+    final String ip=await Ipify.ipv4();
+    final String ipv6=await Ipify.ipv64();
+
+    FirebaseFirestore.instance.collection('IP').add({
+      'Timestamp': Timestamp.fromDate(DateTime.now()),
+      'IPv4': ip ,
+      'IPv6': ipv6
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:
-          AppBar(title: Text('Future Builder'), backgroundColor: Colors.red),
+          AppBar(title: Text('Test'), backgroundColor: Colors.red),
       // body: CircularProgressIndicator(),
-      body: StreamBuilder(
-          stream: FirebaseFirestore.instance.collection('testing').snapshots(),
-          builder: (BuildContext buildContext,
-              AsyncSnapshot<QuerySnapshot> snapshot) {
-            if (!snapshot.hasData) print('success');
-            if (snapshot.hasError) {
-              return Text('Error');
-            }
-
-            if (snapshot.connectionState == ConnectionState.active) {
-              return ListView(
-                children: snapshot.data!.docs.map((DocumentSnapshot document) {
-                  Map<String, dynamic> data =
-                      document.data()! as Map<String, dynamic>;
-                  DateTime txt = ((data['Timestamp'] as Timestamp).toDate());
-                  print(txt.toString());
-                  return ListTile(
-                    title: Text(txt.toString()),
-                    // subtitle: Text(data['company']),
-                  );
-                }).toList(),
-              );
-            }
-            // return ListView.builder(
-            //     itemCount: snapshot.data?.docs.length,
-            //     itemBuilder: (BuildContext buildContext, int index) {
-            //       final docData = snapshot.data?.docs[index].data();
-            //       final time = (docData!['Timestamp'] as Timestamp).toDate();
-
-            //       if (snapshot.hasData) {
-            //         return ListTile(
-            //           title: Text(time.toString()),
-            //         );
-            //       }
-
-            //       return CircularProgressIndicator();
-            //     });
-
-            return CircularProgressIndicator();
-          }),
+      body: Center(child: CircularProgressIndicator()),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Firebase.initializeApp();
-          FirebaseFirestore.instance
-              .collection('testing')
-              .add({'Timestamp': Timestamp.fromDate(DateTime.now())});
-
           if (brightness == Brightness.dark) {
             brightness = Brightness.light;
             //main();

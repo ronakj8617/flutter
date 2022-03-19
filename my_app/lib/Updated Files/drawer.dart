@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/firebase_firestore12.dart';
 import 'package:my_app/future_build11.dart';
 import 'package:my_app/shared_preferences10.dart';
 import 'package:my_app/test.dart';
@@ -173,6 +174,25 @@ class My_Drawer extends StatelessWidget {
             leading: Icon(Icons.mobile_friendly),
             title: Text(
               'Future Builder',
+              style: titleTextStyle,
+            ),
+            subtitle: Text(
+              'Test',
+              style: subtitleTextStyle,
+            ),
+            trailing: Icon(Icons.start),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>  Firestore_Example()),
+              );
+            },
+            leading: Icon(Icons.mobile_friendly),
+            title: Text(
+              'Firestore with Listview',
               style: titleTextStyle,
             ),
             subtitle: Text(
