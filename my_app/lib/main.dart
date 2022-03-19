@@ -8,9 +8,14 @@ void main() {
   // dsfs
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -28,7 +33,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home:Home(),
+      home:const MyHomePage(title: "Home",),
           // isLoggedIn() == true ?  Home() : const MyHomePage(title: 'Home'),
 
       debugShowCheckedModeBanner: false,

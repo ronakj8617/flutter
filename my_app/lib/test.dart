@@ -12,7 +12,6 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
   runApp(MaterialApp(
       home: Home(),
       debugShowCheckedModeBanner: false,
@@ -28,7 +27,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   Future<bool> init() async {
-    FirebaseApp instance = await Firebase.initializeApp();
+    FirebaseApp instance = await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
     return instance != null;
   }
 
@@ -37,7 +38,8 @@ class _HomeState extends State<Home> {
     // TODO: implement initState
     super.initState();
 
-    init();
+    // ? init();
+    main();
   }
 
   // final Future<FirebaseApp> _initialization=FirebaseApp.initializeApp();
