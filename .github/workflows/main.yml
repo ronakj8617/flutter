@@ -15,9 +15,9 @@ jobs:
 
         # Build Website
         - name: Build Website
-          run: |                       
-            flutter pub get
-            flutter build web --release
+          run: |
+            flutter config --enable-web                        
+            flutter build web 
           working-directory: ./
 
         # Deploy Firebase Hosting
