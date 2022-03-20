@@ -23,7 +23,7 @@ jobs:
 
         # Deploy Firebase Hosting
         - name: Deploy Firebase Hosting
-          uses: w9jds/firebase-action@masterf
+          uses: w9jds/firebase-action@master
           with:
             args: deploy --only hosting:flutter-apps-d93d4
           env:
