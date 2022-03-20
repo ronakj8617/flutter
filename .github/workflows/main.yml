@@ -22,7 +22,7 @@ jobs:
             flutter doctor
             flutter config --enable-web            
             flutter clean
-            flutter run            
+            flutter run -d web-server          
             flutter build web 
           working-directory: ./
 
