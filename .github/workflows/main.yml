@@ -17,7 +17,7 @@ jobs:
         - name: Build Website
           run: |
             cd my_app
-            flutter channel stable
+            flutter switch dev
             flutter upgrade
             flutter config --enable-web            
             flutter clean
