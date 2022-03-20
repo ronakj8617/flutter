@@ -1,4 +1,4 @@
-name: Build and Release APK
+name: Build and Release
 on: push
 jobs:
     hosting:
@@ -16,17 +16,9 @@ jobs:
         # Build Website
         - name: Build Website
           run: |
-            cd my_app
-            npm install -g firebase-tools
-            flutter channel dev
-            flutter upgrade
-            # flutter doctor
-            flutter config --enable-web            
-            flutter clean            
-            flutter build web 
-            firebase login --interactive
-            firebase use deploying 
-            firebase deploy --token "$FIREBASE_TOKEN"
+            flutter config --enable-web
+            flutter pub get
+            flutter build web --release
           working-directory: ./
 
         # Deploy Firebase Hosting
@@ -36,4 +28,4 @@ jobs:
             args: deploy --only hosting:flutter-apps-d93d4
           env:
             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-            PROJECT_PATH: ./my_app
+            PROJECT_PATH: ./

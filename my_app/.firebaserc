@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "flutter-apps-d93d4",
-    "deploying": "flutter-apps-d93d4"
-  },
-  "targets": {}
+    "default": "flutter-apps-d93d4"
+  }
 }

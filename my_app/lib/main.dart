@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home:const MyHomePage(title: "Deploying",),
+      home:const MyHomePage(title: "Main",),
           // isLoggedIn() == true ?  Home() : const MyHomePage(title: 'Home'),
 
       debugShowCheckedModeBanner: false,
