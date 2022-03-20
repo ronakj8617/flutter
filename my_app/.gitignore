@@ -30,6 +30,25 @@
 .pub-cache/
 .pub/
 
+build/app/generated
+build/app/intermediaries
+build/app/kotlin
+build/app/kotlinToolingMetadata
+build/app/reports
+build/app/tmp
+
+# build/cloud_firestore
+# build/firebase_core
+# build/firebase_crashlytics
+# build/databse
+# build/ios
+# build/kotlin
+# build/macos
+# build/shared_preferences_android
+/build/
+
+
+
 # Web related
 lib/generated_plugin_registrant.dart
 

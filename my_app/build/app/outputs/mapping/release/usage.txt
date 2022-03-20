@@ -468,6 +468,7 @@ com.google.firebase.firestore.R$integer
 io.flutter.plugins.sharedpreferences.R$style
 kotlinx.coroutines.internal.LocalAtomics_commonKt
 kotlinx.coroutines.channels.AbstractChannel$onReceive$1
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Type
 com.google.api.LogDescriptor$1
 com.google.android.gms.common.api.internal.TaskApiCall:
     public void <init>()
@@ -491,6 +492,7 @@ androidx.core.view.ScrollingView
 androidx.core.graphics.BlendModeUtils$1
 com.google.api.OAuthRequirementsOrBuilder
 com.google.common.util.concurrent.SequentialExecutor$QueueWorker
+com.google.android.datatransport.runtime.time.WallTime
 kotlinx.coroutines.flow.FlowKt__EmittersKt$transform$1
 com.google.common.base.Suppliers$ExpiringMemoizingSupplier
 kotlin.time.AbstractLongTimeSource
@@ -500,6 +502,7 @@ com.google.rpc.context.AttributeContext$ResourceOrBuilder
 com.google.common.io.Files$FilePredicate
 com.google.common.collect.Multimaps$MapMultimap$1
 com.google.common.util.concurrent.MoreExecutors$5
+javax.inject.Qualifier
 com.google.common.cache.CacheBuilder$2
 com.google.android.gms.internal.common.zzv
 com.google.common.collect.MinMaxPriorityQueue$Heap
@@ -553,6 +556,7 @@ com.google.firestore.v1.StructuredQuery$Order:
 androidx.core.view.WindowInsetsAnimationCompat$Callback
 com.google.android.gms.common.internal.zzh
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
+com.google.android.datatransport.runtime.dagger.internal.MapProviderFactory$1
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments
 com.google.gson.internal.LinkedHashTreeMap$Node
 com.google.common.math.BigDecimalMath$BigDecimalToDoubleRounder
@@ -804,6 +808,8 @@ kotlin.LazyKt__LazyKt:
     public static final kotlin.Lazy lazyOf(java.lang.Object)
     private static final java.lang.Object getValue(kotlin.Lazy,java.lang.Object,kotlin.reflect.KProperty)
     public void <init>()
+com.google.firebase.crashlytics.internal.settings.CachedSettingsIo:
+    private static final java.lang.String SETTINGS_CACHE_FILENAME
 com.google.common.collect.MapMakerInternalMap$InternalEntryHelper
 kotlin.math.MathKt__MathJVMKt
 com.google.api.UsageProto
@@ -1104,6 +1110,10 @@ com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter$1
 androidx.core.view.NestedScrollingChild2
 androidx.core.view.ViewCompat$Api23Impl
 androidx.core.view.WindowInsetsCompat$Impl30
+com.google.firebase.crashlytics.internal.metadata.MetaDataStore:
+    public void writeKeyData(java.lang.String,java.util.Map)
+    public java.util.Map readKeyData(java.lang.String)
+    private static final java.lang.String KEY_USER_ID
 com.google.common.collect.Serialization$1
 com.google.common.collect.SortedLists$KeyPresentBehavior
 androidx.core.app.RemoteInput:
@@ -1147,6 +1157,7 @@ io.grpc.CallOptions:
     public io.grpc.CallOptions withDeadlineAfter(long,java.util.concurrent.TimeUnit)
     java.lang.Boolean getWaitForReady()
 kotlinx.coroutines.SupervisorKt
+com.google.android.datatransport.runtime.dagger.internal.MembersInjectors$NoOpMembersInjector
 com.google.common.util.concurrent.ForwardingListenableFuture$SimpleForwardingListenableFuture
 kotlin.time.DurationKt
 com.squareup.okhttp.internal.tls.CertificateChainCleaner
@@ -1165,19 +1176,17 @@ kotlinx.coroutines.SupervisorCoroutine
 com.google.common.cache.CacheLoader$SupplierToCacheLoader
 com.google.protobuf.TypeOrBuilder
 com.squareup.okhttp.internal.framed.FramedConnection$Reader$1
+com.google.android.datatransport.runtime.time.Monotonic
 com.google.android.gms.common.api.internal.DataHolderResult
 com.google.api.Property$PropertyType
 com.google.firebase.analytics.connector.AnalyticsConnectorImpl:
     public static com.google.firebase.analytics.connector.AnalyticsConnector getInstance()
     public static com.google.firebase.analytics.connector.AnalyticsConnector getInstance(com.google.firebase.FirebaseApp)
     static synthetic bridge boolean zzb(com.google.firebase.analytics.connector.AnalyticsConnectorImpl,java.lang.String)
-    private final boolean zzc(java.lang.String)
     public int getMaxUserProperties(java.lang.String)
-    public com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle registerAnalyticsConnectorListener(java.lang.String,com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener)
     public java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
     public java.util.Map getUserProperties(boolean)
     public void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
-    public void logEvent(java.lang.String,java.lang.String,android.os.Bundle)
     public void setConditionalUserProperty(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
     public void setUserProperty(java.lang.String,java.lang.String,java.lang.Object)
 io.flutter.plugins.firebase.firestore.R$string
@@ -1240,6 +1249,11 @@ kotlinx.coroutines.flow.StateFlowImpl$collect$1
 com.google.android.gms.internal.common.zzah
 com.google.common.collect.Collections2$PermutationIterator
 androidx.legacy.coreutils.R$integer
+com.google.firebase.crashlytics.internal.settings.model.Settings:
+    public abstract long getExpiresAtMillis()
+    public abstract int getSettingsVersion()
+    public abstract int getCacheDuration()
+    public abstract boolean isExpired(long)
 com.google.common.hash.Striped64$Cell
 com.google.android.gms.common.util.CollectionUtils:
     public static java.util.Map mapOf(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
@@ -1255,6 +1269,7 @@ com.google.android.gms.common.util.CollectionUtils:
 com.google.common.collect.StandardTable$Row$2
 com.google.common.collect.ConcurrentHashMultiset
 com.google.api.MonitoredResourceMetadataOrBuilder
+com.google.android.datatransport.runtime.dagger.internal.MapProviderFactory
 io.grpc.Deadline:
     public static io.grpc.Deadline$Ticker getSystemTicker()
     public io.grpc.Deadline offset(long,java.util.concurrent.TimeUnit)
@@ -1344,6 +1359,10 @@ kotlin.LazyThreadSafetyMode
 com.google.rpc.Help$Link$Builder
 com.google.common.collect.TreeTraverser$BreadthFirstIterator
 kotlinx.coroutines.CompletableJob$DefaultImpls
+com.google.firebase.crashlytics.internal.common.ExecutorUtils:
+    private void <init>()
+    public static java.util.concurrent.ScheduledExecutorService buildSingleThreadScheduledExecutorService(java.lang.String)
+    private static final long DEFAULT_TERMINATION_TIMEOUT
 com.google.android.gms.tasks.zzx
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatBaseImpl
 com.google.common.hash.ChecksumHashFunction$ChecksumHasher
@@ -1589,6 +1608,9 @@ com.google.android.gms.stats.WakeLock
 com.google.firebase.database.connection.HostInfo:
     private static final java.lang.String VERSION_PARAM
     private static final java.lang.String LAST_SESSION_ID_PARAM
+com.google.android.datatransport.runtime.TransportRuntime:
+    static void withInstance(com.google.android.datatransport.runtime.TransportRuntimeComponent,java.util.concurrent.Callable)
+    public com.google.android.datatransport.TransportFactory newFactory(java.lang.String)
 com.google.api.LabelProto
 com.google.common.collect.LinkedListMultimap$1EntriesImpl
 com.google.common.util.concurrent.Futures
@@ -1612,6 +1634,8 @@ com.google.firebase.appcheck.interop.R$string
 com.google.android.gms.common.api.internal.zaan
 io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
     public void <init>(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.runtime.ProtoEncoderDoNotUse:
+    public static void encode(java.lang.Object,java.io.OutputStream)
 kotlin.collections.builders.SetBuilder
 com.google.common.collect.Maps$FilteredEntrySortedMap
 com.google.common.cache.LocalCache$Strength$2
@@ -1633,6 +1657,7 @@ androidx.core.R$styleable
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$Commit$Builder
 com.google.common.util.concurrent.Service$State$2
 com.google.common.collect.Multimaps$AsMap$EntrySet$1
+com.google.firebase.crashlytics.R$attr
 androidx.viewpager.widget.PagerTabStrip
 com.google.common.collect.AbstractMapEntry
 com.google.common.primitives.package-info
@@ -1720,6 +1745,7 @@ io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$SerializingServerCall$5
 com.google.common.html.package-info
 com.google.firestore.v1.ListDocumentsRequest$1
 androidx.annotation.UiThread
+com.google.firebase.encoders.annotations.Encodable
 androidx.annotation.OptIn
 kotlin.text.MatcherMatchResult$groups$1$iterator$1
 kotlinx.coroutines.flow.StartedEagerly
@@ -1822,6 +1848,7 @@ com.google.gson.internal.LinkedTreeMap$KeySet$1
 kotlinx.coroutines.flow.StateFlowKt
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$lastIndexOf$1
 com.google.android.gms.internal.common.zzf
+javax.inject.Named
 com.google.common.collect.SortedMapDifference
 com.google.common.base.AbstractIterator$State
 androidx.core.os.LocaleListInterface:
@@ -1837,6 +1864,15 @@ io.grpc.internal.RetriableStream:
     public final void setMessageCompression(boolean)
     public final io.grpc.Attributes getAttributes()
 com.google.android.gms.dynamic.LifecycleDelegate
+com.google.firebase.crashlytics.internal.common.SessionReportingCoordinator:
+    public void onLog(long,java.lang.String)
+    public void onCustomKey(java.lang.String,java.lang.String)
+    public void onUserId(java.lang.String)
+    private static final java.lang.String EVENT_TYPE_CRASH
+    private static final java.lang.String EVENT_TYPE_LOGGED
+    private static final int EVENT_THREAD_IMPORTANCE
+    private static final int MAX_CHAINED_EXCEPTION_DEPTH
+    private static final int DEFAULT_BUFFER_SIZE
 io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$SerializingServerCall$10
 com.google.common.reflect.MutableTypeToInstanceMap$UnmodifiableEntry$1
 io.grpc.InternalChannelz$ServerSocketMap
@@ -1885,6 +1921,7 @@ androidx.core.content.pm.ShortcutManagerCompat$1
 kotlin.text.StringsKt___StringsKt$windowedSequence$1
 androidx.core.app.JobIntentService$CompatWorkItem
 com.squareup.okhttp.TlsVersion
+com.google.android.datatransport.backend.cct.R
 androidx.core.telephony.SubscriptionManagerCompat$Api29Impl
 androidx.core.text.TextDirectionHeuristicsCompat
 com.google.common.util.concurrent.ClosingFuture$10
@@ -1942,8 +1979,8 @@ kotlin.text.StringsKt___StringsJvmKt:
     private static final java.math.BigDecimal sumOfBigDecimal(java.lang.CharSequence,kotlin.jvm.functions.Function1)
     private static final java.math.BigInteger sumOfBigInteger(java.lang.CharSequence,kotlin.jvm.functions.Function1)
     public void <init>()
-com.google.firestore.admin.v1.Index$State$1
 com.google.android.gms.common.internal.service.zal
+com.google.firestore.admin.v1.Index$State$1
 com.google.common.util.concurrent.ServiceManager$NoOpService
 com.google.common.reflect.Types$ClassOwnership$2
 kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$2$1
@@ -1956,6 +1993,7 @@ com.google.common.base.package-info
 kotlin.jvm.internal.FunctionAdapter
 com.google.protobuf.ApiOrBuilder
 com.google.common.io.BaseEncoding$StandardBaseEncoding$1
+com.google.android.datatransport.runtime.dagger.internal.InjectedFieldSignature
 com.google.firebase.events.Subscriber:
     public abstract void subscribe(java.lang.Class,com.google.firebase.events.EventHandler)
     public abstract void unsubscribe(java.lang.Class,com.google.firebase.events.EventHandler)
@@ -1991,6 +2029,11 @@ kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$2$1
 kotlinx.coroutines.selects.SelectBuilder$DefaultImpls
 com.google.common.collect.AbstractSortedMultiset
 androidx.print.PrintHelper$PrintUriAdapter$1$1
+com.google.firebase.crashlytics.internal.common.BatteryState:
+    boolean isPowerConnected()
+    static final int VELOCITY_UNPLUGGED
+    static final int VELOCITY_CHARGING
+    static final int VELOCITY_FULL
 kotlinx.coroutines.flow.FlowKt__DelayKt$sample$2$values$1$invokeSuspend$$inlined$collect$1
 com.google.common.collect.EmptyImmutableListMultimap
 kotlinx.coroutines.flow.FlowKt__ZipKt$nullArrayFactory$1
@@ -2021,6 +2064,8 @@ com.google.firestore.v1.StructuredQuery$FieldReference$Builder:
 com.google.api.OAuthRequirements
 com.squareup.okhttp.Dispatcher
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$6
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application:
+    protected com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Builder toBuilder()
 com.google.android.gms.common.GooglePlayServicesManifestException:
     public int getActualVersion()
     public int getExpectedVersion()
@@ -2080,6 +2125,7 @@ kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$5
 androidx.annotation.BoolRes
 androidx.core.content.res.ResourcesCompat$ThemeCompat$ImplApi23
 com.google.common.graph.AbstractNetwork$1$1$1
+com.google.android.datatransport.runtime.BuildConfig
 androidx.lifecycle.AndroidViewModel
 com.google.firebase.components.BuildConfig
 com.google.common.collect.Sets$5$1
@@ -2177,6 +2223,7 @@ com.google.firebase.database.core.ThreadPoolEventTarget$1
 com.google.common.reflect.Types$ClassOwnership$3
 com.google.firebase.database.core.Repo$2:
     public void onTokenChange()
+io.flutter.plugins.firebase.crashlytics.R$drawable
 com.google.android.gms.internal.measurement.zzgi:
     static void <clinit>()
     static final synthetic int[] zza
@@ -2370,11 +2417,14 @@ kotlin.Metadata$DefaultImpls
 com.google.common.cache.RemovalListeners$1
 com.google.apphosting.datastore.testing.DatastoreTestTrace$DatastoreAction$Builder
 com.google.api.Billing$Builder
+com.google.firebase.crashlytics.internal.metadata.QueueFile$Element:
+    static final int HEADER_LENGTH
 kotlin.internal.DynamicExtension
 com.google.common.collect.Maps$NavigableKeySet
 com.google.android.gms.internal.measurement.zzet:
     private void <init>()
 androidx.core.provider.FontsContractCompat$FontRequestCallback
+io.flutter.plugins.firebase.crashlytics.R$string
 kotlin.UByteArray
 io.grpc.internal.ForwardingClientStreamTracer
 com.google.common.hash.AbstractStreamingHasher
@@ -2385,6 +2435,8 @@ com.google.android.gms.internal.measurement.zzff:
 com.google.common.hash.FarmHashFingerprint64
 com.google.common.graph.MapIteratorCache
 com.google.api.Property$1
+com.google.android.datatransport.runtime.retries.Retries:
+    private void <init>()
 androidx.core.view.MenuItemCompat$OnActionExpandListener
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$9$1
 io.grpc.internal.InternalSubchannel$9
@@ -4097,6 +4149,17 @@ io.grpc.internal.Rescheduler$FutureRunnable:
     private boolean isEnabled()
     static synthetic boolean access$900(io.grpc.internal.Rescheduler$FutureRunnable)
 com.google.firebase.firestore.BuildConfig
+com.google.firebase.encoders.proto.ProtobufDataEncoderContext:
+    public com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,java.lang.Object)
+    public com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,double)
+    public com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,int)
+    public com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,long)
+    public com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,boolean)
+    public com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,double)
+    public com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,float)
+    public com.google.firebase.encoders.ObjectEncoderContext inline(java.lang.Object)
+    public com.google.firebase.encoders.ObjectEncoderContext nested(java.lang.String)
+    public com.google.firebase.encoders.ObjectEncoderContext nested(com.google.firebase.encoders.FieldDescriptor)
 io.grpc.ForwardingClientCall$SimpleForwardingClientCall
 androidx.core.app.AppComponentFactory
 com.google.gson.internal.bind.TreeTypeAdapter
@@ -4109,6 +4172,15 @@ com.google.protobuf.Reader:
 io.flutter.plugins.firebase.core.R$integer
 com.google.firestore.v1.BeginTransactionResponse$Builder
 com.google.common.collect.MapMakerInternalMap$WeakKeyDummyValueSegment
+com.google.firebase.crashlytics.FirebaseCrashlytics:
+    public void setCustomKey(java.lang.String,boolean)
+    public void setCustomKey(java.lang.String,double)
+    public void setCustomKey(java.lang.String,float)
+    public void setCustomKey(java.lang.String,int)
+    public void setCustomKeys(com.google.firebase.crashlytics.CustomKeysAndValues)
+    static final java.lang.String FIREBASE_CRASHLYTICS_ANALYTICS_ORIGIN
+    static final java.lang.String LEGACY_CRASH_ANALYTICS_ORIGIN
+    static final int APP_EXCEPTION_CALLBACK_TIMEOUT_MS
 androidx.core.app.NotificationCompatExtras
 kotlinx.coroutines.CoroutineStart:
     public static synthetic void isLazy$annotations()
@@ -4147,8 +4219,6 @@ com.google.android.gms.tasks.zzw:
     public final com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
     public final com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
     public final com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public final com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
-    public final com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
     public final java.lang.Object getResult(java.lang.Class)
 com.google.common.util.concurrent.Service$State$1
 kotlin.jvm.internal.ArrayIterator
@@ -4285,6 +4355,8 @@ kotlinx.coroutines.flow.LintKt$retry$1
 io.grpc.internal.ConscryptLoader
 com.google.common.collect.ImmutableMap$IteratorBasedImmutableMap
 androidx.core.widget.ListPopupWindowCompat
+com.google.firebase.crashlytics.internal.common.DataCollectionArbiter:
+    private static final java.lang.String FIREBASE_CRASHLYTICS_COLLECTION_ENABLED
 androidx.core.app.AlarmManagerCompat
 androidx.core.graphics.drawable.WrappedDrawableApi14
 io.grpc.InternalLogId:
@@ -4407,6 +4479,7 @@ com.google.android.gms.common.data.DataBufferObserver
 com.google.protobuf.Field$Cardinality$CardinalityVerifier
 com.google.common.cache.LocalCache$Strength$3
 com.google.android.gms.common.api.internal.zaam
+io.flutter.plugins.firebase.crashlytics.R
 kotlinx.coroutines.flow.FlowKt__CountKt
 kotlinx.coroutines.internal.DispatchedContinuationKt:
     private static synthetic void getUNDEFINED$annotations()
@@ -4416,10 +4489,10 @@ kotlinx.coroutines.internal.DispatchedContinuationKt:
     static synthetic boolean executeUnconfined$default(kotlinx.coroutines.internal.DispatchedContinuation,java.lang.Object,int,boolean,kotlin.jvm.functions.Function0,int,java.lang.Object)
 androidx.annotation.RequiresOptIn$Level
 kotlinx.coroutines.debug.internal.DebugCoroutineInfoImpl$yieldFrames$1
-com.google.api.HttpBody$1
 kotlinx.coroutines.CompletableJob:
     public abstract boolean complete()
     public abstract boolean completeExceptionally(java.lang.Throwable)
+com.google.api.HttpBody$1
 com.google.common.collect.Iterators$10
 com.google.android.gms.internal.common.zzx
 kotlin.ranges.CharProgression
@@ -4446,7 +4519,6 @@ com.google.common.util.concurrent.ServiceManagerBridge
 com.google.firestore.v1.TargetChangeOrBuilder
 com.google.common.collect.AbstractBiMap$Inverse
 com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtensionParcelable
-com.google.firebase.analytics.connector.internal.zzf
 com.google.android.gms.common.internal.zar
 com.google.firebase.firestore.remote.package-info
 com.google.api.AuthProvider$Builder
@@ -4545,7 +4617,9 @@ android.support.v4.os.ResultReceiver$1
 androidx.annotation.WorkerThread
 com.google.common.graph.GraphBuilder
 kotlinx.coroutines.DeferredCoroutine
+com.google.android.datatransport.runtime.dagger.Component$Factory
 com.google.common.collect.AbstractMapBasedMultimap$SortedAsMap
+io.flutter.plugins.firebase.crashlytics.Constants
 io.grpc.Metadata$1:
     public byte[] toBytes(byte[])
     public byte[] parseBytes(byte[])
@@ -4662,6 +4736,9 @@ kotlin.sequences.USequencesKt
 org.intellij.lang.annotations.PrintFormatPattern
 com.google.common.collect.EnumMultiset$Itr
 com.google.common.util.concurrent.CycleDetectingLockFactory$CycleDetectingReentrantReadLock
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application:
+    protected abstract com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Builder toBuilder()
+    com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application withOrganizationId(java.lang.String)
 com.google.common.base.Objects:
     private void <init>()
 com.google.common.collect.Tables$TransformedTable
@@ -4685,6 +4762,7 @@ com.google.protobuf.MessageLiteToString:
     private static final java.lang.String MAP_SUFFIX
     private static final java.lang.String BYTES_SUFFIX
 com.google.common.collect.Multimaps$UnmodifiableSetMultimap
+com.google.android.datatransport.runtime.dagger.internal.SetBuilder
 com.google.common.util.concurrent.ClosingFuture$Combiner2$1
 androidx.core.view.WindowInsetsControllerCompat$Impl:
     void controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,androidx.core.view.WindowInsetsAnimationControlListenerCompat)
@@ -4891,6 +4969,7 @@ com.google.protobuf.DescriptorProtos$FileDescriptorProto
 com.google.firestore.v1.WriteRequest$LabelsDefaultEntryHolder:
     private void <init>()
 com.google.common.primitives.UnsignedLongs$LexicographicalComparator
+com.google.android.datatransport.runtime.dagger.internal.MapFactory
 com.google.common.io.CharSource
 androidx.core.app.ActivityCompat$1
 com.google.firebase.firestore.local.QueryEngine:
@@ -5075,6 +5154,8 @@ com.google.firebase.database.core.WriteTree:
     public com.google.firebase.database.snapshot.Node calcCompleteEventCache(com.google.firebase.database.core.Path,com.google.firebase.database.snapshot.Node,java.util.List)
 com.squareup.okhttp.internal.framed.Http2$FrameLogger
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$flatMap$1
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_FilesPayload:
+    com.google.firebase.crashlytics.internal.model.CrashlyticsReport$FilesPayload$Builder toBuilder()
 com.google.common.base.Predicates$ObjectPredicate
 com.google.android.gms.common.util.ScopeUtil
 androidx.lifecycle.Transformations$2$1
@@ -5096,7 +5177,8 @@ io.flutter.view.AccessibilityBridge:
     private static final int MIN_ENGINE_GENERATED_NODE_ID
 com.google.common.eventbus.AllowConcurrentEvents
 io.flutter.plugins.firebase.database.R$id
-com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener
+com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener:
+    public abstract void onEvent(java.lang.String,java.lang.String,android.os.Bundle,long)
 org.intellij.lang.annotations.JdkConstants$HorizontalAlignment
 com.google.protobuf.DescriptorProtos$GeneratedCodeInfo$Builder
 io.grpc.internal.MigratingThreadDeframer$DeframeMessageProducer
@@ -5109,8 +5191,8 @@ com.google.firebase.firestore.util.ApiUtil:
     static java.lang.Object newInstance(java.lang.reflect.Constructor)
 io.grpc.internal.ManagedChannelImplBuilder$UnsupportedClientTransportFactoryBuilder
 kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$unsafeFlow$3$1
-androidx.core.view.ViewPropertyAnimatorUpdateListener
 androidx.core.os.ParcelCompat
+androidx.core.view.ViewPropertyAnimatorUpdateListener
 com.google.android.gms.common.server.response.zac
 com.google.common.base.Splitter$Strategy:
     public abstract java.util.Iterator iterator(com.google.common.base.Splitter,java.lang.CharSequence)
@@ -5139,6 +5221,12 @@ com.google.common.util.concurrent.AbstractFuture$Failure$1
 kotlinx.coroutines.sync.MutexImpl$LockCont
 com.google.common.collect.ImmutableMultimap$FieldSettersHolder
 androidx.viewpager.widget.PagerTabStrip$1
+com.google.firebase.encoders.ValueEncoderContext:
+    public abstract com.google.firebase.encoders.ValueEncoderContext add(float)
+    public abstract com.google.firebase.encoders.ValueEncoderContext add(double)
+    public abstract com.google.firebase.encoders.ValueEncoderContext add(int)
+    public abstract com.google.firebase.encoders.ValueEncoderContext add(long)
+    public abstract com.google.firebase.encoders.ValueEncoderContext add(byte[])
 androidx.core.content.PermissionChecker$PermissionResult
 com.google.firebase.firestore.local.MemoryRemoteDocumentCache$1
 com.google.protobuf.DescriptorProtos$DescriptorProto$ReservedRangeOrBuilder
@@ -5304,6 +5392,8 @@ com.google.rpc.context.AttributeContext$Request
 kotlin.random.PlatformRandomKt
 com.google.android.gms.tasks.TaskExecutors:
     private void <init>()
+com.google.firestore.v1.Document$FieldsDefaultEntryHolder:
+    private void <init>()
 com.google.firestore.v1.WriteResult:
     private void setUpdateTime(com.google.protobuf.Timestamp)
     private void mergeUpdateTime(com.google.protobuf.Timestamp)
@@ -5344,8 +5434,6 @@ com.google.firestore.v1.WriteResult:
     public java.util.List getTransformResultsList()
     public java.util.List getTransformResultsOrBuilderList()
     public com.google.firestore.v1.ValueOrBuilder getTransformResultsOrBuilder(int)
-com.google.firestore.v1.Document$FieldsDefaultEntryHolder:
-    private void <init>()
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$1
 com.squareup.okhttp.internal.http.HttpEngine$2
 com.google.common.graph.DirectedGraphConnections$1
@@ -5441,7 +5529,6 @@ kotlin.sequences.SequencesKt__SequencesJVMKt:
     public void <init>()
 androidx.customview.widget.FocusStrategy
 com.google.common.hash.SipHashFunction
-com.google.android.gms.internal.measurement.zzdp
 androidx.core.provider.FontsContractCompat$FontFamilyResult
 kotlin.Deprecated
 com.google.firebase.database.collection.R
@@ -5464,7 +5551,6 @@ com.google.firebase.analytics.zzc:
     public final void zzw(com.google.android.gms.measurement.internal.zzgr)
     public final void zzx(com.google.android.gms.measurement.internal.zzgs)
 com.google.common.collect.ImmutableRangeMap$SerializedForm
-com.google.android.gms.tasks.SuccessContinuation
 androidx.viewpager.R$styleable
 com.google.common.cache.LocalCache$AbstractCacheSet
 io.flutter.embedding.engine.loader.FlutterLoader:
@@ -5572,6 +5658,7 @@ io.grpc.ManagedChannelProvider$ProviderNotFoundException:
 kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1
 com.google.android.gms.internal.base.zai
 com.google.common.graph.NetworkBuilder
+com.google.android.datatransport.runtime.dagger.internal.MapFactory$Builder
 com.google.common.collect.Synchronized$SynchronizedAsMapValues
 kotlinx.coroutines.flow.FlowKt__DelayKt$debounce$2
 androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport$1
@@ -5714,6 +5801,8 @@ com.google.common.util.concurrent.MoreExecutors$2
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$catchImpl$$inlined$collect$1
 io.grpc.internal.ClientTransportFactory$SwapChannelCredentialsResult
 com.google.firestore.v1.WriteProto
+com.google.android.datatransport.runtime.firebase.transport.TimeWindow:
+    public static com.google.android.datatransport.runtime.firebase.transport.TimeWindow getDefaultInstance()
 com.google.common.cache.CacheBuilderSpec$MaximumSizeParser
 com.google.firebase.database.logging.package-info
 com.google.common.collect.ArrayTable$RowMap
@@ -5741,6 +5830,7 @@ com.google.firebase.installations.local.PersistedInstallation:
     private static final java.lang.String PERSISTED_STATUS_KEY
     private static final java.lang.String FIS_ERROR_KEY
 kotlinx.coroutines.flow.SharedFlow
+com.google.android.datatransport.runtime.dagger.internal.GwtIncompatible
 com.google.firestore.admin.v1.Index$State$StateVerifier
 io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
     public static final int unsetValue
@@ -5759,7 +5849,10 @@ androidx.core.graphics.PaintCompat
 javax.annotation.Nonnull
 io.grpc.util.AdvancedTlsX509KeyManager
 com.google.common.collect.FilteredMultimapValues
-com.google.firebase.analytics.connector.internal.zzg
+com.google.firebase.analytics.connector.internal.zzg:
+    public final com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener zza()
+    public final void zzb(java.util.Set)
+    public final void zzc()
 com.google.common.collect.RegularImmutableMap$KeysOrValuesAsList:
     boolean isPartialView()
 com.google.api.Distribution$BucketOptions$Explicit
@@ -5783,7 +5876,13 @@ com.google.common.io.CountingOutputStream
 com.google.common.util.concurrent.ClosingFuture$Combiner2$2
 io.grpc.internal.ReflectionLongAdderCounter:
     public long value()
+com.google.firebase.crashlytics.internal.settings.model.SettingsData:
+    public int getSettingsVersion()
+    public int getCacheDuration()
 okio.InflaterSource
+com.google.firebase.encoders.json.JsonDataEncoderBuilder:
+    public com.google.firebase.encoders.json.JsonDataEncoderBuilder registerFallbackEncoder(com.google.firebase.encoders.ObjectEncoder)
+    public synthetic bridge com.google.firebase.encoders.config.EncoderConfig registerEncoder(java.lang.Class,com.google.firebase.encoders.ValueEncoder)
 com.google.android.gms.common.internal.zzak
 com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder
 com.squareup.okhttp.internal.io.RealConnection
@@ -5811,6 +5910,9 @@ kotlinx.coroutines.flow.internal.FlowProduceCoroutine
 com.google.firebase.database.core.utilities.tuple.PathAndId
 kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$lambda-3$$inlined$collect$1
 com.google.common.graph.EdgesConnecting
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization:
+    public static com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization$Builder builder()
+    protected abstract com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization$Builder toBuilder()
 com.google.common.collect.Iterators$11
 com.google.protobuf.FieldSet$FieldDescriptorLite:
     public abstract com.google.protobuf.Internal$EnumLiteMap getEnumType()
@@ -5835,6 +5937,17 @@ com.google.common.graph.ImmutableNetwork$1
 com.google.longrunning.ListOperationsRequest
 com.google.type.TimeOfDayProto
 com.google.common.util.concurrent.ClosingFuture$12
+com.google.firebase.crashlytics.internal.common.CrashlyticsController:
+    void setCustomKeys(java.util.Map)
+    void setInternalKey(java.lang.String,java.lang.String)
+    com.google.firebase.crashlytics.internal.metadata.UserMetadata getUserMetadata()
+    static final java.lang.String FIREBASE_CRASH_TYPE
+    static final java.lang.String FIREBASE_TIMESTAMP
+    static final java.lang.String FIREBASE_APPLICATION_EXCEPTION
+    static final java.lang.String APP_EXCEPTION_MARKER_PREFIX
+    static final java.lang.String NATIVE_SESSION_DIR
+    static final int FIREBASE_CRASH_TYPE_FATAL
+    private static final java.lang.String GENERATOR_FORMAT
 kotlin.ranges.ComparableRange
 com.google.firebase.database.connection.Constants
 com.squareup.okhttp.internal.framed.FrameReader
@@ -6149,6 +6262,8 @@ androidx.core.text.util.FindAddress$ZipRange
 kotlin.reflect.KVariance
 kotlin.sequences.SequencesKt__SequencesKt$Sequence$1
 com.google.api.FieldBehavior$1
+com.google.android.datatransport.TransportFactory:
+    public abstract com.google.android.datatransport.Transport getTransport(java.lang.String,java.lang.Class,com.google.android.datatransport.Transformer)
 kotlin.sequences.SequencesKt___SequencesKt$minus$1
 com.google.android.gms.common.images.zaa
 com.google.common.collect.LinkedListMultimap$KeyList
@@ -6157,6 +6272,12 @@ com.google.common.collect.ImmutableMultiset$Builder
 kotlin.UninitializedPropertyAccessException:
     public void <init>(java.lang.String,java.lang.Throwable)
     public void <init>(java.lang.Throwable)
+com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig:
+    public java.util.Set getFlags(com.google.android.datatransport.Priority)
+    private static final long TWENTY_FOUR_HOURS
+    private static final long THIRTY_SECONDS
+    private static final long ONE_SECOND
+    private static final long BACKOFF_LOG_BASE
 com.google.common.graph.AbstractValueGraph
 io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
     public abstract java.lang.Object getLifecycle()
@@ -6172,6 +6293,8 @@ io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
     public abstract void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
 kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1
 com.google.common.hash.Funnels$SinkAsStream
+com.google.firebase.crashlytics.internal.common.NativeSessionFileGzipper:
+    void <init>()
 com.google.android.gms.common.api.internal.zaal
 com.google.common.math.Quantiles$ScaleAndIndex
 kotlinx.coroutines.scheduling.CoroutineScheduler:
@@ -6335,6 +6458,7 @@ okio.ForwardingTimeout
 kotlinx.coroutines.flow.FlowKt__TransformKt$withIndex$lambda-7$$inlined$collect$1
 io.grpc.okhttp.internal.framed.FrameReader:
     public abstract void readConnectionPreface()
+com.google.android.datatransport.runtime.dagger.multibindings.LongKey
 androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
 com.google.common.eventbus.Dispatcher$LegacyAsyncDispatcher$EventWithSubscriber
 com.google.protobuf.MessageSchema:
@@ -6369,6 +6493,7 @@ androidx.core.view.OnApplyWindowInsetsListener
 androidx.core.content.pm.PermissionInfoCompat$ProtectionFlags
 kotlinx.coroutines.internal.Segment
 kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$2$2
+com.google.android.datatransport.runtime.backends.BackendRegistryModule
 io.grpc.InternalChannelz$ServerStats
 kotlinx.coroutines.AwaitKt$joinAll$1
 androidx.loader.app.LoaderManagerImpl$LoaderInfo:
@@ -6407,6 +6532,9 @@ com.example.my_app.R$mipmap
 io.grpc.util.AdvancedTlsX509KeyManager$KeyInfo
 io.grpc.ForwardingServerBuilder
 androidx.versionedparcelable.VersionedParcelize
+com.google.android.datatransport.runtime.dagger.internal.InstanceFactory:
+    public static com.google.android.datatransport.runtime.dagger.internal.Factory createNullable(java.lang.Object)
+    private static com.google.android.datatransport.runtime.dagger.internal.InstanceFactory nullInstanceFactory()
 com.google.rpc.Status$Builder:
     public int getCode()
     public com.google.rpc.Status$Builder setCode(int)
@@ -6596,6 +6724,8 @@ androidx.core.graphics.drawable.IconCompat:
     static final java.lang.String EXTRA_TINT_MODE
     static final java.lang.String EXTRA_STRING1
 com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask
+com.google.android.datatransport.runtime.time.TimeModule_EventClockFactory$InstanceHolder:
+    private void <init>()
 com.google.firebase.database.core.Platform:
     public abstract java.lang.String getPlatformVersion()
 androidx.core.content.res.GradientColorInflaterCompat
@@ -6804,6 +6934,22 @@ io.grpc.internal.TransportTracer$FlowControlWindows
 com.google.common.net.InetAddresses
 kotlinx.coroutines.debug.internal.DebugProbesKt
 androidx.fragment.app.FragmentManager$BackStackEntry
+com.google.android.datatransport.runtime.scheduling.persistence.SchemaManager:
+    static final java.lang.String DB_NAME
+    private static final java.lang.String CREATE_EVENTS_SQL_V1
+    private static final java.lang.String CREATE_EVENT_METADATA_SQL_V1
+    private static final java.lang.String CREATE_CONTEXTS_SQL_V1
+    private static final java.lang.String CREATE_EVENT_BACKEND_INDEX_V1
+    private static final java.lang.String CREATE_CONTEXT_BACKEND_PRIORITY_INDEX_V1
+    private static final java.lang.String DROP_EVENTS_SQL
+    private static final java.lang.String DROP_EVENT_METADATA_SQL
+    private static final java.lang.String DROP_CONTEXTS_SQL
+    private static final java.lang.String CREATE_PAYLOADS_TABLE_V4
+    private static final java.lang.String DROP_PAYLOADS_SQL
+    private static final java.lang.String CREATE_LOG_EVENT_DROPPED_TABLE
+    private static final java.lang.String CREATE_GLOBAL_LOG_EVENT_STATE_TABLE
+    private static final java.lang.String DROP_LOG_EVENT_DROPPED_SQL
+    private static final java.lang.String DROP_GLOBAL_LOG_EVENT_STATE_SQL
 com.google.common.reflect.ClassPath$1
 androidx.core.view.DragStartHelper
 android.annotation.SuppressLint
@@ -6898,6 +7044,7 @@ com.google.protobuf.JavaType:
     public java.lang.Object getDefaultDefault()
     public java.lang.Class getType()
     public boolean isValidType(java.lang.Class)
+com.google.android.datatransport.runtime.dagger.internal.DaggerCollections
 com.google.common.math.Quantiles$1
 io.grpc.stub.ClientCalls$GrpcFuture
 com.google.common.hash.LittleEndianByteArray$LittleEndianBytes
@@ -6942,6 +7089,7 @@ com.google.firebase.database.android.package-info
 com.google.api.MetricDescriptor$MetricDescriptorMetadata
 com.google.android.gms.internal.common.zzae
 io.flutter.plugins.firebase.firestore.R$integer
+com.google.firebase.crashlytics.internal.common.CrashlyticsLifecycleEvents
 androidx.core.app.ActivityOptionsCompat
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$6$1
 com.google.gson.internal.UnsafeAllocator$3
@@ -7084,6 +7232,12 @@ androidx.activity.R$attr
 com.google.longrunning.Operation$ResultCase
 com.google.android.gms.measurement_base.R
 io.grpc.ServerInterceptors$KnownLengthBufferedInputStream
+com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore:
+    private static synthetic java.lang.Object lambda$clearDb$13(android.database.sqlite.SQLiteDatabase)
+    public void clearDb()
+    private static final java.lang.String LOG_TAG
+    static final int MAX_RETRIES
+    private static final int LOCK_RETRY_BACK_OFF_MILLIS
 com.google.android.gms.common.config.zzc
 kotlinx.coroutines.internal.LockFreeTaskQueueCore:
     public final java.util.List map(kotlin.jvm.functions.Function1)
@@ -7118,6 +7272,7 @@ com.google.protobuf.Empty$1
 com.google.common.eventbus.AsyncEventBus
 com.google.android.gms.common.server.response.zan
 androidx.core.provider.FontRequestWorker$2
+com.google.android.datatransport.runtime.dagger.Module
 io.grpc.ServerRegistry
 com.google.android.gms.tasks.Task:
     public com.google.android.gms.tasks.Task addOnCanceledListener(com.google.android.gms.tasks.OnCanceledListener)
@@ -7126,8 +7281,6 @@ com.google.android.gms.tasks.Task:
     public abstract com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
     public abstract com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
     public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
-    public com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
     public abstract java.lang.Object getResult(java.lang.Class)
 com.google.protobuf.GeneratedMessageLite$GeneratedExtension:
     void <init>(com.google.protobuf.MessageLite,java.lang.Object,com.google.protobuf.MessageLite,com.google.protobuf.GeneratedMessageLite$ExtensionDescriptor,java.lang.Class)
@@ -7151,6 +7304,8 @@ com.squareup.okhttp.internal.framed.Spdy3$Reader
 com.squareup.okhttp.CertificatePinner
 com.google.common.io.Flushables
 com.google.common.cache.Striped64$Cell
+com.google.firebase.crashlytics.internal.stacktrace.RemoveRepeatsStrategy:
+    public void <init>()
 androidx.core.view.ContentInfoCompat
 kotlin.sequences.DropTakeSequence
 com.google.common.collect.Iterators$4
@@ -7160,6 +7315,9 @@ io.grpc.ServerInterceptors$2
 com.google.common.graph.MapRetrievalCache$CacheEntry
 com.google.firebase.database.android.SqlPersistenceStorageEngine$PersistentCacheOpenHelper:
     private static final int DATABASE_VERSION
+com.google.firebase.crashlytics.internal.analytics.BlockingAnalyticsEventLogger:
+    boolean isCallbackReceived()
+    static final java.lang.String APP_EXCEPTION_EVENT_NAME
 com.squareup.okhttp.Cache
 kotlinx.coroutines.android.HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1
 com.google.gson.internal.LinkedHashTreeMap$LinkedTreeMapIterator
@@ -7242,6 +7400,9 @@ androidx.core.widget.TextViewCompat
 com.google.common.util.concurrent.Callables$4
 com.google.common.collect.ArrayTable$1
 kotlin.io.FilesKt__UtilsKt$copyRecursively$2
+com.google.android.datatransport.runtime.dagger.internal.Preconditions:
+    public static java.lang.Object checkNotNull(java.lang.Object,java.lang.String,java.lang.Object)
+    private void <init>()
 com.google.common.net.HostAndPort
 com.google.api.EndpointProto
 com.google.firestore.v1.StructuredQuery$UnaryFilter:
@@ -7567,6 +7728,7 @@ kotlin.sequences.IndexingSequence
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$ActionCase
 kotlinx.coroutines.flow.FlowKt__CollectionKt
 kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$4
+com.google.firebase.crashlytics.R$integer
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$elementAtOrNull$1
 com.google.common.graph.MutableValueGraph
 com.google.common.graph.Traverser$4
@@ -7966,6 +8128,8 @@ com.google.firestore.v1.TransactionOptions$Builder:
 com.google.common.base.Enums$StringConverter
 androidx.core.provider.SelfDestructiveThread$1
 kotlin.jvm.internal.markers.KMutableListIterator
+com.google.firebase.crashlytics.internal.common.Utils:
+    private void <init>()
 com.google.common.io.FileBackedOutputStream$MemoryOutput
 com.google.common.util.concurrent.Callables
 com.google.common.collect.Sets$PowerSet
@@ -8161,6 +8325,7 @@ okio.SegmentedByteString:
 kotlinx.coroutines.flow.internal.ChannelFlow$collect$2
 androidx.core.view.inputmethod.EditorInfoCompat$Impl30
 com.google.common.escape.Escapers$2
+com.google.android.datatransport.runtime.dagger.internal.MapBuilder
 androidx.core.view.ViewConfigurationCompat
 kotlin.reflect.KType:
     public abstract kotlin.reflect.KClassifier getClassifier()
@@ -8207,6 +8372,7 @@ com.squareup.okhttp.internal.NamedRunnable
 com.google.common.cache.LocalCache$WeightedStrongValueReference
 com.google.common.util.concurrent.Striped
 io.grpc.stub.ClientResponseObserver
+com.google.firebase.encoders.json.BuildConfig
 kotlin.jvm.internal.Intrinsics:
     public static void checkNotNull(java.lang.Object,java.lang.String)
     public static void throwNpe()
@@ -8241,6 +8407,7 @@ kotlin.jvm.internal.Intrinsics:
     public static void checkHasClass(java.lang.String)
     public static void checkHasClass(java.lang.String,java.lang.String)
 com.google.common.primitives.Booleans
+com.google.android.datatransport.runtime.dagger.internal.AbstractMapFactory
 com.google.common.collect.FilteredKeySetMultimap$EntrySet
 kotlinx.coroutines.flow.FlowKt__CollectKt$collect$3
 androidx.core.provider.RequestExecutor$DefaultThreadFactory
@@ -8376,6 +8543,7 @@ com.google.common.collect.MapMakerInternalMap$AbstractSerializationProxy
 com.google.android.gms.common.images.zag
 com.google.protobuf.FloatValue$Builder
 com.google.type.TimeOfDay
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application_Organization$1
 kotlinx.coroutines.internal.MainDispatchersKt:
     public static final boolean isMissing(kotlinx.coroutines.MainCoroutineDispatcher)
     private static synthetic void getSUPPORT_MISSING$annotations()
@@ -8388,6 +8556,8 @@ kotlin.NumbersKt__NumbersJVMKt
 com.google.common.io.FileBackedOutputStream$2
 com.google.firestore.v1.ListDocumentsRequest$Builder
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$CryptoObject
+com.google.firebase.crashlytics.internal.common.InstallerPackageNameProvider:
+    private static final java.lang.String NO_INSTALLER_PACKAGE_NAME
 kotlin.sequences.SequencesKt__SequenceBuilderKt$buildSequence$$inlined$Sequence$1
 com.google.common.collect.Multisets$4$2
 com.google.firestore.admin.v1.Index$QueryScope
@@ -8401,6 +8571,8 @@ com.google.api.Billing
 com.google.common.collect.MapMakerInternalMap$WeakValueEntry
 io.grpc.InternalConfigSelector$Result$Builder:
     public io.grpc.InternalConfigSelector$Result$Builder setInterceptor(io.grpc.ClientInterceptor)
+com.google.android.datatransport.runtime.scheduling.SchedulingConfigModule:
+    public void <init>()
 androidx.core.view.ScaleGestureDetectorCompat
 androidx.core.view.ViewGroupCompat:
     private void <init>()
@@ -8413,6 +8585,17 @@ androidx.core.view.ViewGroupCompat:
     public static final int LAYOUT_MODE_CLIP_BOUNDS
     public static final int LAYOUT_MODE_OPTICAL_BOUNDS
 androidx.core.app.NotificationCompat$CarExtender
+com.google.firebase.encoders.ObjectEncoderContext:
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,java.lang.Object)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,double)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,int)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,long)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,boolean)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,float)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,double)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext inline(java.lang.Object)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext nested(java.lang.String)
+    public abstract com.google.firebase.encoders.ObjectEncoderContext nested(com.google.firebase.encoders.FieldDescriptor)
 org.checkerframework.checker.nullness.compatqual.KeyForDecl
 com.google.common.collect.AbstractMapBasedMultimap$WrappedList
 kotlinx.coroutines.android.HandlerDispatcherKt$awaitFrame$lambda-3$$inlined$Runnable$1
@@ -8582,6 +8765,8 @@ com.google.firebase.firestore.util.FileUtil$DefaultFileDeleter:
     private void <init>()
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$catch$$inlined$unsafeFlow$1
 kotlin.text.MatchNamedGroupCollection
+com.google.android.datatransport.runtime.ExecutionModule:
+    void <init>()
 com.google.common.collect.TopKSelector
 com.google.gson.Gson$1
 io.flutter.embedding.engine.loader.FlutterLoader$Settings:
@@ -8680,7 +8865,10 @@ kotlinx.coroutines.channels.ArrayChannel:
     protected java.lang.Object enqueueSend(kotlinx.coroutines.channels.Send)
     protected java.lang.Object pollSelectInternal(kotlinx.coroutines.selects.SelectInstance)
     protected void onCancelIdempotent(boolean)
+com.google.firebase.crashlytics.internal.analytics.CrashlyticsOriginAnalyticsEventLogger:
+    static final java.lang.String FIREBASE_ANALYTICS_ORIGIN_CRASHLYTICS
 com.google.android.gms.common.api.internal.zaaj
+com.google.firebase.encoders.annotations.ExtraProperty
 okio.ByteString:
     public static okio.ByteString of(byte[],int,int)
     public static okio.ByteString of(java.nio.ByteBuffer)
@@ -8793,12 +8981,19 @@ kotlinx.coroutines.flow.SharedFlowImpl$Emitter
 com.google.protobuf.FieldMaskProto
 io.flutter.app.FlutterFragmentActivity
 com.google.common.collect.ImmutableTable$Builder
+com.google.android.datatransport.runtime.dagger.multibindings.ClassKey
 kotlinx.coroutines.CancellableContinuation$DefaultImpls:
     public static synthetic boolean cancel$default(kotlinx.coroutines.CancellableContinuation,java.lang.Throwable,int,java.lang.Object)
 kotlinx.coroutines.flow.FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1$1
 com.google.common.reflect.TypeToken$TypeCollector
 com.google.android.gms.common.server.response.FastJsonResponse$Field
 kotlin.collections.MutableMapWithDefault
+com.google.firebase.crashlytics.internal.DevelopmentPlatformProvider:
+    public static boolean isUnity(android.content.Context)
+    private static final java.lang.String UNITY_PLATFORM
+    private static final java.lang.String FLUTTER_PLATFORM
+    private static final java.lang.String UNITY_VERSION_FIELD
+    private static final java.lang.String FLUTTER_ASSETS_PATH
 androidx.core.view.DisplayCutoutCompat
 com.google.common.graph.Traverser$5
 kotlin.collections.CollectionsKt___CollectionsKt:
@@ -9062,6 +9257,7 @@ kotlin.collections.EmptyList:
     public java.lang.Void remove(int)
     private static final long serialVersionUID
 com.google.common.hash.MessageDigestHashFunction$SerializedForm
+com.google.firebase.crashlytics.R$style
 kotlin.jvm.internal.PropertyReference0
 io.flutter.util.Preconditions:
     private void <init>()
@@ -9073,7 +9269,6 @@ com.google.common.graph.EndpointPairIterator
 kotlin.collections.ReversedListReadOnly
 com.google.common.graph.UndirectedMultiNetworkConnections$1
 com.google.common.hash.Hashing$1
-com.google.android.gms.internal.measurement.zzdv
 kotlin.collections.CollectionsKt__MutableCollectionsJVMKt:
     private static final void sort(java.util.List,java.util.Comparator)
     private static final void sort(java.util.List,kotlin.jvm.functions.Function2)
@@ -9253,6 +9448,12 @@ com.google.rpc.Status:
     public com.google.protobuf.AnyOrBuilder getDetailsOrBuilder(int)
 com.google.common.collect.ImmutableMap$SerializedForm
 com.google.common.graph.Traverser$Traversal$3
+com.google.android.datatransport.cct.CCTDestination:
+    static byte[] encodeString(java.lang.String)
+    static java.lang.String decodeExtras(byte[])
+    static final java.lang.String DESTINATION_NAME
+    private static final java.lang.String EXTRAS_VERSION_MARKER
+    private static final java.lang.String EXTRAS_DELIMITER
 com.google.firestore.v1.RunQueryResponseOrBuilder
 com.google.api.Distribution$BucketOptions$ExplicitOrBuilder
 io.grpc.ServerStreamTracer$Factory
@@ -9360,7 +9561,6 @@ com.google.android.gms.internal.measurement.zzca:
     public final void isDataCollectionEnabled(com.google.android.gms.internal.measurement.zzcf)
     public final void logEventAndBundle(java.lang.String,java.lang.String,android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
     public final void performAction(android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
-    public final void registerOnMeasurementEventListener(com.google.android.gms.internal.measurement.zzci)
     public final void resetAnalyticsData(long)
     public final void setConsent(android.os.Bundle,long)
     public final void setConsentThirdParty(android.os.Bundle,long)
@@ -9479,6 +9679,8 @@ com.google.gson.ToNumberPolicy$4
 com.google.gson.JsonObject
 com.google.protobuf.Api
 kotlin.text.Regex$Serialized$Companion
+com.google.android.datatransport.cct.internal.LogResponse:
+    private static final java.lang.String LOG_TAG
 com.google.android.gms.internal.measurement.zzll:
     void <init>()
 com.google.common.util.concurrent.Striped$CompactStriped
@@ -9605,6 +9807,7 @@ com.google.firebase.installations.InstallationTokenResult$Builder
 com.google.type.LatLngProto
 io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$SerializingServerCall$9
 com.google.gson.internal.bind.NumberTypeAdapter$2
+com.google.android.datatransport.runtime.dagger.internal.MapProviderFactory$Builder
 androidx.customview.widget.FocusStrategy$SequentialComparator
 com.google.firebase.database.core.view.filter.package-info
 io.flutter.plugins.sharedpreferences.MethodCallHandlerImpl:
@@ -9649,6 +9852,8 @@ com.google.android.gms.common.util.ProcessUtils:
     private void <init>()
 com.google.api.CustomHttpPattern$Builder
 com.google.common.collect.ImmutableMultiset$1
+com.google.android.datatransport.runtime.AutoProtoEncoderDoNotUseEncoder:
+    public static final int CODEGEN_VERSION
 com.google.type.DayOfWeek$1
 kotlinx.coroutines.flow.internal.StackFrameContinuation
 com.google.firebase.firestore.proto.Mutation
@@ -9671,6 +9876,8 @@ io.grpc.internal.ClientCallImpl:
     public io.grpc.Attributes getAttributes()
 com.google.android.gms.common.api.Response
 com.google.common.collect.Maps$AbstractFilteredMap
+com.google.android.datatransport.runtime.firebase.transport.StorageMetrics:
+    public static com.google.android.datatransport.runtime.firebase.transport.StorageMetrics getDefaultInstance()
 com.google.common.graph.ValueGraphBuilder
 com.google.api.Logging$LoggingDestination
 kotlinx.coroutines.internal.ConcurrentKt:
@@ -10006,6 +10213,15 @@ androidx.core.provider.SelfDestructiveThread$2$1
 org.intellij.lang.annotations.JdkConstants$TitledBorderTitlePosition
 com.google.j2objc.annotations.WeakOuter
 com.google.protobuf.Method$1
+com.google.firebase.crashlytics.internal.metadata.UserMetadata:
+    public void setCustomKeys(java.util.Map)
+    public boolean setInternalKey(java.lang.String,java.lang.String)
+    public static final java.lang.String USERDATA_FILENAME
+    public static final java.lang.String KEYDATA_FILENAME
+    public static final java.lang.String INTERNAL_KEYDATA_FILENAME
+    public static final int MAX_ATTRIBUTES
+    public static final int MAX_ATTRIBUTE_SIZE
+    public static final int MAX_INTERNAL_KEY_SIZE
 com.google.api.Distribution$BucketOptions$LinearOrBuilder
 com.google.common.collect.MapMakerInternalMap$1
 androidx.core.view.accessibility.AccessibilityViewCommand
@@ -10181,9 +10397,11 @@ io.grpc.InternalServiceProviders:
     public static java.lang.Iterable getCandidatesViaHardCoded(java.lang.Class,java.lang.Iterable)
 kotlinx.coroutines.channels.BroadcastKt
 kotlinx.coroutines.flow.FlowKt__ChannelsKt
+com.google.firebase.crashlytics.internal.network.HttpRequestFactory:
+    public com.google.firebase.crashlytics.internal.network.HttpGetRequest buildHttpGetRequest(java.lang.String)
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$1
-kotlin.text.MatcherMatchResult$groupValues$1
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$Rollback
+kotlin.text.MatcherMatchResult$groupValues$1
 com.google.protobuf.CodedOutputStream$ByteOutputEncoder
 kotlinx.coroutines.flow.internal.CombineKt$combineInternal$2
 kotlinx.coroutines.flow.FlowKt__ChannelsKt$asFlow$$inlined$unsafeFlow$1
@@ -10218,10 +10436,16 @@ kotlinx.coroutines.flow.internal.CombineKt
 com.google.rpc.context.AttributeContext$1
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$7
 kotlinx.coroutines.test.TestCoroutineContext$Dispatcher
+com.google.android.datatransport.runtime.firebase.transport.ClientMetrics:
+    public static com.google.android.datatransport.runtime.firebase.transport.ClientMetrics getDefaultInstance()
+    public void writeTo(java.io.OutputStream)
+    public com.google.android.datatransport.runtime.firebase.transport.TimeWindow getWindow()
+    public com.google.android.datatransport.runtime.firebase.transport.GlobalMetrics getGlobalMetrics()
 com.google.common.collect.LinkedListMultimap$1KeySetImpl
 com.google.android.gms.common.api.internal.zaaz
 com.google.android.gms.common.util.ClientLibraryUtils
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$any$1
+com.google.android.datatransport.runtime.dagger.Subcomponent
 com.google.common.util.concurrent.OverflowAvoidingLockSupport
 com.google.protobuf.Field$Cardinality
 com.google.common.hash.Funnels$IntegerFunnel
@@ -10336,12 +10560,22 @@ com.google.common.graph.Traverser$Traversal$4
 com.google.android.gms.common.images.zad
 com.google.android.gms.tasks.NativeOnCompleteListener
 kotlin.collections.builders.SerializedCollection
+com.google.firebase.crashlytics.internal.network.HttpGetRequest:
+    public com.google.firebase.crashlytics.internal.network.HttpGetRequest header(java.util.Map$Entry)
+    private static final java.lang.String METHOD_GET
+    private static final int DEFAULT_TIMEOUT_MS
+    private static final int READ_BUFFER_SIZE
 com.google.common.io.CharSource$CharSequenceCharSource$1
 kotlin.comparisons.NaturalOrderComparator
 com.google.cloud.audit.AuditLogOrBuilder
 kotlinx.coroutines.flow.internal.ChannelFlow
 com.google.gson.internal.bind.DateTypeAdapter$1
 androidx.core.app.ActivityRecreator$2
+com.google.firebase.crashlytics.CrashlyticsAnalyticsListener:
+    static final java.lang.String EVENT_ORIGIN_KEY
+    static final java.lang.String EVENT_NAME_KEY
+    static final java.lang.String EVENT_PARAMS_KEY
+    static final java.lang.String CRASHLYTICS_ORIGIN
 com.google.gson.internal.Streams$AppendableWriter$CurrentWrite
 com.google.common.graph.ImmutableValueGraph$Builder
 com.google.android.gms.common.internal.FallbackServiceBroker
@@ -10478,6 +10712,9 @@ com.google.firebase.firestore.local.package-info
 io.flutter.view.FlutterMain$Settings
 com.google.common.primitives.Shorts$ShortConverter
 com.google.common.collect.Table
+com.google.firebase.crashlytics.internal.metadata.LogFileManager:
+    private static final java.lang.String LOGFILE_NAME
+    static final int MAX_LOG_SIZE
 com.google.common.util.concurrent.Striped$2
 kotlinx.coroutines.flow.FlowKt__EmittersKt$transform$1$invokeSuspend$$inlined$collect$1
 androidx.core.util.AtomicFile
@@ -10489,6 +10726,7 @@ com.google.protobuf.AbstractMessageLite$Builder$LimitedInputStream
 androidx.loader.R$layout
 com.google.common.util.concurrent.AbstractTransformFuture
 com.google.apphosting.datastore.testing.DatastoreTestTrace$1
+com.google.android.datatransport.runtime.dagger.internal.AbstractMapFactory$Builder
 androidx.customview.widget.ExploreByTouchHelper$MyNodeProvider
 kotlinx.coroutines.flow.StartedLazily$command$1$invokeSuspend$$inlined$collect$1$1
 com.google.android.gms.common.internal.service.zaj
@@ -10612,6 +10850,7 @@ com.google.android.gms.internal.measurement.zzef:
     static final synthetic int[] zza
 com.google.common.graph.AbstractBaseGraph$2$2
 com.google.protobuf.DescriptorProtos$EnumDescriptorProto
+com.google.android.datatransport.backend.cct.BuildConfig
 com.google.common.io.BaseEncoding$Alphabet:
     private boolean hasLowerCase()
     private boolean hasUpperCase()
@@ -10764,6 +11003,7 @@ com.google.android.gms.common.internal.ShowFirstParty
 com.google.common.collect.ReverseOrdering
 kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$1
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$2
+io.flutter.plugins.firebase.crashlytics.R$integer
 com.google.android.gms.internal.measurement.zzcq
 com.google.common.collect.HashBiMap$ValueSet
 com.google.common.base.JdkPattern$JdkMatcher
@@ -11034,6 +11274,7 @@ com.google.android.gms.measurement.zzd:
     abstract java.lang.String zzl()
     abstract java.util.Map zzn(boolean)
 androidx.localbroadcastmanager.content.LocalBroadcastManager$1
+io.flutter.plugins.firebase.crashlytics.R$style
 com.google.api.UsageRuleOrBuilder
 androidx.core.app.NotificationManagerCompat$SideChannelManager
 com.google.firebase.analytics.FirebaseAnalytics$UserProperty
@@ -11233,6 +11474,8 @@ com.google.protobuf.Internal$MapAdapter$Converter
 com.google.firebase.installations.interop.R
 kotlinx.coroutines.flow.FlowKt__ContextKt$flowWith$$inlined$unsafeFlow$1
 com.google.common.collect.ForwardingTable
+com.google.firebase.crashlytics.internal.model.AutoCrashlyticsReportEncoder:
+    public static final int CODEGEN_VERSION
 com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator
 androidx.core.os.HandlerCompat$Api28Impl
 com.google.firebase.database.core.DatabaseConfig:
@@ -11252,6 +11495,10 @@ com.google.android.gms.internal.common.zzu
 com.google.common.graph.EndpointPairIterator$1
 androidx.core.view.ContentInfoCompat$Flags
 com.google.android.gms.tasks.R
+com.google.firebase.crashlytics.internal.analytics.BreadcrumbAnalyticsEventReceiver:
+    private static final java.lang.String BREADCRUMB_NAME_KEY
+    private static final java.lang.String BREADCRUMB_PARAMS_KEY
+    private static final java.lang.String BREADCRUMB_PREFIX
 androidx.core.content.LocusIdCompat:
     public void <init>(java.lang.String)
     public static androidx.core.content.LocusIdCompat toLocusIdCompat(android.content.LocusId)
@@ -11267,6 +11514,8 @@ com.google.common.collect.TreeRangeMap
 io.grpc.internal.RetriableStream$1MessageCompressionEntry
 kotlinx.coroutines.internal.SynchronizedKt
 com.google.type.PostalAddress
+com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_SchemaVersionFactory$InstanceHolder:
+    private void <init>()
 com.google.protobuf.ListValue$Builder
 com.google.common.collect.ImmutableMapKeySet
 com.google.android.gms.common.internal.zaaa
@@ -11303,6 +11552,7 @@ com.google.protobuf.CodedInputStream$IterableDirectByteBufferDecoder:
     public void resetSizeCounter()
     public int getBytesUntilLimit()
     public byte[] readRawBytes(int)
+com.google.android.datatransport.runtime.dagger.internal.ProviderOfLazy
 com.google.common.base.CharMatcher$JavaDigit
 com.google.firebase.database.collection.R$color
 com.google.api.Context$1
@@ -11331,14 +11581,40 @@ kotlinx.coroutines.CancellableContinuation:
     public abstract void resumeUndispatched(kotlinx.coroutines.CoroutineDispatcher,java.lang.Object)
     public abstract void resumeUndispatchedWithException(kotlinx.coroutines.CoroutineDispatcher,java.lang.Throwable)
 com.google.common.collect.Lists$Partition
-com.google.firebase.database.core.utilities.tuple.NodeAndPath
 com.google.firestore.bundle.BundleElementOrBuilder
+com.google.firebase.database.core.utilities.tuple.NodeAndPath
 com.google.android.gms.common.server.response.FastJsonResponse$FieldConverter
 kotlin.jvm.Throws
 com.google.firebase.firestore.local.LocalDocumentsView:
     com.google.firebase.firestore.local.RemoteDocumentCache getRemoteDocumentCache()
     com.google.firebase.firestore.local.MutationQueue getMutationQueue()
     com.google.firebase.firestore.local.DocumentOverlayCache getDocumentOverlayCache()
+com.google.android.datatransport.cct.CctTransportBackend:
+    private static final java.lang.String LOG_TAG
+    private static final int CONNECTION_TIME_OUT
+    private static final int READ_TIME_OUT
+    private static final int INVALID_VERSION_CODE
+    private static final java.lang.String ACCEPT_ENCODING_HEADER_KEY
+    private static final java.lang.String CONTENT_ENCODING_HEADER_KEY
+    private static final java.lang.String GZIP_CONTENT_ENCODING
+    private static final java.lang.String CONTENT_TYPE_HEADER_KEY
+    static final java.lang.String API_KEY_HEADER_KEY
+    private static final java.lang.String JSON_CONTENT_TYPE
+    static final java.lang.String KEY_NETWORK_TYPE
+    static final java.lang.String KEY_MOBILE_SUBTYPE
+    private static final java.lang.String KEY_SDK_VERSION
+    private static final java.lang.String KEY_MODEL
+    private static final java.lang.String KEY_HARDWARE
+    private static final java.lang.String KEY_DEVICE
+    private static final java.lang.String KEY_PRODUCT
+    private static final java.lang.String KEY_OS_BUILD
+    private static final java.lang.String KEY_MANUFACTURER
+    private static final java.lang.String KEY_FINGERPRINT
+    private static final java.lang.String KEY_LOCALE
+    private static final java.lang.String KEY_COUNTRY
+    private static final java.lang.String KEY_MCC_MNC
+    private static final java.lang.String KEY_TIMEZONE_OFFSET
+    private static final java.lang.String KEY_APPLICATION_BUILD
 io.grpc.TlsServerCredentials$Feature
 com.google.common.graph.DirectedGraphConnections$2$2
 com.google.gson.internal.bind.TypeAdapters
@@ -11349,6 +11625,26 @@ kotlin.sequences.SequencesKt__SequencesKt$shuffled$1
 com.google.common.collect.Tables$TransformedTable$1
 com.google.common.util.concurrent.ClosingFuture$Combiner4$2
 androidx.core.provider.FontRequestWorker$3
+com.google.firebase.encoders.json.JsonValueObjectEncoderContext:
+    private void <init>(com.google.firebase.encoders.json.JsonValueObjectEncoderContext)
+    public com.google.firebase.encoders.json.JsonValueObjectEncoderContext add(java.lang.String,double)
+    public com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,float)
+    public com.google.firebase.encoders.ObjectEncoderContext add(com.google.firebase.encoders.FieldDescriptor,double)
+    public com.google.firebase.encoders.ObjectEncoderContext inline(java.lang.Object)
+    public com.google.firebase.encoders.ObjectEncoderContext nested(java.lang.String)
+    public com.google.firebase.encoders.ObjectEncoderContext nested(com.google.firebase.encoders.FieldDescriptor)
+    public com.google.firebase.encoders.json.JsonValueObjectEncoderContext add(float)
+    public com.google.firebase.encoders.json.JsonValueObjectEncoderContext add(double)
+    public synthetic bridge com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,boolean)
+    public synthetic bridge com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,long)
+    public synthetic bridge com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,int)
+    public synthetic bridge com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,double)
+    public synthetic bridge com.google.firebase.encoders.ObjectEncoderContext add(java.lang.String,java.lang.Object)
+    public synthetic bridge com.google.firebase.encoders.ValueEncoderContext add(byte[])
+    public synthetic bridge com.google.firebase.encoders.ValueEncoderContext add(long)
+    public synthetic bridge com.google.firebase.encoders.ValueEncoderContext add(int)
+    public synthetic bridge com.google.firebase.encoders.ValueEncoderContext add(double)
+    public synthetic bridge com.google.firebase.encoders.ValueEncoderContext add(float)
 com.google.android.gms.internal.common.zzaa
 com.google.android.gms.measurement.internal.zzhd
 com.google.android.gms.common.images.zae
@@ -11432,6 +11728,7 @@ com.google.android.gms.common.data.DataBufferObserver$Observable
 com.google.api.Billing$BillingDestination$Builder
 kotlin.ranges.ClosedRange$DefaultImpls
 com.google.common.collect.MapMakerInternalMap$AbstractStrongKeyEntry
+com.google.android.datatransport.runtime.dagger.multibindings.IntKey
 com.google.common.cache.LocalCache$WeakEntry
 com.google.common.collect.StandardTable$Row$1
 com.google.common.collect.AbstractIndexedListIterator:
@@ -11449,10 +11746,10 @@ com.google.api.Distribution
 com.google.protobuf.DescriptorProtos$FieldOptions$CType$CTypeVerifier
 com.google.common.hash.Murmur3_128HashFunction
 kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1
+kotlinx.coroutines.flow.FlowKt__TransformKt$map$$inlined$unsafeTransform$1
 com.google.android.gms.common.internal.BaseGmsClient$BaseConnectionCallbacks:
     public static final int CAUSE_SERVICE_DISCONNECTED
     public static final int CAUSE_DEAD_OBJECT_EXCEPTION
-kotlinx.coroutines.flow.FlowKt__TransformKt$map$$inlined$unsafeTransform$1
 com.google.protobuf.AllocatedBuffer$2
 kotlin.reflect.KMutableProperty
 com.google.common.base.CharMatcher$BreakingWhitespace
@@ -11651,7 +11948,6 @@ com.google.android.gms.internal.measurement.zzee:
     public final java.lang.String zzk()
     public final void zzx(java.lang.String,android.os.Bundle)
     public final void zzz(java.lang.String,java.lang.String,android.os.Bundle,long)
-    public final void zzB(com.google.android.gms.measurement.internal.zzgs)
     public final void zzC()
     public final void zzE(android.os.Bundle)
     public final void zzF(android.os.Bundle)
@@ -11680,6 +11976,10 @@ androidx.core.view.inputmethod.InputConnectionCompat$1
 kotlinx.coroutines.flow.FlowKt__MergeKt$flattenConcat$$inlined$unsafeFlow$1
 androidx.loader.content.AsyncTaskLoader
 io.flutter.view.FlutterView$SurfaceTextureRegistryEntry$1
+com.google.firebase.crashlytics.internal.Logger:
+    public void log(int,java.lang.String)
+    public void log(int,java.lang.String,boolean)
+    public static final java.lang.String TAG
 kotlinx.coroutines.CompletionHandler_commonKt
 io.grpc.okhttp.internal.OkHostnameVerifier:
     public static java.util.List allSubjectAltNames(java.security.cert.X509Certificate)
@@ -11874,6 +12174,8 @@ com.google.firebase.firestore.util.Logger:
     public void <init>()
     public static void setLogLevel(com.google.firebase.firestore.util.Logger$Level)
 kotlinx.coroutines.selects.SelectKt
+com.google.android.datatransport.runtime.time.TimeModule:
+    public void <init>()
 com.google.android.gms.common.api.internal.zaax
 com.squareup.okhttp.internal.http.Http1xStream$FixedLengthSink
 kotlinx.coroutines.flow.FlowKt__DelayKt$sample$2$1$1
@@ -11977,6 +12279,14 @@ com.google.common.collect.Multisets$DecreasingCount
 com.google.common.collect.Maps$2
 io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$SerializingServerCall$7
 com.google.common.base.Joiner$2
+com.google.firebase.crashlytics.internal.persistence.FileStore:
+    public void deleteAllCrashlyticsFiles()
+    private static final java.lang.String FILES_PATH
+    private static final java.lang.String SESSIONS_PATH
+    private static final java.lang.String NATIVE_SESSION_SUBDIR
+    private static final java.lang.String REPORTS_PATH
+    private static final java.lang.String PRIORITY_REPORTS_PATH
+    private static final java.lang.String NATIVE_REPORTS_PATH
 androidx.core.content.res.ResourcesCompat:
     public static android.graphics.drawable.Drawable getDrawableForDensity(android.content.res.Resources,int,int,android.content.res.Resources$Theme)
     public static int getColor(android.content.res.Resources,int,android.content.res.Resources$Theme)
@@ -12015,7 +12325,6 @@ com.google.firestore.bundle.NamedQueryOrBuilder
 com.google.common.base.VerifyException:
     public void <init>()
     public void <init>(java.lang.Throwable)
-com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener
 com.google.common.collect.Maps$FilteredEntryMap$EntrySet
 com.google.api.Distribution$Exemplar$Builder
 kotlinx.coroutines.flow.ReadonlySharedFlow
@@ -12042,7 +12351,6 @@ com.google.android.gms.common.util.ArrayUtils:
     public static varargs byte[] concatByteArrays(byte[][])
     public static int[] toPrimitiveArray(java.util.Collection)
     public static java.lang.Integer[] toWrapperArray(int[])
-    public static varargs java.lang.Object[] concat(java.lang.Object[][])
     public static varargs java.lang.Object[] removeAll(java.lang.Object[],java.lang.Object[])
 com.google.protobuf.DescriptorProtos$OneofDescriptorProtoOrBuilder
 com.google.common.collect.Lists$AbstractListWrapper
@@ -12055,7 +12363,10 @@ io.grpc.InternalMetadata:
     public static java.lang.Object parsedValue(io.grpc.Metadata$BinaryStreamMarshaller,java.lang.Object)
     public static io.grpc.Metadata newMetadataWithParsedValues(int,java.lang.Object[])
 com.google.common.graph.Traverser$InsertionOrder$2
-com.google.firebase.analytics.connector.AnalyticsConnectorImpl$1
+com.google.firebase.analytics.connector.AnalyticsConnectorImpl$1:
+    public void registerEventNames(java.util.Set)
+    public final void unregister()
+    public void unregisterEventNames()
 com.squareup.okhttp.internal.framed.FramedConnection$6
 androidx.core.database.sqlite.SQLiteCursorCompat
 org.checkerframework.checker.nullness.compatqual.KeyForType
@@ -12087,6 +12398,8 @@ com.google.firebase.firestore.WriteBatch:
     public varargs com.google.firebase.firestore.WriteBatch update(com.google.firebase.firestore.DocumentReference,com.google.firebase.firestore.FieldPath,java.lang.Object,java.lang.Object[])
 kotlin.annotation.MustBeDocumented
 com.google.firestore.v1.FirestoreGrpc$2
+com.google.firebase.encoders.proto.AtProtobuf:
+    public com.google.firebase.encoders.proto.AtProtobuf intEncoding(com.google.firebase.encoders.proto.Protobuf$IntEncoding)
 kotlin.reflect.KFunction$DefaultImpls
 kotlinx.coroutines.flow.internal.NopCollector
 com.google.common.collect.CompoundOrdering
@@ -12602,6 +12915,7 @@ com.google.api.LabelDescriptor$ValueType$1
 kotlinx.coroutines.AbstractCoroutine:
     public static synthetic void getContext$annotations()
 kotlinx.coroutines.channels.AbstractChannel$TryPollDesc
+com.google.firebase.crashlytics.BuildConfig
 com.google.firestore.v1.StructuredQuery$Projection$Builder:
     public java.util.List getFieldsList()
     public int getFieldsCount()
@@ -12759,8 +13073,6 @@ com.google.firebase.firestore.LoadBundleTask:
     public com.google.android.gms.tasks.Task addOnCanceledListener(com.google.android.gms.tasks.OnCanceledListener)
     public com.google.android.gms.tasks.Task addOnCanceledListener(android.app.Activity,com.google.android.gms.tasks.OnCanceledListener)
     public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
-    public com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
     public com.google.firebase.firestore.LoadBundleTask addOnProgressListener(java.util.concurrent.Executor,com.google.firebase.firestore.OnProgressListener)
     public com.google.firebase.firestore.LoadBundleTask addOnProgressListener(android.app.Activity,com.google.firebase.firestore.OnProgressListener)
     public synthetic bridge java.lang.Object getResult(java.lang.Class)
@@ -12795,7 +13107,8 @@ kotlinx.coroutines.Job:
     public abstract kotlinx.coroutines.Job plus(kotlinx.coroutines.Job)
 com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$3
 com.google.firebase.firestore.proto.MutationQueueOrBuilder
-com.google.android.gms.tasks.zzp
+com.google.android.gms.tasks.zzp:
+    public final void zzc()
 com.google.firestore.v1.StructuredQuery$Direction:
     public static com.google.firestore.v1.StructuredQuery$Direction valueOf(int)
     public static com.google.protobuf.Internal$EnumLiteMap internalGetValueMap()
@@ -12838,6 +13151,11 @@ com.google.firebase.installations.R$color
 com.example.my_app.R$drawable
 com.google.apphosting.datastore.testing.DatastoreTestTrace
 com.google.common.cache.CacheLoader$1
+com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule:
+    public void <init>()
+    abstract com.google.android.datatransport.runtime.scheduling.persistence.EventStore eventStore(com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore)
+    abstract com.google.android.datatransport.runtime.synchronization.SynchronizationGuard synchronizationGuard(com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore)
+    abstract com.google.android.datatransport.runtime.scheduling.persistence.ClientHealthMetricsStore clientHealthMetricsStore(com.google.android.datatransport.runtime.scheduling.persistence.SQLiteEventStore)
 com.google.firestore.v1.UpdateDocumentRequest$1
 com.google.api.Billing$1
 com.google.common.cache.CacheBuilderSpec$LongParser
@@ -12893,6 +13211,7 @@ com.google.common.io.package-info
 com.google.thirdparty.publicsuffix.TrieParser
 com.google.common.math.LongMath$MillerRabinTester
 androidx.core.R$layout
+javax.inject.Singleton
 com.google.common.collect.RegularContiguousSet$1
 androidx.lifecycle.Transformations$2
 com.google.api.ResourceDescriptor$History$HistoryVerifier
@@ -13153,6 +13472,8 @@ io.grpc.okhttp.OkHttpClientTransport$4$1:
     public okio.Timeout timeout()
 androidx.core.util.DebugUtils:
     private void <init>()
+com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_DbNameFactory$InstanceHolder:
+    private void <init>()
 com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$1
 com.squareup.okhttp.Cache$1
 com.google.firebase.database.snapshot.RangeMerge:
@@ -13204,13 +13525,25 @@ com.google.common.base.Splitter$4$1
 com.google.common.graph.DirectedGraphConnections
 kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1$3$1
 com.google.android.gms.stats.zzc
-com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle
+com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle:
+    public abstract void unregister()
+    public abstract void registerEventNames(java.util.Set)
+    public abstract void unregisterEventNames()
 com.google.api.BackendProto
 com.google.firebase.analytics.connector.R
+com.google.firebase.crashlytics.internal.CrashlyticsNativeComponentDeferredProxy$MissingNativeSessionFileProvider:
+    public java.io.File getBinaryImagesFile()
 kotlin.collections.MovingSubList
 com.google.firebase.firestore.UserDataReader:
     public com.google.firebase.firestore.core.UserData$ParsedUpdateData parseUpdateData(java.util.List)
 androidx.annotation.InterpolatorRes
+com.google.android.datatransport.runtime.scheduling.persistence.EventStoreConfig:
+    com.google.android.datatransport.runtime.scheduling.persistence.EventStoreConfig$Builder toBuilder()
+    private static final long MAX_DB_STORAGE_SIZE_IN_BYTES
+    private static final int LOAD_BATCH_SIZE
+    private static final int LOCK_TIME_OUT_MS
+    private static final long DURATION_ONE_WEEK_MS
+    private static final int MAX_BLOB_BYTE_SIZE_PER_ROW
 androidx.core.provider.RequestExecutor$HandlerExecutor
 com.google.rpc.ErrorInfoOrBuilder
 com.google.android.gms.common.api.internal.zabz
@@ -13231,10 +13564,8 @@ kotlinx.coroutines.BuildersKt__Builders_commonKt:
     private static final int SUSPENDED
     private static final int RESUMED
 com.google.firebase.analytics.connector.AnalyticsConnector:
-    public abstract void logEvent(java.lang.String,java.lang.String,android.os.Bundle)
     public abstract void setUserProperty(java.lang.String,java.lang.String,java.lang.Object)
     public abstract java.util.Map getUserProperties(boolean)
-    public abstract com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle registerAnalyticsConnectorListener(java.lang.String,com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener)
     public abstract void setConditionalUserProperty(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
     public abstract void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
     public abstract java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
@@ -13280,6 +13611,8 @@ com.google.common.collect.Maps$5
 com.google.firebase.database.core.TokenProvider$TokenChangeListener:
     public abstract void onTokenChange()
 com.google.android.gms.common.internal.zay
+com.google.android.datatransport.runtime.backends.BackendRequest:
+    public static com.google.android.datatransport.runtime.backends.BackendRequest create(java.lang.Iterable)
 com.google.gson.internal.bind.DateTypeAdapter
 io.flutter.plugins.firebase.core.R$drawable
 kotlinx.coroutines.CoroutineContextKt:
@@ -13425,6 +13758,8 @@ com.google.common.collect.ImmutableMapValues$2
 com.google.api.AuthenticationOrBuilder
 com.google.common.collect.ForwardingMultimap
 com.google.common.hash.ImmutableSupplier
+com.google.android.datatransport.cct.StringMerger:
+    public void <init>()
 com.google.api.Logging
 com.google.common.primitives.ImmutableLongArray$Builder
 io.grpc.ServiceDescriptor$1
@@ -13452,6 +13787,8 @@ com.google.common.collect.DescendingImmutableSortedMultiset
 kotlinx.coroutines.debug.AgentPremain$DebugProbesTransformer
 io.flutter.view.FlutterView
 com.google.common.collect.SortedLists$1
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$FilesPayload:
+    abstract com.google.firebase.crashlytics.internal.model.CrashlyticsReport$FilesPayload$Builder toBuilder()
 com.google.common.cache.LocalCache$HashIterator
 com.google.firebase.database.core.persistence.PruneForest:
     private com.google.firebase.database.core.persistence.PruneForest doAll(com.google.firebase.database.core.Path,java.util.Set,com.google.firebase.database.core.utilities.ImmutableTree)
@@ -13475,11 +13812,12 @@ kotlinx.coroutines.channels.LinkedListChannel:
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action
 androidx.core.view.accessibility.AccessibilityClickableSpanCompat
 com.google.common.collect.Iterables$5
+com.google.android.datatransport.runtime.dagger.Component
 com.google.common.util.concurrent.AbstractExecutionThreadService
 com.google.gson.internal.bind.JsonTreeReader
+kotlinx.coroutines.channels.BroadcastKt$broadcast$$inlined$CoroutineExceptionHandler$1
 io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding:
     public abstract android.content.ContentProvider getContentProvider()
-kotlinx.coroutines.channels.BroadcastKt$broadcast$$inlined$CoroutineExceptionHandler$1
 com.google.android.gms.measurement.internal.zzhx:
     public abstract java.lang.Object zzg(int)
     public abstract void zzt(java.lang.String,java.lang.String,android.os.Bundle,long)
@@ -13498,6 +13836,10 @@ androidx.customview.R$style
 com.google.common.primitives.Booleans$BooleanArrayAsList
 com.google.common.collect.ReverseNaturalOrdering
 com.google.common.collect.Maps$ValueDifferenceImpl
+io.flutter.plugins.firebase.crashlytics.R$bool
+com.google.firebase.crashlytics.internal.model.serialization.CrashlyticsReportJsonTransform:
+    public java.lang.String applicationExitInfoToJson(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$ApplicationExitInfo)
+    public com.google.firebase.crashlytics.internal.model.CrashlyticsReport$ApplicationExitInfo applicationExitInfoFromJson(java.lang.String)
 com.google.common.collect.ImmutableRangeSet$ComplementRanges
 com.google.common.primitives.FloatsMethodsForWeb
 com.google.firebase.installations.R$styleable
@@ -13551,6 +13893,8 @@ io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$1
 io.grpc.LoadBalancer$Subchannel:
     public io.grpc.Channel asChannel()
     public io.grpc.ChannelLogger getChannelLogger()
+com.google.firebase.crashlytics.internal.settings.SettingsJsonTransform:
+    public abstract org.json.JSONObject toJson(com.google.firebase.crashlytics.internal.settings.model.SettingsData)
 com.squareup.okhttp.RequestBody$3
 com.google.api.AnnotationsProto
 com.google.android.gms.common.internal.service.zac
@@ -13594,6 +13938,12 @@ com.google.common.collect.ContiguousSet
 com.google.protobuf.Mixin
 com.google.android.gms.common.api.internal.zav
 io.grpc.ServerInterceptors
+com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerScheduler:
+    private static final java.lang.String LOG_TAG
+    static final java.lang.String ATTEMPT_NUMBER
+    static final java.lang.String BACKEND_NAME
+    static final java.lang.String EVENT_PRIORITY
+    static final java.lang.String EXTRAS
 com.google.apphosting.datastore.testing.DatastoreTestTrace$ParallelTestTraceOrBuilder
 kotlin.jvm.internal.TypeReference
 com.google.common.base.PairwiseEquivalence
@@ -13646,6 +13996,11 @@ androidx.fragment.R$string
 com.google.common.base.FinalizablePhantomReference
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$$inlined$combineTransformUnsafe$FlowKt__ZipKt$5
 kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest$flowCollect$3$invokeSuspend$$inlined$collect$1
+com.google.firebase.crashlytics.internal.common.CrashlyticsReportDataCapture:
+    static final int GENERATOR_TYPE
+    static final int REPORT_ANDROID_PLATFORM
+    static final int SESSION_ANDROID_PLATFORM
+    static final java.lang.String SIGNAL_DEFAULT
 com.google.common.cache.LocalCache$WriteQueue$1
 com.google.firestore.v1.BatchGetDocumentsRequest$Builder:
     public com.google.firestore.v1.BatchGetDocumentsRequest$ConsistencySelectorCase getConsistencySelectorCase()
@@ -13719,6 +14074,9 @@ com.google.firestore.v1.WriteRequest$Builder:
     public com.google.firestore.v1.WriteRequest$Builder putLabels(java.lang.String,java.lang.String)
     public com.google.firestore.v1.WriteRequest$Builder putAllLabels(java.util.Map)
 com.google.rpc.BadRequest$FieldViolation$Builder
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_FilesPayload$Builder:
+    private void <init>(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$FilesPayload)
+    synthetic void <init>(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$FilesPayload,com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_FilesPayload$1)
 com.google.firestore.bundle.NamedQuery$Builder
 com.google.firestore.admin.v1.Index$QueryScope$QueryScopeVerifier
 com.google.protobuf.Timestamp:
@@ -13830,6 +14188,7 @@ com.google.firebase.database.core.view.View:
     java.util.List getEventRegistrations()
 io.grpc.internal.DelayedClientCall$7:
     public boolean isReady()
+com.google.android.datatransport.runtime.dagger.MembersInjector
 com.google.apphosting.datastore.testing.DatastoreTestTrace$TestTraceOrBuilder
 com.google.android.gms.measurement.api.AppMeasurementSdk$EventInterceptor
 kotlinx.coroutines.CompletableDeferredKt
@@ -13985,6 +14344,8 @@ androidx.core.app.Person:
     private static final java.lang.String KEY_KEY
     private static final java.lang.String IS_BOT_KEY
     private static final java.lang.String IS_IMPORTANT_KEY
+com.google.android.datatransport.Transport:
+    public abstract void send(com.google.android.datatransport.Event)
 kotlin.internal.PlatformImplementationsKt:
     private static final synthetic java.lang.Object castToBaseType(java.lang.Object)
     public static final boolean apiVersionIsAtLeast(int,int,int)
@@ -13997,7 +14358,6 @@ androidx.annotation.StyleRes
 com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$2
 com.google.common.util.concurrent.CycleDetectingLockFactory$Policies
 androidx.core.app.NotificationCompat$NotificationVisibility
-com.google.android.gms.tasks.zzo
 com.google.api.Advice
 kotlinx.coroutines.flow.internal.ChannelFlowMerge
 com.google.api.Billing$BillingDestinationOrBuilder
@@ -14088,6 +14448,8 @@ com.google.android.gms.common.api.ApiException:
     public int getStatusCode()
     public java.lang.String getStatusMessage()
 com.google.api.LaunchStage$LaunchStageVerifier
+com.google.android.datatransport.runtime.dagger.internal.MemoizedSentinel:
+    public void <init>()
 com.google.common.base.Functions$ToStringFunction
 com.google.firebase.database.Query$1
 com.google.gson.internal.sql.SqlTypesSupport$1
@@ -14097,6 +14459,7 @@ com.google.common.base.CharMatcher$Digit
 kotlin.text.RegexKt
 io.grpc.internal.CallCredentialsApplyingTransportFactory:
     public io.grpc.internal.ClientTransportFactory$SwapChannelCredentialsResult swapChannelCredentials(io.grpc.ChannelCredentials)
+com.google.firebase.crashlytics.R$drawable
 com.google.rpc.StatusProto
 com.google.common.math.PairedStatsAccumulator
 kotlin.jvm.functions.Function19:
@@ -14315,11 +14678,21 @@ com.google.common.collect.StandardTable$RowMap
 com.google.common.cache.LocalCache$StrongValueReference
 com.google.protobuf.DescriptorProtos$UninterpretedOption$Builder
 com.google.longrunning.CancelOperationRequestOrBuilder
+com.google.firebase.crashlytics.internal.metadata.UserMetadata$SerializeableKeysMap:
+    public void setKeys(java.util.Map)
 com.google.android.gms.internal.measurement.zzig:
     public abstract com.google.android.gms.internal.measurement.zzig zzao()
     public synthetic bridge java.lang.Object clone()
 androidx.viewpager.widget.ViewPager$SavedState
 com.google.common.graph.Traverser$InsertionOrder
+com.google.firebase.crashlytics.internal.metadata.QueueFile:
+    void <init>(java.io.RandomAccessFile)
+    public synchronized byte[] peek()
+    public synchronized void peek(com.google.firebase.crashlytics.internal.metadata.QueueFile$ElementReader)
+    public synchronized int size()
+    public boolean hasSpaceFor(int,int)
+    private static final int INITIAL_LENGTH
+    static final int HEADER_LENGTH
 kotlin.io.path.PathsKt__PathReadWriteKt
 io.grpc.internal.GrpcUtil$3:
     private static final java.lang.String NAME
@@ -14533,6 +14906,7 @@ com.google.protobuf.UnsafeUtil$MemoryAccessor:
     public abstract void copyMemory(byte[],long,long,long)
 com.google.protobuf.EnumValue
 com.google.common.collect.Maps$EntrySet
+com.google.firebase.encoders.annotations.Encodable$Field
 com.google.api.UsageRule
 androidx.multidex.MultiDex$V14
 com.google.firebase.R$attr
@@ -14616,6 +14990,8 @@ com.google.protobuf.ByteString$BoundedByteString:
     private static final long serialVersionUID
 com.google.type.Money$Builder
 kotlin.collections.CollectionsKt__IterablesKt$Iterable$1
+com.google.firebase.crashlytics.internal.NativeSessionFileProvider:
+    public abstract java.io.File getBinaryImagesFile()
 com.google.common.collect.Synchronized$SynchronizedNavigableMap
 kotlinx.coroutines.ThreadContextElement$DefaultImpls
 com.google.common.cache.AbstractCache$SimpleStatsCounter
@@ -14873,6 +15249,7 @@ kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$9
 com.google.api.MetricDescriptorOrBuilder
 io.grpc.internal.Stream:
     public abstract void setMessageCompression(boolean)
+com.google.android.datatransport.runtime.R
 com.google.firebase.appcheck.interop.R$integer
 kotlinx.coroutines.flow.StartedLazily$command$1$invokeSuspend$$inlined$collect$1
 kotlin.reflect.KClass:
@@ -14987,6 +15364,7 @@ kotlin.collections.MapsKt__MapsKt:
     private static final void minusAssign(java.util.Map,kotlin.sequences.Sequence)
     public void <init>()
 com.example.my_app.R$styleable
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Architecture
 kotlin.NotImplementedError
 com.google.firebase.firestore.proto.TargetGlobal
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Indicator
@@ -14997,9 +15375,35 @@ io.grpc.ServerMethodDefinition
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$retryWhen$$inlined$unsafeFlow$1
 com.google.common.cache.CacheBuilderSpec$InitialCapacityParser
 com.google.api.Logging$1
+com.google.firebase.crashlytics.internal.common.CommonUtils:
+    public void <init>()
+    public static android.content.SharedPreferences getLegacySharedPrefs(android.content.Context)
+    public static boolean isLoggingEnabled(android.content.Context)
+    public static java.lang.String getStringsFileValue(android.content.Context,java.lang.String)
+    public static java.lang.String padWithZerosToMaxIntWidth(int)
+    private static final java.lang.String SHA1_INSTANCE
+    private static final java.lang.String GOLDFISH
+    private static final java.lang.String RANCHU
+    private static final java.lang.String SDK
+    public static final java.lang.String SHARED_PREFS_NAME
+    public static final java.lang.String LEGACY_SHARED_PREFS_NAME
+    static final java.lang.String MAPPING_FILE_ID_RESOURCE_NAME
+    static final java.lang.String LEGACY_MAPPING_FILE_ID_RESOURCE_NAME
+    private static final long UNCALCULATED_TOTAL_RAM
+    static final int BYTES_IN_A_GIGABYTE
+    static final int BYTES_IN_A_MEGABYTE
+    static final int BYTES_IN_A_KILOBYTE
+    public static final int DEVICE_STATE_ISSIMULATOR
+    public static final int DEVICE_STATE_JAILBROKEN
+    public static final int DEVICE_STATE_DEBUGGERATTACHED
+    public static final int DEVICE_STATE_BETAOS
+    public static final int DEVICE_STATE_VENDORINTERNAL
+    public static final int DEVICE_STATE_COMPROMISEDLIBRARIES
 com.google.common.collect.ConcurrentHashMultiset$FieldSettersHolder
 com.google.gson.internal.bind.TypeAdapters$26
 org.intellij.lang.annotations.JdkConstants$TabLayoutPolicy
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session:
+    com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session withOrganizationId(java.lang.String)
 com.google.android.gms.common.zzx
 kotlin.js.ExperimentalJsExport
 com.squareup.okhttp.Call$AsyncCall
@@ -15151,6 +15555,7 @@ kotlinx.coroutines.debug.internal.DebuggerInfo
 javax.annotation.meta.Exclusive
 com.google.android.gms.internal.measurement.zzdh
 com.squareup.okhttp.ConnectionPool
+com.google.android.datatransport.runtime.dagger.internal.MapFactory$1
 com.google.common.base.Throwables:
     private void <init>()
     public static void throwIfInstanceOf(java.lang.Throwable,java.lang.Class)
@@ -15210,6 +15615,8 @@ com.google.firestore.v1.Target$QueryTarget:
     public boolean hasStructuredQuery()
 kotlinx.coroutines.flow.ChannelFlowBuilder
 com.google.common.primitives.Floats$LexicographicalComparator
+com.google.android.datatransport.runtime.time.TimeModule_UptimeClockFactory$InstanceHolder:
+    private void <init>()
 com.google.android.gms.common.internal.ServiceSpecificExtraArgs$GamesExtraArgs
 com.squareup.okhttp.internal.FaultHidingSink
 com.google.firebase.firestore.R
@@ -15338,6 +15745,9 @@ kotlinx.coroutines.internal.AtomicKt:
     public static synthetic void getRETRY_ATOMIC$annotations()
 com.google.common.cache.LocalCache$LocalManualCache
 androidx.core.location.LocationManagerCompat$3
+com.google.android.datatransport.runtime.scheduling.jobscheduling.Uploader:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String CLIENT_HEALTH_METRICS_LOG_SOURCE
 com.google.android.gms.common.util.JsonUtils
 com.google.common.graph.EndpointPair$Ordered
 com.google.type.Fraction$Builder
@@ -15410,6 +15820,10 @@ com.google.common.collect.Iterators$MergingIterator
 com.google.android.gms.internal.stats.zzh
 kotlin.UShort$Companion
 kotlinx.coroutines.flow.FlowKt__TransformKt$onEach$$inlined$unsafeTransform$1$2$1
+com.google.android.datatransport.runtime.logging.Logging:
+    private void <init>()
+    public static void d(java.lang.String,java.lang.String)
+    public static void d(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object)
 kotlin.jvm.internal.ArrayByteIterator
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9
 com.google.api.Logging$LoggingDestinationOrBuilder
@@ -15422,6 +15836,13 @@ com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension
 com.google.protobuf.EnumValue$1
 androidx.viewpager.widget.ViewPager$OnPageChangeListener
 com.google.type.CalendarPeriod$1
+com.google.firebase.crashlytics.internal.common.IdManager:
+    public static final java.lang.String DEFAULT_VERSION_NAME
+    static final java.lang.String PREFKEY_ADVERTISING_ID
+    static final java.lang.String PREFKEY_INSTALLATION_UUID
+    static final java.lang.String PREFKEY_FIREBASE_IID
+    static final java.lang.String PREFKEY_LEGACY_INSTALLATION_UUID
+    private static final java.lang.String SYNTHETIC_FID_PREFIX
 kotlinx.coroutines.channels.AbstractSendChannel:
     private final boolean isFullImpl()
     private final java.lang.Throwable helpCloseAndGetSendException(java.lang.Object,kotlinx.coroutines.channels.Closed)
@@ -15464,13 +15885,14 @@ androidx.core.app.SharedElementCallback$OnSharedElementsReadyListener
 com.google.firebase.database.tubesock.MessageBuilderFactory:
     void <init>()
 androidx.core.view.MenuCompat
-com.google.android.gms.common.internal.zzaa
 com.google.android.gms.common.internal.TelemetryLogging:
     private void <init>()
+com.google.android.gms.common.internal.zzaa
 com.google.common.collect.Maps$DescendingMap$1EntrySetImpl
 io.flutter.plugin.common.ActivityLifecycleListener
 com.google.common.collect.AbstractSetMultimap
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$drop$1
+com.google.android.datatransport.runtime.dagger.Reusable
 androidx.lifecycle.Transformations
 com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture
 androidx.customview.R$integer
@@ -15490,6 +15912,7 @@ com.google.common.collect.RegularContiguousSet$3
 com.google.rpc.ErrorInfo$MetadataDefaultEntryHolder
 com.google.firestore.bundle.BundleElement$1
 com.google.common.collect.CompactHashMap$Itr
+io.flutter.plugins.firebase.crashlytics.BuildConfig
 com.google.common.collect.HashBiMap$EntrySet
 com.google.common.base.Joiner$MapJoiner
 com.google.firebase.R$integer
@@ -15751,6 +16174,9 @@ com.google.api.SystemParameter$Builder
 com.google.android.gms.common.providers.zza
 com.google.common.collect.Maps$FilteredEntryBiMap
 com.squareup.okhttp.ConnectionSpec$Builder
+com.google.android.datatransport.runtime.EventInternal:
+    public byte[] getPayload()
+    public final java.lang.String getOrDefault(java.lang.String,java.lang.String)
 io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions
 com.squareup.okhttp.OkHttpClient$1
 com.google.common.collect.Multisets$ElementSet
@@ -15834,6 +16260,7 @@ com.google.firebase.database.connection.PersistentConnectionImpl:
     private static final java.lang.String TOKEN_REFRESH_INTERRUPT_REASON
 com.google.common.collect.ForwardingMap$StandardValues
 com.google.common.collect.RangeMap
+com.google.android.datatransport.runtime.dagger.internal.SetFactory
 androidx.activity.ComponentActivity:
     public void <init>(int)
     public java.lang.Object getLastCustomNonConfigurationInstance()
@@ -15900,6 +16327,7 @@ com.google.protobuf.BinaryReader:
     private static final int FIXED32_MULTIPLE_MASK
     private static final int FIXED64_MULTIPLE_MASK
 com.squareup.okhttp.Dns$1
+io.flutter.plugins.firebase.crashlytics.R$id
 com.google.common.util.concurrent.FakeTimeLimiter
 com.google.android.gms.base.R$styleable
 com.google.android.gms.tasks.TaskCompletionSource:
@@ -15977,6 +16405,9 @@ kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$8
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 com.google.android.gms.base.R
 com.google.protobuf.BinaryWriter$SafeDirectWriter
+com.google.android.datatransport.runtime.backends.CreationContext:
+    public static com.google.android.datatransport.runtime.backends.CreationContext create(android.content.Context,com.google.android.datatransport.runtime.time.Clock,com.google.android.datatransport.runtime.time.Clock)
+    private static final java.lang.String DEFAULT_BACKEND_NAME
 androidx.customview.widget.ExploreByTouchHelper
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
@@ -16031,11 +16462,11 @@ kotlinx.coroutines.flow.CallbackFlowBuilder
 androidx.core.content.res.ConfigurationHelper
 androidx.core.content.ContextCompat$Api23Impl
 kotlin.internal.OnlyInputTypes
+com.google.firebase.encoders.config.EncoderConfig:
+    public abstract com.google.firebase.encoders.config.EncoderConfig registerEncoder(java.lang.Class,com.google.firebase.encoders.ValueEncoder)
 com.google.errorprone.annotations.Immutable
 kotlinx.coroutines.Delay$DefaultImpls
 androidx.core.view.accessibility.AccessibilityViewCommand$ScrollToPositionArguments
-com.google.firebase.installations.remote.AutoValue_InstallationResponse:
-    public com.google.firebase.installations.remote.InstallationResponse$Builder toBuilder()
 com.google.firebase.firestore.util.Util:
     public void <init>()
     public static java.lang.String autoId()
@@ -16044,9 +16475,28 @@ com.google.firebase.firestore.util.Util:
     public static void diffCollections(java.util.Collection,java.util.Collection,java.util.Comparator,com.google.firebase.firestore.util.Consumer,com.google.firebase.firestore.util.Consumer)
     private static final int AUTO_ID_LENGTH
     private static final java.lang.String AUTO_ID_ALPHABET
+com.google.firebase.installations.remote.AutoValue_InstallationResponse:
+    public com.google.firebase.installations.remote.InstallationResponse$Builder toBuilder()
 com.google.common.cache.LongAddables$2
 com.google.common.collect.Lists$TwoPlusArrayList
 com.google.protobuf.Struct
+com.google.firebase.crashlytics.internal.settings.network.DefaultSettingsSpiCall:
+    static final java.lang.String HEADER_GOOGLE_APP_ID
+    static final java.lang.String HEADER_CLIENT_TYPE
+    static final java.lang.String HEADER_CLIENT_VERSION
+    static final java.lang.String HEADER_USER_AGENT
+    static final java.lang.String HEADER_ACCEPT
+    static final java.lang.String CRASHLYTICS_USER_AGENT
+    static final java.lang.String ACCEPT_JSON_VALUE
+    static final java.lang.String ANDROID_CLIENT_TYPE
+    static final java.lang.String BUILD_VERSION_PARAM
+    static final java.lang.String DISPLAY_VERSION_PARAM
+    static final java.lang.String INSTANCE_PARAM
+    static final java.lang.String SOURCE_PARAM
+    static final java.lang.String HEADER_DEVICE_MODEL
+    static final java.lang.String HEADER_OS_BUILD_VERSION
+    static final java.lang.String HEADER_OS_DISPLAY_VERSION
+    static final java.lang.String HEADER_INSTALLATION_ID
 com.google.common.hash.Hashing$Sha384Holder
 io.grpc.ServerStreamTracer$ReadOnlyServerCall
 androidx.viewpager.widget.ViewPager
@@ -16347,6 +16797,7 @@ androidx.core.graphics.TypefaceCompatApi24Impl
 kotlinx.coroutines.debug.AgentPremain
 com.google.firebase.installations.interop.R$dimen
 io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener
+com.google.android.datatransport.runtime.dagger.multibindings.StringKey
 com.google.common.base.CharMatcher$JavaLetterOrDigit
 com.squareup.okhttp.internal.framed.Header
 kotlinx.coroutines.flow.internal.SafeCollectorKt:
@@ -16450,21 +16901,26 @@ kotlinx.coroutines.ExecutorCoroutineDispatcher:
     public abstract java.util.concurrent.Executor getExecutor()
     public abstract void close()
 kotlin.collections.builders.ListBuilder
+com.google.firebase.crashlytics.R$layout
 com.google.api.SystemParameterRule$1
 com.google.common.collect.Multimaps$MapMultimap
 com.google.protobuf.Value$KindCase
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$8
 com.google.common.collect.ForwardingSortedMultiset$StandardDescendingMultiset
 com.google.firebase.installations.FirebaseInstallationsApi:
-    public abstract com.google.android.gms.tasks.Task getId()
     public abstract com.google.android.gms.tasks.Task getToken(boolean)
     public abstract com.google.android.gms.tasks.Task delete()
     public abstract com.google.firebase.installations.internal.FidListenerHandle registerFidListener(com.google.firebase.installations.internal.FidListener)
 com.google.android.gms.common.stats.StatsEvent$Types
+com.google.android.datatransport.runtime.firebase.transport.LogEventDropped:
+    public static com.google.android.datatransport.runtime.firebase.transport.LogEventDropped getDefaultInstance()
 com.google.common.base.AbstractIterator
 androidx.viewpager.widget.ViewPager$DecorView
 com.google.gson.Gson
 androidx.core.content.res.ResourcesCompat$FontCallback$1
+com.google.android.datatransport.runtime.firebase.transport.GlobalMetrics:
+    public static com.google.android.datatransport.runtime.firebase.transport.GlobalMetrics getDefaultInstance()
+    public com.google.android.datatransport.runtime.firebase.transport.StorageMetrics getStorageMetrics()
 kotlinx.coroutines.flow.FlowKt__CollectKt
 com.google.common.collect.Multimaps$UnmodifiableListMultimap
 com.google.common.hash.LongAddables$1
@@ -16590,9 +17046,12 @@ com.google.protobuf.TextFormatEscaper$2
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$Commit
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$2$1
 com.google.android.gms.internal.base.zap
+com.google.android.datatransport.runtime.dagger.BindsOptionalOf
 com.google.common.collect.ImmutableTable
 kotlinx.coroutines.debug.internal.ConcurrentWeakMap$entries$1
+com.google.firebase.crashlytics.R$string
 com.google.android.gms.internal.measurement.zzcu
+com.google.firebase.crashlytics.internal.settings.SettingsJsonConstants
 io.flutter.plugins.firebase.core.R$id
 com.google.firebase.R$drawable
 com.squareup.okhttp.internal.http.HttpDate
@@ -16629,6 +17088,8 @@ com.squareup.okhttp.RequestBody:
     public long contentLength()
     public abstract void writeTo(okio.BufferedSink)
 io.grpc.inprocess.InternalInProcess
+com.google.android.datatransport.runtime.dagger.Provides
+com.google.android.datatransport.runtime.dagger.MapKey
 kotlin.ExtensionFunctionType
 androidx.core.view.LayoutInflaterFactory
 com.google.common.graph.Traverser$Traversal$1
@@ -16641,6 +17102,10 @@ com.google.firebase.database.snapshot.LeafNode:
 com.google.firebase.FirebaseNetworkException
 com.google.logging.type.HttpRequest$1
 com.google.common.collect.TreeMultiset$Aggregate$2
+com.google.firebase.crashlytics.internal.settings.model.AppSettingsData:
+    public static final java.lang.String STATUS_NEW
+    public static final java.lang.String STATUS_CONFIGURED
+    public static final java.lang.String STATUS_ACTIVATED
 com.google.firestore.bundle.BundleMetadataOrBuilder
 com.google.common.escape.Escapers$Builder
 com.google.common.collect.LinkedListMultimap
@@ -16651,6 +17116,8 @@ kotlin.text.StringsKt__IndentKt$prependIndent$1
 io.grpc.internal.ServerImpl$1
 com.google.firebase.installations.BuildConfig
 com.google.common.io.Files$1
+com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics$Builder:
+    public com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics$Builder addLogEventDropped(com.google.android.datatransport.runtime.firebase.transport.LogEventDropped)
 com.google.common.collect.Range$RangeLexOrdering
 androidx.core.R$drawable
 com.google.common.util.concurrent.ServiceManager$ServiceManagerState$AwaitHealthGuard
@@ -16767,6 +17234,7 @@ com.google.firebase.database.annotations.NotNull
 com.google.common.collect.RegularImmutableMap$EntrySet$1:
     public boolean isPartialView()
 com.google.common.collect.CompactHashSet$1
+io.flutter.plugins.firebase.crashlytics.R$color
 com.google.firebase.database.core.persistence.TrackedQueryManager$7
 androidx.lifecycle.ViewModelProvider$NewInstanceFactory
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$1
@@ -16829,6 +17297,10 @@ com.google.firestore.v1.GetDocumentRequest
 org.intellij.lang.annotations.JdkConstants$CursorType
 androidx.annotation.RequiresPermission$Write
 com.google.common.net.InternetDomainName
+com.google.firebase.encoders.proto.ProtobufEncoder$Builder:
+    public com.google.firebase.encoders.proto.ProtobufEncoder$Builder registerEncoder(java.lang.Class,com.google.firebase.encoders.ValueEncoder)
+    public com.google.firebase.encoders.proto.ProtobufEncoder$Builder registerFallbackEncoder(com.google.firebase.encoders.ObjectEncoder)
+    public synthetic bridge com.google.firebase.encoders.config.EncoderConfig registerEncoder(java.lang.Class,com.google.firebase.encoders.ValueEncoder)
 com.google.common.io.Resources$UrlByteSource
 com.google.firebase.firestore.Transaction:
     public varargs com.google.firebase.firestore.Transaction update(com.google.firebase.firestore.DocumentReference,java.lang.String,java.lang.Object,java.lang.Object[])
@@ -16848,6 +17320,7 @@ kotlin.sequences.DropSequence$iterator$1
 com.google.protobuf.DescriptorProtos$MethodOptions$IdempotencyLevel
 io.grpc.PartialForwardingServerCall
 com.google.android.gms.common.api.internal.zacz
+com.google.firebase.encoders.annotations.Encodable$Ignore
 com.google.common.collect.EnumMultiset$1
 com.google.common.graph.Network
 kotlinx.coroutines.flow.FlowKt__CollectKt$collectIndexed$2
@@ -16874,6 +17347,12 @@ io.flutter.plugins.sharedpreferences.R$integer
 io.grpc.Contexts:
     private void <init>()
     public static io.grpc.ServerCall$Listener interceptCall(io.grpc.Context,io.grpc.ServerCall,io.grpc.Metadata,io.grpc.ServerCallHandler)
+com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoScheduler:
+    private static final java.lang.String LOG_TAG
+    static final java.lang.String ATTEMPT_NUMBER
+    static final java.lang.String BACKEND_NAME
+    static final java.lang.String EVENT_PRIORITY
+    static final java.lang.String EXTRAS
 com.google.common.collect.AbstractIterator$State
 com.google.common.reflect.TypeToken$3
 okio.HashingSink
@@ -17093,6 +17572,7 @@ io.grpc.internal.OobChannel$4
 com.google.firebase.database.collection.LLRBNode$NodeVisitor:
     public boolean shouldContinue(java.lang.Object,java.lang.Object)
 com.google.api.HttpBody
+com.google.android.datatransport.runtime.dagger.multibindings.IntoSet
 com.google.common.collect.HashMultimapGwtSerializationDependencies
 kotlin.jvm.internal.ArrayLongIterator
 com.google.common.collect.Cut
@@ -17165,6 +17645,7 @@ com.google.protobuf.CodedOutputStream:
     public static final int LITTLE_ENDIAN_32_SIZE
     public static final int DEFAULT_BUFFER_SIZE
 com.google.android.gms.common.api.internal.zaat
+com.google.firebase.crashlytics.R$color
 kotlin.io.FilePathComponents
 com.google.common.util.concurrent.ClosingFuture$Combiner$1
 com.google.common.io.Closer
@@ -17273,6 +17754,7 @@ androidx.core.location.LocationManagerCompat$1
 com.google.common.io.Closer$LoggingSuppressor
 com.google.gson.internal.bind.TypeAdapters$28
 com.google.protobuf.GeneratedMessageLite$ExtendableMessageOrBuilder
+io.flutter.plugins.firebase.crashlytics.R$styleable
 com.google.common.util.concurrent.ForwardingFuture$SimpleForwardingFuture
 io.grpc.InternalServiceProviders$PriorityAccessor
 kotlin.io.FileTreeWalk$FileTreeWalkIterator$WhenMappings
@@ -17365,8 +17847,10 @@ com.google.firestore.v1.DocumentMask:
     public java.util.List getFieldPathsList()
     public com.google.protobuf.ByteString getFieldPathsBytes(int)
 kotlin.annotation.Target
-kotlinx.coroutines.JobSupport$children$1
-kotlinx.coroutines.flow.FlowKt__ChannelsKt$WhenMappings
+com.google.android.datatransport.runtime.time.TestClock
+com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics:
+    public static com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics getDefaultInstance()
+com.google.firebase.crashlytics.CustomKeysAndValues
 kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp:
     public void <init>(kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode,kotlinx.coroutines.internal.LockFreeLinkedListNode$AbstractAtomicDesc)
     public kotlinx.coroutines.internal.AtomicOp getAtomicOp()
@@ -17374,6 +17858,8 @@ kotlinx.coroutines.internal.LockFreeLinkedListNode$PrepareOp:
     public java.lang.String toString()
     public final kotlinx.coroutines.internal.LockFreeLinkedListNode affected
     public final kotlinx.coroutines.internal.LockFreeLinkedListNode next
+kotlinx.coroutines.flow.FlowKt__ChannelsKt$WhenMappings
+kotlinx.coroutines.JobSupport$children$1
 com.google.common.collect.Sets$PowerSet$1
 com.google.android.gms.common.data.DataBufferIterator
 kotlin.coroutines.ContinuationInterceptor$DefaultImpls:
@@ -17415,6 +17901,7 @@ kotlin.reflect.KType$DefaultImpls
 com.google.common.collect.AbstractBiMap
 com.google.gson.JsonParser
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$4
+com.example.my_app.R$bool
 kotlin.text.CharsKt:
     private void <init>()
 androidx.core.content.res.ResourcesCompat$ThemeCompat$ImplApi29
@@ -17438,6 +17925,9 @@ com.google.firebase.database.DatabaseReference:
     public com.google.firebase.database.DatabaseReference getRoot()
     void setHijackHash(boolean)
     private static com.google.firebase.database.core.DatabaseConfig defaultConfig
+com.google.android.datatransport.runtime.scheduling.SchedulingModule:
+    public void <init>()
+    abstract com.google.android.datatransport.runtime.scheduling.Scheduler scheduler(com.google.android.datatransport.runtime.scheduling.DefaultScheduler)
 com.google.common.base.CharMatcher$IsNot
 kotlinx.coroutines.sync.MutexImpl$LockSelect$completeResumeLockWaiter$1
 androidx.core.view.WindowInsetsAnimationCompat
@@ -17545,8 +18035,11 @@ com.google.common.base.CharMatcher$None:
     public com.google.common.base.CharMatcher negate()
 com.google.firebase.database.core.RunLoop:
     public abstract void shutdown()
+com.google.android.datatransport.runtime.dagger.Subcomponent$Builder
 androidx.core.content.pm.ShortcutManagerCompat$Api25Impl
 com.google.common.collect.MapMakerInternalMap$InternalEntry
+com.google.android.datatransport.cct.internal.AutoBatchedLogRequestEncoder:
+    public static final int CODEGEN_VERSION
 io.grpc.InternalChannelz$TcpInfo$Builder
 com.google.common.util.concurrent.Futures$InCompletionOrderState
 io.flutter.embedding.android.FlutterSurfaceView:
@@ -17557,6 +18050,7 @@ androidx.annotation.ChecksSdkIntAtLeast
 com.google.gson.internal.bind.TypeAdapters$15
 com.google.common.collect.Maps$SortedMapDifferenceImpl
 kotlinx.coroutines.flow.CancellableFlowImpl
+com.google.android.datatransport.runtime.dagger.internal.SingleCheck
 com.google.api.SystemParameterProto
 com.google.common.net.HostSpecifier
 com.google.common.util.concurrent.ImmediateFuture$ImmediateFailedFuture
@@ -17573,7 +18067,6 @@ com.google.firebase.database.collection.R$style
 com.google.common.collect.TreeRangeSet
 kotlin.jvm.functions.Function16:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
-com.google.firebase.analytics.connector.internal.zzd
 com.google.android.gms.internal.common.zzi:
     public void <init>()
 com.google.protobuf.DescriptorProtos$DescriptorProtoOrBuilder
@@ -17671,6 +18164,7 @@ com.google.common.collect.DenseImmutableTable$ImmutableArrayMap
 io.grpc.inprocess.InProcessServerBuilder
 androidx.annotation.InspectableProperty$EnumEntry
 com.google.errorprone.annotations.concurrent.GuardedBy
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application_Organization$Builder
 androidx.fragment.app.FragmentController:
     public androidx.loader.app.LoaderManager getSupportLoaderManager()
     public int getActiveFragmentsCount()
@@ -17707,6 +18201,7 @@ com.google.common.base.Suppliers$SupplierFunction
 com.squareup.okhttp.MultipartBuilder$MultipartRequestBody
 com.google.common.collect.TreeRangeSet$AsRanges
 com.google.api.ServiceOrBuilder
+com.google.firebase.crashlytics.internal.settings.model.AppRequestData
 com.google.android.gms.common.api.GoogleApiClient:
     public static java.util.Set getAllClients()
     static void <clinit>()
@@ -17780,6 +18275,12 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$distinct$1
 kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
 com.google.android.gms.common.AccountPicker
 com.google.cloud.audit.AuthenticationInfo$Builder
+com.google.android.datatransport.Event:
+    public static com.google.android.datatransport.Event ofData(int,java.lang.Object)
+    public static com.google.android.datatransport.Event ofData(java.lang.Object)
+    public static com.google.android.datatransport.Event ofTelemetry(int,java.lang.Object)
+    public static com.google.android.datatransport.Event ofTelemetry(java.lang.Object)
+    public static com.google.android.datatransport.Event ofUrgent(int,java.lang.Object)
 com.google.type.Fraction$1
 kotlin.ranges.ClosedDoubleRange
 com.google.common.eventbus.SubscriberRegistry$MethodIdentifier
@@ -17854,10 +18355,8 @@ com.google.android.gms.measurement.api.AppMeasurementSdk:
     public void beginAdUnitExposure(java.lang.String)
     public void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
     public void endAdUnitExposure(java.lang.String)
-    public void logEvent(java.lang.String,java.lang.String,android.os.Bundle)
     public void logEventNoInterceptor(java.lang.String,java.lang.String,android.os.Bundle,long)
     public void performAction(android.os.Bundle)
-    public void registerOnMeasurementEventListener(com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener)
     public void setConditionalUserProperty(android.os.Bundle)
     public void setConsent(android.os.Bundle)
     public void setCurrentScreen(android.app.Activity,java.lang.String,java.lang.String)
@@ -17924,8 +18423,8 @@ com.google.common.util.concurrent.MoreExecutors$ScheduledListeningDecorator$Neve
 androidx.arch.core.executor.DefaultTaskExecutor$1:
     private static final java.lang.String THREAD_NAME_STEM
 com.google.protobuf.LazyStringArrayList$ByteArrayListView
-kotlin.collections.ArraysKt___ArraysKt$withIndex$8
 androidx.core.util.Pools$SimplePool
+kotlin.collections.ArraysKt___ArraysKt$withIndex$8
 com.google.android.gms.internal.base.zag
 com.google.android.gms.common.server.response.zae
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
@@ -18147,6 +18646,8 @@ io.flutter.embedding.engine.plugins.shim.ShimRegistrar
 com.google.android.gms.measurement.internal.zzin
 io.flutter.plugins.firebase.firestore.R$styleable
 com.google.common.collect.MapMakerInternalMap$WriteThroughEntry
+com.google.android.datatransport.runtime.firebase.transport.ClientMetrics$Builder:
+    public com.google.android.datatransport.runtime.firebase.transport.ClientMetrics$Builder setLogSourceMetricsList(java.util.List)
 com.google.common.graph.DirectedGraphConnections$3
 androidx.collection.LruCache:
     public void resize(int)
@@ -18188,6 +18689,8 @@ androidx.lifecycle.ReportFragment:
     void setProcessListener(androidx.lifecycle.ReportFragment$ActivityInitializationListener)
     private static final java.lang.String REPORT_FRAGMENT_TAG
 com.google.type.QuaternionProto
+com.google.android.datatransport.runtime.scheduling.persistence.EventStoreModule_StoreConfigFactory$InstanceHolder:
+    private void <init>()
 com.google.common.collect.MapMakerInternalMap$Segment
 com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$5
 com.google.protobuf.DescriptorProtos$FieldOptions$Builder
@@ -18203,6 +18706,7 @@ com.google.common.primitives.ImmutableIntArray
 kotlin.collections.builders.ListBuilderKt
 com.squareup.okhttp.internal.DiskLruCache$Entry
 com.google.common.collect.NullsLastOrdering
+com.google.android.datatransport.runtime.dagger.internal.SetFactory$1
 com.google.gson.internal.bind.TypeAdapters$8
 com.google.common.collect.AbstractIterator$1
 com.google.common.hash.BloomFilter$Strategy
@@ -18248,6 +18752,7 @@ kotlin.ParameterName
 io.flutter.embedding.engine.FlutterEngineCache:
     public boolean contains(java.lang.String)
     public void clear()
+com.google.android.datatransport.runtime.dagger.Subcomponent$Factory
 kotlin.collections.CollectionsKt__IteratorsJVMKt$iterator$1
 io.grpc.PartialForwardingClientCallListener
 androidx.core.view.ViewParentCompat
@@ -18383,6 +18888,7 @@ io.grpc.CompressorRegistry:
     public static io.grpc.CompressorRegistry newEmptyInstance()
     public void register(io.grpc.Compressor)
 kotlin.jvm.internal.BooleanCompanionObject
+com.google.android.datatransport.R
 androidx.core.view.OnReceiveContentListener
 kotlinx.coroutines.flow.FlowKt__TransformKt$filterIsInstance$$inlined$filter$1$2$1
 com.google.firebase.database.core.RepoInfo:
@@ -18515,6 +19021,10 @@ io.grpc.ChannelCredentials:
 com.google.protobuf.Struct$1
 kotlin.io.FileTreeWalk$WalkState
 com.google.common.collect.LinkedListMultimap$DistinctKeyIterator
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application$Builder:
+    private void <init>(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application)
+    synthetic void <init>(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application,com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application$1)
+    public com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Builder setOrganization(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization)
 com.google.protobuf.Internal$IntList:
     public abstract int getInt(int)
     public abstract void addInt(int)
@@ -18650,6 +19160,9 @@ com.google.protobuf.TimestampOrBuilder
 kotlin.text.Regex$Serialized
 com.google.firebase.platforminfo.GlobalLibraryVersionRegistrar:
     public void registerVersion(java.lang.String,java.lang.String)
+com.google.android.datatransport.cct.internal.QosTier:
+    public static com.google.android.datatransport.cct.internal.QosTier forNumber(int)
+    public final int getNumber()
 com.google.common.cache.LocalCache$LoadingSerializationProxy
 com.google.common.cache.CacheBuilderSpec$RecordStatsParser
 com.google.common.collect.RegularImmutableMultiset$SerializedForm
@@ -18664,6 +19177,7 @@ com.google.protobuf.ExtensionLite:
     public abstract java.lang.Object getDefaultValue()
     public abstract com.google.protobuf.MessageLite getMessageDefaultInstance()
     boolean isLite()
+com.google.firebase.crashlytics.R
 com.google.type.Date
 com.google.api.QuotaLimit$Builder
 io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed
@@ -18908,10 +19422,14 @@ androidx.core.util.Pools$SynchronizedPool
 kotlin.jvm.functions.Function15:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 kotlinx.coroutines.channels.AbstractSendChannel$enqueueSend$$inlined$addLastIfPrevAndIf$1
+com.google.android.datatransport.BuildConfig
 com.google.common.util.concurrent.AggregateFutureState$SafeAtomicHelper
 androidx.core.content.SharedPreferencesCompat$EditorCompat
 io.grpc.ServiceDescriptor
-com.google.firebase.analytics.connector.internal.zze
+com.google.firebase.analytics.connector.internal.zze:
+    public final com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener zza()
+    public final void zzb(java.util.Set)
+    public final void zzc()
 androidx.core.view.ViewCompat$Api30Impl
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$9
 org.intellij.lang.annotations.Pattern
@@ -18933,6 +19451,7 @@ com.google.android.gms.common.internal.AccountAccessor:
     public final boolean equals(java.lang.Object)
     public final android.accounts.Account zzb()
 com.google.common.collect.StandardTable$Column
+com.google.android.datatransport.runtime.dagger.internal.DelegateFactory
 androidx.core.provider.FontProvider
 io.grpc.Context$1FixedContextExecutor
 com.google.android.gms.common.UserRecoverableException:
@@ -18943,6 +19462,7 @@ com.google.android.gms.internal.ads_identifier.zzd:
     public final boolean zzd()
 com.google.common.hash.BloomFilterStrategies$1
 kotlin.comparisons.UComparisonsKt___UComparisonsKt
+io.flutter.plugins.firebase.crashlytics.R$layout
 androidx.annotation.PluralsRes
 com.google.common.collect.HashBasedTable$Factory
 com.google.firestore.v1.StructuredQuery$Filter$Builder:
@@ -18991,11 +19511,17 @@ kotlinx.coroutines.EventLoopKt:
     public static final long processNextEventInCurrentThread()
 androidx.multidex.MultiDexExtractor$ExtractedDex
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$1
+com.google.android.datatransport.runtime.dagger.internal.ComponentDefinitionType
 com.google.firebase.database.InternalHelpers:
     public void <init>()
     public static com.google.firebase.database.FirebaseDatabase createDatabaseForTests(com.google.firebase.FirebaseApp,com.google.firebase.database.core.RepoInfo,com.google.firebase.database.core.DatabaseConfig)
 com.google.common.util.concurrent.ListenerCallQueue
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$ShimRegistrarAggregate
+com.google.firebase.crashlytics.internal.settings.DefaultSettingsJsonTransform:
+    private org.json.JSONObject toAppJson(com.google.firebase.crashlytics.internal.settings.model.AppSettingsData)
+    private org.json.JSONObject toFeaturesJson(com.google.firebase.crashlytics.internal.settings.model.FeaturesSettingsData)
+    private org.json.JSONObject toSessionJson(com.google.firebase.crashlytics.internal.settings.model.SessionSettingsData)
+    public org.json.JSONObject toJson(com.google.firebase.crashlytics.internal.settings.model.SettingsData)
 com.google.common.collect.CompactLinkedHashSet
 io.grpc.internal.ServerListener
 kotlin.io.FilesKt
@@ -19031,6 +19557,8 @@ com.google.protobuf.WireFormat$FieldType$4:
     public boolean isPackable()
 com.google.common.cache.LocalCache$AccessQueue
 com.google.gson.internal.bind.TypeAdapters$6
+com.google.android.datatransport.runtime.util.PriorityMapping:
+    public void <init>()
 com.google.firebase.firestore.util.LogicUtils:
     public void <init>()
 com.google.firestore.v1.GetDocumentRequest$Builder
@@ -19074,6 +19602,7 @@ com.google.protobuf.MutabilityOracle$1
 androidx.core.widget.CheckedTextViewCompat$Api14Impl
 io.grpc.util.TransmitStatusRuntimeExceptionInterceptor$SerializingServerCall$1
 com.google.common.reflect.TypeParameter
+com.google.firebase.encoders.json.R
 com.google.common.primitives.Booleans$LexicographicalComparator
 com.google.common.io.CharSource$AsByteSource
 com.squareup.okhttp.internal.http.RequestException
@@ -19092,6 +19621,7 @@ io.flutter.embedding.engine.dart.DartExecutor:
     public int getPendingChannelResponseCount()
     public void setIsolateServiceIdListener(io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener)
     private static final java.lang.String TAG
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization$Builder
 com.google.android.gms.common.ErrorDialogFragment:
     public static com.google.android.gms.common.ErrorDialogFragment newInstance(android.app.Dialog)
 com.google.common.cache.CacheBuilderSpec$WriteDurationParser
@@ -19150,6 +19680,7 @@ com.google.common.collect.ImmutableBiMap$Builder
 kotlinx.coroutines.test.TestCoroutineContext$special$$inlined$CoroutineExceptionHandler$1
 com.google.android.gms.internal.measurement.zzik:
     void <init>()
+com.google.android.datatransport.runtime.dagger.Component$Builder
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$dropWhile$1
 kotlinx.coroutines.flow.internal.FlowCoroutineKt$scopedFlow$$inlined$unsafeFlow$1
 com.google.protobuf.CodedOutputStream$SafeDirectNioEncoder
@@ -19201,6 +19732,7 @@ com.google.common.primitives.Primitives
 io.grpc.okhttp.SslSocketFactoryChannelCredentials$ChannelCredentials
 io.grpc.okhttp.OkHttpChannelBuilder$SslSocketFactoryResult
 com.google.cloud.audit.AuditLog
+com.google.firebase.firestore.util.package-info
 com.google.firestore.v1.StructuredQuery$Order$Builder:
     public boolean hasField()
     public com.google.firestore.v1.StructuredQuery$FieldReference getField()
@@ -19211,7 +19743,6 @@ com.google.firestore.v1.StructuredQuery$Order$Builder:
     public com.google.firestore.v1.StructuredQuery$Order$Builder setDirectionValue(int)
     public com.google.firestore.v1.StructuredQuery$Direction getDirection()
     public com.google.firestore.v1.StructuredQuery$Order$Builder clearDirection()
-com.google.firebase.firestore.util.package-info
 com.google.common.util.concurrent.AbstractFuture$1
 com.google.common.collect.TreeMultiset
 com.google.common.collect.StandardRowSortedTable
@@ -19338,6 +19869,7 @@ androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
 org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
 com.google.gson.JsonArray
 com.squareup.okhttp.internal.InternalCache
+com.google.android.datatransport.runtime.dagger.internal.Beta
 com.google.firebase.firestore.DocumentReference:
     public java.lang.String getId()
     public com.google.firebase.firestore.CollectionReference getParent()
@@ -19533,10 +20065,17 @@ com.google.protobuf.FieldInfo:
     private final java.lang.Class oneofStoredType
     private final java.lang.Object mapDefaultEntry
     private final com.google.protobuf.Internal$EnumVerifier enumVerifier
+com.google.firebase.encoders.proto.ProtobufValueEncoderContext:
+    public com.google.firebase.encoders.ValueEncoderContext add(float)
+    public com.google.firebase.encoders.ValueEncoderContext add(double)
+    public com.google.firebase.encoders.ValueEncoderContext add(int)
+    public com.google.firebase.encoders.ValueEncoderContext add(long)
+    public com.google.firebase.encoders.ValueEncoderContext add(byte[])
 com.google.protobuf.Int32Value$Builder:
     public int getValue()
     public com.google.protobuf.Int32Value$Builder clearValue()
 com.google.apphosting.datastore.testing.DatastoreTestTrace$TimelineTestTrace
+javax.inject.Inject
 com.google.common.base.Functions$FunctionForMapNoDefault
 kotlinx.coroutines.test.TestCoroutineContext
 com.google.firebase.annotations.PublicApi
@@ -19566,6 +20105,7 @@ com.google.common.collect.Multimaps$Keys$1$1
 com.google.api.Metric$LabelsDefaultEntryHolder
 com.google.firebase.firestore.local.SQLitePersistence:
     public static final int MAX_ARGS
+com.google.android.datatransport.runtime.dagger.Binds
 kotlin.properties.Delegates$vetoable$1
 com.google.firebase.firestore.bundle.BundleReader:
     protected static final int BUFFER_CAPACITY
@@ -19696,6 +20236,7 @@ androidx.documentfile.provider.TreeDocumentFile
 kotlin.collections.AbstractIterator$WhenMappings
 kotlin.reflect.KProperty$Getter
 org.intellij.lang.annotations.JdkConstants$CalendarMonth
+io.flutter.plugins.firebase.crashlytics.R$dimen
 com.google.api.DocumentationRule$1
 com.google.firebase.database.snapshot.ChildKey:
     public static final java.lang.String MAX_KEY_NAME
@@ -19717,6 +20258,18 @@ com.squareup.okhttp.Authenticator
 com.google.common.collect.ImmutableSortedMultiset$SerializedForm
 androidx.core.location.LocationManagerCompat$InlineHandlerExecutor
 com.google.common.cache.CacheStats
+com.google.firebase.crashlytics.internal.common.CrashlyticsCore:
+    public void setCustomKeys(java.util.Map)
+    public void setInternalKey(java.lang.String,java.lang.String)
+    com.google.firebase.crashlytics.internal.common.CrashlyticsController getController()
+    private static final java.lang.String MISSING_BUILD_ID_MSG
+    static final int MAX_STACK_SIZE
+    static final int NUM_STACK_REPETITIONS_ALLOWED
+    static final java.lang.String CRASHLYTICS_REQUIRE_BUILD_ID
+    static final boolean CRASHLYTICS_REQUIRE_BUILD_ID_DEFAULT
+    static final int DEFAULT_MAIN_HANDLER_TIMEOUT_SEC
+    private static final java.lang.String INITIALIZATION_MARKER_FILE_NAME
+    static final java.lang.String CRASH_MARKER_FILE_NAME
 com.google.protobuf.DescriptorProtos$FileDescriptorSet$Builder
 com.google.type.DayOfWeek
 com.google.common.cache.LocalCache$WriteQueue$2
@@ -19773,7 +20326,6 @@ com.google.protobuf.AnyOrBuilder
 com.google.common.cache.CacheBuilder$NullListener
 kotlin.io.ByteStreamsKt
 com.google.android.gms.tasks.Tasks:
-    public static com.google.android.gms.tasks.Task call(java.util.concurrent.Callable)
     public static com.google.android.gms.tasks.Task forCanceled()
     public static com.google.android.gms.tasks.Task whenAllComplete(java.util.Collection)
     public static varargs com.google.android.gms.tasks.Task whenAllComplete(com.google.android.gms.tasks.Task[])
@@ -19912,6 +20464,7 @@ com.google.firestore.v1.BatchGetDocumentsResponse:
     public boolean hasReadTime()
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param
 kotlin.time.TimeSource
+com.google.android.datatransport.runtime.dagger.BindsInstance
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5
 com.google.api.Authentication$1
 androidx.annotation.DrawableRes
@@ -19966,8 +20519,9 @@ com.google.android.gms.common.util.HttpUtils
 com.google.common.collect.HashBiMap$EntryForKey
 kotlinx.coroutines.sync.MutexImpl$TryLockDesc
 com.google.gson.internal.bind.TypeAdapters$5
-kotlinx.coroutines.flow.FlowKt__MigrationKt$delayEach$1
 kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapConcat$$inlined$map$1$2$1
+kotlinx.coroutines.flow.FlowKt__MigrationKt$delayEach$1
+com.google.firebase.crashlytics.R$dimen
 com.google.firestore.bundle.BundledDocumentMetadata$Builder
 com.google.firebase.database.BuildConfig
 com.google.android.gms.common.stats.StatsEvent
@@ -20125,6 +20679,10 @@ com.google.type.Money
 com.google.common.hash.LongAddables
 androidx.core.widget.NestedScrollView$AccessibilityDelegate
 com.google.common.util.concurrent.AbstractIdleService$ThreadNameSupplier
+com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application_Organization:
+    private void <init>(java.lang.String)
+    synthetic void <init>(java.lang.String,com.google.firebase.crashlytics.internal.model.AutoValue_CrashlyticsReport_Session_Application_Organization$1)
+    protected com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization$Builder toBuilder()
 com.google.common.collect.TreeRangeMap$AsMapOfRanges
 androidx.core.content.ContextCompat:
     protected void <init>()
@@ -20150,6 +20708,8 @@ androidx.core.content.ContextCompat:
     private static android.util.TypedValue sTempValue
 androidx.annotation.Dimension
 com.google.common.base.Splitter$3
+com.google.android.datatransport.runtime.SendRequest$Builder:
+    public com.google.android.datatransport.runtime.SendRequest$Builder setEvent(com.google.android.datatransport.Event,com.google.android.datatransport.Encoding,com.google.android.datatransport.Transformer)
 androidx.core.widget.EdgeEffectCompat
 com.google.common.primitives.Booleans$BooleanComparator
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$map$1
@@ -20314,6 +20874,15 @@ com.google.firestore.v1.DocumentTransform$Builder:
 kotlin.jvm.internal.CallableReference$NoReceiver:
     private java.lang.Object readResolve()
 com.google.android.gms.internal.base.zae
+com.google.firebase.crashlytics.internal.settings.SettingsV3JsonTransform:
+    private org.json.JSONObject toFabricJson(com.google.firebase.crashlytics.internal.settings.model.AppSettingsData)
+    private org.json.JSONObject toAppJson(com.google.firebase.crashlytics.internal.settings.model.AppSettingsData)
+    private org.json.JSONObject toFeaturesJson(com.google.firebase.crashlytics.internal.settings.model.FeaturesSettingsData)
+    public org.json.JSONObject toJson(com.google.firebase.crashlytics.internal.settings.model.SettingsData)
+    private static final java.lang.String CRASHLYTICS_APP_URL
+    private static final java.lang.String CRASHLYTICS_APP_URL_FORMAT
+    private static final java.lang.String REPORTS_URL_FORMAT
+    private static final java.lang.String NDK_REPORTS_URL_FORMAT
 com.google.firebase.appcheck.interop.R$style
 com.google.android.gms.common.annotation.KeepForSdkWithMembers
 com.google.common.cache.LocalCache$WeakValueReference
@@ -20333,6 +20902,8 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$unsafeFlow$2
 kotlin.NumbersKt
 kotlinx.coroutines.flow.FlowKt__CountKt$count$$inlined$collect$2
 io.grpc.util.ForwardingClientStreamTracer
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Builder:
+    public abstract com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Builder setOrganization(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Application$Organization)
 kotlin.annotation.AnnotationTarget
 com.google.common.graph.Graphs
 kotlinx.coroutines.sync.SemaphoreKt$withPermit$1
@@ -20461,6 +21032,7 @@ com.google.api.BackendRule$PathTranslation$PathTranslationVerifier
 androidx.fragment.app.Fragment$SavedState
 com.google.firestore.v1.ListDocumentsRequest
 com.google.api.MetricRule$MetricCostsDefaultEntryHolder
+com.google.android.datatransport.runtime.dagger.multibindings.Multibinds
 com.google.firebase.FirebaseOptions:
     static synthetic java.lang.String access$000(com.google.firebase.FirebaseOptions)
     static synthetic java.lang.String access$100(com.google.firebase.FirebaseOptions)
@@ -20570,6 +21142,7 @@ kotlin.collections.CollectionsKt___CollectionsJvmKt:
     public void <init>()
 com.google.type.TimeOfDay$1
 kotlin.jvm.internal.ArrayIteratorsKt
+com.google.firebase.crashlytics.R$styleable
 com.google.firebase.installations.R$style
 kotlin.jvm.internal.KTypeBase
 com.google.longrunning.DeleteOperationRequest$Builder
@@ -20698,6 +21271,7 @@ com.google.firestore.v1.CommitRequest$Builder:
     public com.google.protobuf.ByteString getTransaction()
     public com.google.firestore.v1.CommitRequest$Builder setTransaction(com.google.protobuf.ByteString)
     public com.google.firestore.v1.CommitRequest$Builder clearTransaction()
+com.google.android.datatransport.runtime.dagger.internal.MembersInjectors
 com.google.common.graph.AbstractDirectedNetworkConnections$1
 com.google.gson.internal.bind.TypeAdapters$18
 io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint:
@@ -20851,6 +21425,8 @@ com.google.android.gms.common.util.IOUtils:
 com.google.common.hash.Hashing
 com.google.common.base.Predicates$SubtypeOfPredicate
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$RunQueryOrBuilder
+com.google.android.datatransport.runtime.ExecutionModule_ExecutorFactory$InstanceHolder:
+    private void <init>()
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransformUnsafe$1$1
 kotlin.collections.GroupingKt__GroupingJVMKt
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
@@ -20858,11 +21434,16 @@ com.google.api.LaunchStage$1
 kotlinx.coroutines.debug.internal.DebugProbesImpl$dumpCoroutinesSynchronized$lambda-21$$inlined$sortedBy$1
 androidx.annotation.GravityInt
 com.google.common.net.HttpHeaders$ReferrerPolicyValues
+com.google.firebase.crashlytics.internal.settings.SettingsController:
+    private static final java.lang.String PREFS_BUILD_INSTANCE_IDENTIFIER
+    private static final java.lang.String SETTINGS_URL_FORMAT
 com.google.api.AuthenticationRuleOrBuilder
 com.google.firebase.firestore.util.FileUtil$LegacyFileDeleter:
     private void <init>()
 com.google.gson.internal.bind.ObjectTypeAdapter
 com.google.android.gms.common.util.Predicate
+com.google.firebase.crashlytics.internal.send.DataTransportCrashlyticsReportSender:
+    private static final java.lang.String CRASHLYTICS_TRANSPORT_NAME
 com.google.firebase.appcheck.interop.R$id
 io.grpc.internal.MigratingThreadDeframer$1
 androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$3
@@ -20991,6 +21572,7 @@ com.google.firebase.firestore.proto.MaybeDocumentOuterClass
 kotlin.coroutines.ContinuationInterceptor:
     public abstract kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)
     public abstract kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)
+com.google.firebase.crashlytics.R$id
 kotlinx.coroutines.scheduling.LimitingDispatcher:
     public java.util.concurrent.Executor getExecutor()
     public void dispatchYield(kotlin.coroutines.CoroutineContext,java.lang.Runnable)
@@ -21006,7 +21588,6 @@ kotlinx.coroutines.channels.Channel:
     public static final int BUFFERED
     public static final int OPTIONAL_CHANNEL
     public static final java.lang.String DEFAULT_BUFFER_PROPERTY_NAME
-com.google.android.gms.internal.measurement.zzch
 androidx.versionedparcelable.VersionedParcel$1
 com.google.common.collect.MinMaxPriorityQueue$QueueIterator
 com.google.android.gms.measurement.sdk.api.R
@@ -21026,6 +21607,7 @@ kotlin.random.jdk8.PlatformThreadLocalRandom:
     public long nextLong(long)
     public long nextLong(long,long)
     public double nextDouble(double)
+javax.inject.Scope
 com.google.common.reflect.Types$TypeVariableImpl
 kotlin.jvm.internal.ArrayDoubleIterator
 com.google.common.collect.RegularImmutableTable$Values
@@ -21053,6 +21635,7 @@ com.google.android.gms.common.internal.service.zaa
 kotlinx.coroutines.flow.StateFlowImpl
 kotlin.properties.ReadOnlyProperty
 kotlinx.coroutines.flow.FlowKt__TransformKt$withIndex$$inlined$unsafeFlow$1
+com.google.firebase.crashlytics.CustomKeysAndValues$Builder
 androidx.core.view.WindowInsetsControllerCompat$Impl30$1
 com.google.common.net.MediaType$Tokenizer
 androidx.core.app.NotificationManagerCompat$NotifyTask
@@ -21142,8 +21725,8 @@ com.google.protobuf.DescriptorProtos$SourceCodeInfoOrBuilder
 com.google.common.cache.LocalCache$WeightedWeakValueReference
 com.google.common.util.concurrent.ListenerCallQueue$Event
 kotlinx.coroutines.channels.ConflatedBroadcastChannel
-kotlinx.coroutines.ChildHandle$DefaultImpls
 com.google.firestore.v1.StructuredQuery$CollectionSelectorOrBuilder
+kotlinx.coroutines.ChildHandle$DefaultImpls
 kotlin.jvm.internal.ClassReference$Companion:
     public final java.lang.String getClassQualifiedName(java.lang.Class)
     public final boolean isInstance(java.lang.Object,java.lang.Class)
@@ -21157,7 +21740,14 @@ io.grpc.ServiceProviders:
     public static java.lang.Object load(java.lang.Class,java.lang.Iterable,java.lang.ClassLoader,io.grpc.ServiceProviders$PriorityAccessor)
 io.grpc.internal.ManagedChannelImpl$1StatsFetcher
 kotlin.jvm.internal.SpreadBuilder
-com.google.firebase.analytics.connector.internal.zzc
+com.google.firebase.analytics.connector.internal.zzc:
+    public static android.os.Bundle zza(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    public static com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty zzb(android.os.Bundle)
+    public static java.lang.String zzd(java.lang.String)
+    public static boolean zzf(java.lang.String)
+    public static boolean zzg(java.lang.String)
+    public static boolean zzi(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    public static boolean zzm(java.lang.String,java.lang.String)
 kotlin.UByte
 io.grpc.internal.ReadableBuffers$ByteReadableBufferWrapper
 kotlinx.coroutines.flow.FlowKt__LimitKt$takeWhile$$inlined$unsafeFlow$1$1
@@ -21334,6 +21924,8 @@ com.google.common.reflect.TypeResolver$TypeMappingIntrospector
 com.google.common.collect.SortedSetMultimap
 com.google.common.io.PatternFilenameFilter
 com.google.common.reflect.Types$ParameterizedTypeImpl
+com.google.android.datatransport.runtime.TransportFactoryImpl:
+    public com.google.android.datatransport.Transport getTransport(java.lang.String,java.lang.Class,com.google.android.datatransport.Transformer)
 com.google.gson.internal.Excluder$1
 com.google.firebase.installations.interop.R$color
 kotlinx.coroutines.flow.FlowKt__ErrorsKt
@@ -21419,6 +22011,7 @@ com.squareup.okhttp.internal.framed.NameValueBlockReader
 com.google.protobuf.DescriptorProtos$FieldDescriptorProtoOrBuilder
 kotlin.sequences.TransformingSequence$iterator$1:
     public final java.util.Iterator getIterator()
+com.google.android.datatransport.runtime.dagger.multibindings.IntoMap
 com.google.rpc.QuotaFailure$Violation$Builder
 com.google.common.collect.Iterables$2
 io.grpc.inprocess.InProcessChannelBuilder$1InProcessChannelTransportFactoryBuilder
@@ -21443,6 +22036,7 @@ com.google.android.gms.internal.measurement.zzko:
 com.google.common.collect.MultimapBuilder$3
 kotlin.collections.ArraysKt___ArraysKt$withIndex$9
 androidx.fragment.R$id
+com.google.android.datatransport.runtime.dagger.multibindings.ElementsIntoSet
 com.google.api.ConfigChangeProto
 kotlin.system.TimingKt
 kotlin.io.path.PathsKt__PathUtilsKt
@@ -21462,6 +22056,8 @@ okio.Timeout:
     public static final okio.Timeout NONE
 com.google.common.collect.ForwardingImmutableList
 com.google.gson.internal.sql.SqlTimeTypeAdapter
+io.flutter.plugins.firebase.crashlytics.FlutterFirebaseCrashlyticsPlugin:
+    public static final java.lang.String TAG
 com.google.rpc.Code$1
 com.google.protobuf.WireFormat$JavaType:
     java.lang.Object getDefaultDefault()
@@ -21523,10 +22119,10 @@ com.google.gson.stream.JsonReader:
     private static final int NUMBER_CHAR_EXP_E
     private static final int NUMBER_CHAR_EXP_SIGN
     private static final int NUMBER_CHAR_EXP_DIGIT
-androidx.core.graphics.TypefaceCompatApi21Impl
 kotlinx.coroutines.JobImpl:
     public boolean complete()
     public boolean completeExceptionally(java.lang.Throwable)
+androidx.core.graphics.TypefaceCompatApi21Impl
 com.google.api.AdviceOrBuilder
 com.google.common.collect.AbstractSortedMultiset$1DescendingMultisetImpl
 com.google.android.gms.internal.measurement.zzii:
@@ -21767,6 +22363,16 @@ com.google.common.util.concurrent.AggregateFuture$2
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$filterNotNullTo$1
 androidx.core.os.CancellationSignal
 com.google.gson.JsonElement
+com.google.firebase.crashlytics.internal.persistence.CrashlyticsReportPersistence:
+    public void persistEvent(com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Session$Event,java.lang.String)
+    private static final int MAX_OPEN_SESSIONS
+    private static final java.lang.String REPORT_FILE_NAME
+    private static final java.lang.String SESSION_START_TIMESTAMP_FILE_NAME
+    private static final java.lang.String EVENT_FILE_NAME_PREFIX
+    private static final int EVENT_COUNTER_WIDTH
+    private static final java.lang.String EVENT_COUNTER_FORMAT
+    private static final java.lang.String PRIORITY_EVENT_SUFFIX
+    private static final java.lang.String NORMAL_EVENT_SUFFIX
 com.google.firebase.database.collection.LLRBNode$ShortCircuitingNodeVisitor
 com.google.android.gms.common.internal.zzn:
     public void <init>(android.content.ComponentName,int)
@@ -21879,6 +22485,10 @@ io.grpc.ManagedChannelBuilder:
     public io.grpc.ManagedChannelBuilder proxyDetector(io.grpc.ProxyDetector)
     public io.grpc.ManagedChannelBuilder defaultServiceConfig(java.util.Map)
     public io.grpc.ManagedChannelBuilder disableServiceConfigLookUp()
+com.google.firebase.crashlytics.internal.common.ResponseParser
+com.google.android.datatransport.runtime.backends.MetadataBackendRegistry:
+    private static final java.lang.String TAG
+    private static final java.lang.String BACKEND_KEY_PREFIX
 com.google.api.Monitoring$Builder
 com.google.firebase.database.collection.ImmutableSortedMap$Builder:
     public void <init>()
@@ -21905,6 +22515,9 @@ kotlin.text.StringsKt__StringBuilderKt:
     private static final java.lang.StringBuilder appendLine(java.lang.StringBuilder,char)
     private static final java.lang.StringBuilder appendLine(java.lang.StringBuilder,boolean)
     public void <init>()
+com.google.android.datatransport.runtime.TransportImpl:
+    private static synthetic void lambda$send$0(java.lang.Exception)
+    public void send(com.google.android.datatransport.Event)
 com.google.common.hash.AbstractNonStreamingHashFunction$BufferingHasher
 io.grpc.internal.DnsNameResolver$ResourceResolver:
     public abstract java.util.List resolveSrv(java.lang.String)
@@ -22010,6 +22623,10 @@ kotlin.collections.ReversedList
 com.google.longrunning.GetOperationRequest
 kotlin.ranges.LongProgression
 com.google.apphosting.datastore.testing.DatastoreTestTrace$FirestoreV1Action$ListDocumentsOrBuilder
+com.google.firebase.crashlytics.internal.model.CrashlyticsReport:
+    public com.google.firebase.crashlytics.internal.model.CrashlyticsReport$Type getType()
+    public com.google.firebase.crashlytics.internal.model.CrashlyticsReport withOrganizationId(java.lang.String)
+com.google.android.datatransport.runtime.dagger.internal.SetFactory$Builder
 androidx.core.net.TrafficStatsCompat
 com.squareup.okhttp.internal.http.RouteException
 com.google.common.base.AbstractIterator$1
@@ -22237,10 +22854,11 @@ io.grpc.ClientInterceptors:
 io.flutter.plugin.common.PluginRegistry
 com.google.common.collect.Synchronized$SynchronizedMultiset
 io.flutter.plugins.firebase.database.R$drawable
-com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$SiEkKBu9hz30n6jbv61jv-eXGhA:
-    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
+io.flutter.plugins.firebase.crashlytics.R$attr
 com.google.firebase.database.android.-$$Lambda$AndroidAppCheckTokenProvider$60vFfzkhuN4dN7asQDMFpqCxmE0:
     public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
+com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$SiEkKBu9hz30n6jbv61jv-eXGhA:
+    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.database.android.-$$Lambda$AndroidAuthTokenProvider$osJYqH9k0s6WcvseFM2DDFHB78I:
     public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$hu48mr03bfT6X2LDSOXJket2KbA:
@@ -22297,8 +22915,6 @@ com.google.android.gms.internal.measurement.zzfx:
     public final com.google.android.gms.internal.measurement.zzfx zzW(com.google.android.gms.internal.measurement.zzfz)
 androidx.core.app.NotificationCompatBuilder:
     private final android.content.Context mContext
-com.google.firebase.analytics.connector.AnalyticsConnectorImpl:
-    final java.util.Map zzb
 com.squareup.okhttp.HttpUrl:
     private final java.lang.String scheme
     private final java.lang.String username
@@ -22451,8 +23067,13 @@ io.grpc.Status:
     static final synthetic boolean $assertionsDisabled
 io.grpc.internal.DelayedClientCall:
     static final synthetic boolean $assertionsDisabled
+com.google.android.datatransport.runtime.firebase.transport.TimeWindow:
+    private static final com.google.android.datatransport.runtime.firebase.transport.TimeWindow DEFAULT_INSTANCE
 io.grpc.internal.ReflectionLongAdderCounter:
     private static final java.lang.reflect.Method sumMethod
+com.google.firebase.crashlytics.internal.settings.model.SettingsData:
+    public final int settingsVersion
+    public final int cacheDuration
 com.google.android.gms.internal.measurement.zzlf:
     private final com.google.android.gms.internal.measurement.zzlh zzp
 com.google.firebase.database.core.CompoundWrite$1:
@@ -22477,6 +23098,8 @@ androidx.loader.app.LoaderManagerImpl$LoaderInfo:
     androidx.loader.content.Loader getLoader()
 com.google.firestore.v1.StructuredQuery$UnaryFilter$Operator:
     private static final com.google.protobuf.Internal$EnumLiteMap internalValueMap
+com.google.android.datatransport.runtime.dagger.internal.InstanceFactory:
+    private static final com.google.android.datatransport.runtime.dagger.internal.InstanceFactory NULL_INSTANCE_FACTORY
 com.google.firebase.installations.FirebaseInstallationsException:
     private final com.google.firebase.installations.FirebaseInstallationsException$Status status
 io.grpc.internal.ManagedChannelImpl$1ChannelCallTracerFactory:
@@ -22500,8 +23123,12 @@ io.grpc.internal.CallCredentialsApplyingTransportFactory$CallCredentialsApplying
     final synthetic io.grpc.internal.CallCredentialsApplyingTransportFactory$CallCredentialsApplyingTransport this$1
 androidx.fragment.app.FragmentManagerImpl$5:
     final synthetic androidx.fragment.app.FragmentManagerImpl this$0
+com.google.firebase.crashlytics.internal.metadata.QueueFile$1:
+    final synthetic com.google.firebase.crashlytics.internal.metadata.QueueFile this$0
 io.grpc.internal.CallCredentialsApplyingTransportFactory$CallCredentialsApplyingTransport:
     private final java.lang.String authority
+com.google.firebase.crashlytics.internal.analytics.BlockingAnalyticsEventLogger:
+    private boolean callbackReceived
 com.google.firebase.database.FirebaseDatabase:
     private final com.google.firebase.FirebaseApp app
 com.google.android.gms.common.GoogleApiAvailability:
@@ -22523,6 +23150,8 @@ io.grpc.internal.RetriableStream$1MaxInboundMessageSizeEntry:
     final synthetic io.grpc.internal.RetriableStream this$0
 com.google.firebase.database.core.persistence.CachePolicy$1
 com.google.android.gms.internal.measurement.zzkj
+com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$2:
+    final synthetic com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker this$0
 androidx.fragment.app.FragmentTransitionImpl$1:
     final synthetic androidx.fragment.app.FragmentTransitionImpl this$0
 androidx.lifecycle.ViewModel:
@@ -22540,6 +23169,8 @@ com.google.firebase.database.tubesock.MessageBuilderFactory$TextBuilder:
     private static java.lang.ThreadLocal localEncoder
 io.grpc.Context$ExecutableListener:
     void deliver()
+com.google.firebase.crashlytics.internal.common.ExecutorUtils$1$1:
+    final synthetic com.google.firebase.crashlytics.internal.common.ExecutorUtils$1 this$0
 com.google.firestore.v1.Precondition$ConditionTypeCase:
     private final int value
 com.google.protobuf.CodedInputStream:
@@ -22555,6 +23186,9 @@ androidx.arch.core.executor.ArchTaskExecutor$2
 com.google.protobuf.OneofInfo
 com.google.android.gms.internal.measurement.zzou:
     public static final com.google.android.gms.internal.measurement.zzhu zza
+com.google.android.datatransport.cct.CCTDestination:
+    public static final com.google.android.datatransport.cct.CCTDestination INSTANCE
+    public static final com.google.android.datatransport.cct.CCTDestination LEGACY_INSTANCE
 io.grpc.internal.DelayedClientCall$1DrainListenerRunnable:
     final synthetic io.grpc.internal.DelayedClientCall this$0
 io.flutter.plugin.editing.TextInputPlugin$2:
@@ -22562,6 +23196,8 @@ io.flutter.plugin.editing.TextInputPlugin$2:
 com.google.common.base.Platform:
     private static final java.util.logging.Logger logger
     private static final com.google.common.base.PatternCompiler patternCompiler
+com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$3:
+    final synthetic com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker this$0
 androidx.fragment.app.FragmentTransitionImpl$2:
     final synthetic androidx.fragment.app.FragmentTransitionImpl this$0
 com.google.firebase.firestore.model.FieldIndex:
@@ -22575,6 +23211,8 @@ com.google.android.gms.internal.measurement.zzki:
 com.google.android.gms.common.GooglePlayServicesRepairableException:
     private final int zza
 androidx.fragment.app.Fragment$1
+com.google.android.datatransport.runtime.firebase.transport.StorageMetrics:
+    private static final com.google.android.datatransport.runtime.firebase.transport.StorageMetrics DEFAULT_INSTANCE
 androidx.loader.content.Loader:
     public void unregisterListener(androidx.loader.content.Loader$OnLoadCompleteListener)
     public void abandon()
@@ -22586,9 +23224,13 @@ io.grpc.internal.ManagedChannelImpl$1PanicSubchannelPicker:
 com.google.firebase.database.core.Repo$21:
     final synthetic com.google.firebase.database.core.Repo this$0
 com.google.android.gms.common.internal.ICancelToken
+com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker$4:
+    final synthetic com.google.firebase.crashlytics.internal.common.CrashlyticsBackgroundWorker this$0
 com.google.firebase.database.android.AndroidAuthTokenProvider:
     private static synthetic void lambda$addTokenChangeListener$4(java.util.concurrent.ExecutorService,com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.internal.InternalTokenResult)
     static synthetic void lambda$addTokenChangeListener$3(com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.internal.InternalTokenResult)
+com.google.android.datatransport.runtime.firebase.transport.ClientMetrics:
+    private static final com.google.android.datatransport.runtime.firebase.transport.ClientMetrics DEFAULT_INSTANCE
 io.grpc.internal.OobChannel:
     private volatile boolean shutdown
     private static final java.util.logging.Logger log
@@ -22599,6 +23241,8 @@ com.google.android.gms.internal.measurement.zzn:
     private final com.google.android.gms.internal.measurement.zzo zza
 com.google.protobuf.BinaryReader$SafeHeapReader:
     private final int initialPos
+com.google.android.datatransport.cct.internal.ClientInfo$ClientType:
+    private final int value
 io.grpc.NameResolver$1:
     final synthetic io.grpc.NameResolver this$0
 com.google.android.gms.internal.measurement.zznq:
@@ -22626,6 +23270,7 @@ com.google.protobuf.ByteString:
     private static final java.util.Comparator UNSIGNED_LEXICOGRAPHICAL_COMPARATOR
 io.grpc.internal.RetriableStream$1DecompressorRegistryEntry:
     final synthetic io.grpc.internal.RetriableStream this$0
+com.google.firebase.encoders.Encoder
 com.google.android.gms.common.util.Strings:
     private static final java.util.regex.Pattern zza
 com.google.android.gms.common.api.Status:
@@ -22660,7 +23305,6 @@ com.google.android.gms.internal.measurement.zzfz:
 com.google.android.gms.measurement.internal.zzdy:
     private java.lang.String zze
 com.google.android.gms.internal.measurement.zzee:
-    private final java.util.List zzf
     private final java.lang.String zzi
 com.google.firebase.components.EventBus:
     private final java.util.concurrent.Executor defaultExecutor
@@ -22675,6 +23319,9 @@ androidx.core.content.res.ResourcesCompat:
     private static final java.lang.Object sColorStateCacheLock
 com.google.firebase.database.core.utilities.Tree$1:
     final synthetic com.google.firebase.database.core.utilities.Tree this$0
+com.google.firebase.analytics.connector.AnalyticsConnectorImpl$1:
+    final synthetic java.lang.String zza
+    final synthetic com.google.firebase.analytics.connector.AnalyticsConnectorImpl zzb
 com.google.android.gms.internal.common.zzc:
     private static final java.lang.ClassLoader zza
 com.google.firebase.firestore.auth.FirebaseAppCheckTokenProvider:
@@ -22755,6 +23402,7 @@ com.google.android.gms.internal.measurement.zzoi:
     public static final com.google.android.gms.internal.measurement.zzhu zza
     public static final com.google.android.gms.internal.measurement.zzhu zzb
     public static final com.google.android.gms.internal.measurement.zzhu zzd
+com.google.android.datatransport.runtime.dagger.internal.MemoizedSentinel
 io.grpc.internal.GrpcUtil:
     public static final java.nio.charset.Charset US_ASCII
     public static final com.google.common.base.Splitter ACCEPT_ENCODING_SPLITTER
@@ -22925,8 +23573,24 @@ com.google.firestore.v1.DocumentTransform$FieldTransform$TransformTypeCase:
     private final int value
 kotlinx.coroutines.ExecutorCoroutineDispatcher:
     public static final kotlinx.coroutines.ExecutorCoroutineDispatcher$Key Key
+com.google.android.datatransport.runtime.firebase.transport.LogEventDropped:
+    private static final com.google.android.datatransport.runtime.firebase.transport.LogEventDropped DEFAULT_INSTANCE
+com.google.android.datatransport.runtime.firebase.transport.GlobalMetrics:
+    private static final com.google.android.datatransport.runtime.firebase.transport.GlobalMetrics DEFAULT_INSTANCE
+com.google.android.datatransport.runtime.dagger.internal.DoubleCheck:
+    static final synthetic boolean $assertionsDisabled
 io.grpc.internal.RetriableStream$2:
     final synthetic io.grpc.internal.RetriableStream this$0
+com.google.firebase.crashlytics.internal.settings.model.AppSettingsData:
+    public final java.lang.String status
+    public final java.lang.String url
+    public final java.lang.String reportsUrl
+    public final java.lang.String ndkReportsUrl
+    public final java.lang.String bundleId
+    public final java.lang.String organizationId
+    public final boolean updateRequired
+    public final int reportUploadVariant
+    public final int nativeReportUploadVariant
 io.grpc.PersistentHashArrayMappedTrie$Node
 io.grpc.internal.GrpcUtil$1:
     void <init>()
@@ -22966,6 +23630,8 @@ com.google.android.gms.internal.measurement.zznk:
     public static final com.google.android.gms.internal.measurement.zzhu zza
     public static final com.google.android.gms.internal.measurement.zzhu zzb
     public static final com.google.android.gms.internal.measurement.zzhu zzc
+com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics:
+    private static final com.google.android.datatransport.runtime.firebase.transport.LogSourceMetrics DEFAULT_INSTANCE
 io.grpc.okhttp.OkHttpClientTransport$2:
     final synthetic io.grpc.okhttp.OkHttpClientTransport this$0
 kotlin.text.CharsKt
@@ -23043,6 +23709,10 @@ io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator:
     final synthetic io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack this$0
 com.google.protobuf.FieldType$Collection:
     public boolean isList()
+com.google.android.datatransport.cct.internal.QosTier:
+    private final int value
+com.google.firebase.crashlytics.internal.metadata.QueueFileLogStore$1:
+    final synthetic com.google.firebase.crashlytics.internal.metadata.QueueFileLogStore this$0
 io.grpc.Context$DirectExecutor
 com.google.firebase.database.core.WriteTree$1:
     final synthetic com.google.firebase.database.core.WriteTree this$0
@@ -23073,6 +23743,8 @@ androidx.fragment.app.FragmentTransitionCompat21$1:
     final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
 com.google.firebase.firestore.auth.FirebaseAuthCredentialsProvider:
     private synthetic void lambda$new$0(com.google.firebase.internal.InternalTokenResult)
+io.flutter.plugins.firebase.crashlytics.FlutterFirebaseCrashlyticsPlugin$1:
+    final synthetic io.flutter.plugins.firebase.crashlytics.FlutterFirebaseCrashlyticsPlugin this$0
 kotlinx.coroutines.Dispatchers:
     private void <init>()
     public static final kotlinx.coroutines.Dispatchers INSTANCE
@@ -23103,6 +23775,8 @@ com.google.android.gms.internal.measurement.zzol:
     public static final com.google.android.gms.internal.measurement.zzhu zza
     public static final com.google.android.gms.internal.measurement.zzhu zzb
     public static final com.google.android.gms.internal.measurement.zzhu zzd
+com.google.firebase.crashlytics.internal.common.CrashlyticsCore:
+    private final com.google.firebase.FirebaseApp app
 com.google.android.gms.common.api.Api:
     private final com.google.android.gms.common.api.Api$ClientKey zab
 com.google.firebase.firestore.util.AsyncQueue$SynchronizedShutdownAwareExecutor$1:
@@ -23114,6 +23788,8 @@ com.google.android.gms.internal.measurement.zznz:
     public static final com.google.android.gms.internal.measurement.zzhu zza
 com.google.android.gms.common.util.AndroidUtilsLight:
     private static volatile int zza
+com.google.firebase.crashlytics.internal.DevelopmentPlatformProvider$DevelopmentPlatform:
+    final synthetic com.google.firebase.crashlytics.internal.DevelopmentPlatformProvider this$0
 com.google.android.gms.internal.ads_identifier.zzc:
     private static final java.lang.ClassLoader zza
 androidx.core.content.ContextCompat:
@@ -23136,6 +23812,8 @@ com.google.firebase.database.core.Repo:
     private com.google.firebase.database.FirebaseDatabase database
 okio.Base64:
     private static final byte[] URL_MAP
+io.flutter.plugins.firebase.crashlytics.FlutterFirebaseCrashlyticsPlugin$2:
+    final synthetic io.flutter.plugins.firebase.crashlytics.FlutterFirebaseCrashlyticsPlugin this$0
 com.google.firebase.database.tubesock.WebSocketMessage:
     private byte[] byteMessage
     private byte opcode
@@ -23150,6 +23828,8 @@ com.google.android.gms.common.GooglePlayServicesNotAvailableException:
     public final int errorCode
 com.google.protobuf.NullValue$1
 com.google.firestore.v1.DocumentTransform$FieldTransform$ServerValue$1
+com.google.firebase.crashlytics.internal.send.DataTransportCrashlyticsReportSender:
+    private final com.google.android.datatransport.Transformer transportTransform
 com.google.android.gms.internal.measurement.zzen
 io.grpc.okhttp.OkHttpChannelBuilder:
     private final boolean useGetForSafeMethods
@@ -23157,6 +23837,8 @@ io.grpc.okhttp.OkHttpChannelBuilder:
     private static final java.util.EnumSet understoodTlsFeatures
 io.grpc.internal.StatsTraceContext:
     public static final io.grpc.internal.StatsTraceContext NOOP
+com.google.firebase.crashlytics.internal.common.CrashlyticsController$3:
+    final synthetic com.google.firebase.crashlytics.internal.common.CrashlyticsController this$0
 io.flutter.FlutterInjector$Builder$NamedThreadFactory:
     final synthetic io.flutter.FlutterInjector$Builder this$0
 com.google.android.gms.internal.measurement.zzmv:
@@ -23217,5 +23899,5 @@ io.grpc.ClientInterceptors:
     private static final io.grpc.ClientCall NOOP_CALL
 com.google.firebase.database.android.-$$Lambda$AndroidAuthTokenProvider$gJsys6XzUCti6lenAdcfFvM3tKY
 com.google.firebase.database.android.-$$Lambda$AndroidAppCheckTokenProvider$d5ouCwY_MlmKFbkPIcW9iYuM3gk
-io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.plugin.platform.PlatformView$-CC
