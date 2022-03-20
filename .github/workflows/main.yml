@@ -16,6 +16,7 @@ jobs:
         # Build Website
         - name: Build Website
           run: |
+            cd my_app
             flutter config --enable-web            
             flutter clean
             flutter run            
