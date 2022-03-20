@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/firebase_firestore12.dart';
+import 'package:my_app/future_build11.dart';
+import 'package:my_app/shared_preferences10.dart';
 import 'package:my_app/test.dart';
 import 'package:my_app/textfield_card5.dart';
 
@@ -37,7 +40,7 @@ class My_Drawer extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Home()),
+                MaterialPageRoute(builder: (context) =>  Home()),
               );
             },
             leading: Icon(Icons.mobile_friendly),
@@ -133,6 +136,63 @@ class My_Drawer extends StatelessWidget {
             leading: Icon(Icons.mobile_friendly),
             title: Text(
               'Login Form',
+              style: titleTextStyle,
+            ),
+            subtitle: Text(
+              'Test',
+              style: subtitleTextStyle,
+            ),
+            trailing: Icon(Icons.start),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Shared_Preferences()),
+              );
+            },
+            leading: Icon(Icons.mobile_friendly),
+            title: Text(
+              'Shared Preferences',
+              style: titleTextStyle,
+            ),
+            subtitle: Text(
+              'Test',
+              style: subtitleTextStyle,
+            ),
+            trailing: Icon(Icons.start),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Future_Build()),
+              );
+            },
+            leading: Icon(Icons.mobile_friendly),
+            title: Text(
+              'Future Builder',
+              style: titleTextStyle,
+            ),
+            subtitle: Text(
+              'Test',
+              style: subtitleTextStyle,
+            ),
+            trailing: Icon(Icons.start),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>  Firestore_Example()),
+              );
+            },
+            leading: Icon(Icons.mobile_friendly),
+            title: Text(
+              'Firestore with Listview',
               style: titleTextStyle,
             ),
             subtitle: Text(

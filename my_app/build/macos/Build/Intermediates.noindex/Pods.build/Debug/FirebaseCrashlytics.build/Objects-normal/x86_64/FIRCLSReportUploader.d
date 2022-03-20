@@ -1,0 +1,53 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSReportUploader.m \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Interop/Analytics/Public/FIRAnalyticsInterop.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSAnalyticsManager.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSManagerData.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSReportUploader_Private.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Controllers/FIRCLSReportUploader.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/DataCollection/FIRCLSDataCollectionToken.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSDefines.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Models/FIRCLSFileManager.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Models/FIRCLSInstallIdentifierModel.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Models/FIRCLSInternalReport.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFeatures.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Models/FIRCLSSymbolResolver.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Models/Record/FIRCLSReportAdapter.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Protogen/nanopb/crashlytics.nanopb.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/nanopb.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/nanopb/pb_encode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/nanopb/pb_decode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/nanopb/pb_common.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/nanopb/pb.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/nanopb/nanopb-umbrella.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/GoogleDataTransport.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GoogleDataTransport.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTransport.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventDataObject.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREndpoints.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORConsoleLogger.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORClock.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/GoogleDataTransport/GoogleDataTransport-umbrella.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Operations/Reports/FIRCLSProcessReportOperation.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSUtility.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSGlobals.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSContext.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSBinaryImage.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFile.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSMachO/FIRCLSMachO.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSHost.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSUserLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSMachException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSSignal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSAllocate.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSInternalLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSLogger.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSConstants.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSNetworking/FIRCLSMultipartMimeStreamEncoder.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSNetworking/FIRCLSURLBuilder.h

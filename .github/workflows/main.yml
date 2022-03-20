@@ -1,0 +1,35 @@
+name: Build and Release(Web and Android)
+on: push
+jobs:
+    hosting:
+      name: Deploy Website
+      runs-on: ubuntu-latest
+      steps:
+        # Checkout Repository
+        - uses: actions/checkout@v1
+
+        # Install Flutter command
+        - uses: subosito/flutter-action@v1
+          with:
+            channel: 'dev'
+
+        # Build Website
+        - name: Build Website
+          run: |
+            cd my_app
+            flutter channel dev
+            flutter upgrade
+            flutter config --enable-web
+            flutter pub get
+            flutter build web --release
+            flutter build apk
+          working-directory: ./
+
+        # Deploy Firebase Hosting
+        - name: Deploy Firebase Hosting
+          uses: w9jds/firebase-action@master
+          with:
+            args: deploy --only hosting:flutter-apps-d93d4
+          env:
+            FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+            PROJECT_PATH: ./my_app

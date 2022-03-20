@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.m \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSHost.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFile.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSUtility.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSGlobals.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSContext.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSBinaryImage.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFeatures.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSDefines.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSMachO/FIRCLSMachO.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSUserLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSMachException.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSSignal.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSAllocate.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSInternalLogging.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSLogger.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/GoogleUtilities.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/NSURLSession+GULPromises.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULURLSessionDataResponse.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainStorage.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorageUserDefaults.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorable.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/Target\ Support\ Files/GoogleUtilities/GoogleUtilities-umbrella.h

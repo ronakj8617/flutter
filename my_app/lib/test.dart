@@ -1,14 +1,16 @@
-import 'dart:ui';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dart_ipify/dart_ipify.dart';
 import 'package:flutter/material.dart';
+import 'package:my_app/Updated%20Files/drawer.dart';
 import 'package:my_app/Updated%20Files/my_styles.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
-import 'Updated Files/drawer.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core_platform_interface/firebase_core_platform_interface.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MaterialApp(
       home: Home(),
       debugShowCheckedModeBanner: false,
@@ -16,114 +18,52 @@ void main() {
 }
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  @override
-  final formKey = GlobalKey<FormState>();
-  final _id = TextEditingController();
-  final _password = TextEditingController();
+  Future<bool> init() async {
+    FirebaseApp instance = await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    return instance != null;
+  }
 
   @override
-  void initState() {
+  void initState() 
+  {
     // TODO: implement initState
     super.initState();
+
+    init();
+
+
+    // ? init();
+    main();
+    insert();
   }
 
+  void insert() async{
+
+    final String ip=await Ipify.ipv4();
+    final String ipv6=await Ipify.ipv64();
+
+    FirebaseFirestore.instance.collection('IP').add({
+      'Timestamp': Timestamp.fromDate(DateTime.now()),
+      'IPv4': ip ,
+      'IPv6': ipv6
+    });
+  }
   @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-  }
-
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Test'), backgroundColor: Colors.red),
-      body: Stack(
-        fit: StackFit.expand,
-        children: [
-          Image.asset(
-            "assets/img2.jpeg",
-            fit: BoxFit.cover,
-            color: Colors.black.withOpacity(0.4),
-            colorBlendMode: BlendMode.darken,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Center(
-              child: SingleChildScrollView(
-                  child: Form(
-                      key: formKey,
-                      child: Card(
-                        color: Colors.white.withOpacity(0),
-                        child: Column(
-                          children: [
-                            TextFormField(
-                              controller: _id,
-                              decoration: InputDecoration(
-                                hintText: "Enter ur ID",
-                                border: OutlineInputBorder(),
-                                label: Text("ID"),
-                              ),
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                              ),
-                              keyboardType: TextInputType.text,
-                            ),
-                            SizedBox(
-                              height: 30,
-                            ),
-                            TextFormField(
-                              controller: _password,
-                              decoration: InputDecoration(
-                                hintText: "Enter ur password",
-                                border: OutlineInputBorder(),
-                                label: Text("Password"),
-                              ),
-                              obscureText: true,
-                              keyboardType: TextInputType.visiblePassword,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 30,
-                            ),
-                            ElevatedButton(
-                              onPressed: () async {
-                                // if(_id.text=='Ronak' && _password=='123')
-                                final ipv4 = await Ipify.ipv4();
-                                print(ipv4);
-
-                                final ipv6 = await Ipify.ipv64();
-                                print(ipv6);
-                                
-
-                                Alert(
-                                  context: context,
-                                  title: "IPV4: " + ipv4.toString(),
-                                  desc: "IPV6: " + ipv6.toString(),
-                                  image: Icon(Icons.supervised_user_circle),
-                                ).show();
-                              },
-                              style: ButtonStyle(),
-                              child: Text("Sign In"),
-                            )
-                          ],
-                        ),
-                      ))),
-            ),
-          )
-        ],
-      ),
+      appBar:
+          AppBar(title: Text('Test'), backgroundColor: Colors.red),
+      // body: CircularProgressIndicator(),
+      body: Center(child: CircularProgressIndicator()),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           if (brightness == Brightness.dark) {
@@ -135,7 +75,6 @@ class _HomeState extends State<Home> {
             //main();
           }
 
-          setState(() {});
           main();
         },
         backgroundColor: Colors.red,
@@ -145,5 +84,12 @@ class _HomeState extends State<Home> {
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       drawer: My_Drawer(),
     );
+    ;
   }
+}
+
+@override
+Widget build(BuildContext context) {
+  // TODO: implement build
+  throw UnimplementedError();
 }

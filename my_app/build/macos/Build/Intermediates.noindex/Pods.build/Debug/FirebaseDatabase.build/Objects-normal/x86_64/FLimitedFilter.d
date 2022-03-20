@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FLimitedFilter.m \
+  /Users/ronak/Ronak/Git/flutter/my_app/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseDatabase.build/module.modulemap \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FLimitedFilter.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FNodeFilter.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FQueryParams.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/FChange.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseReference.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataSnapshot.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabase.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseQuery.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataEventType.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRMutableData.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRServerValue.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRTransactionResult.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FIndexedNode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FIndex.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FNamedNode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FNode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Api/Private/FTypedefs_Private.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/Utilities/FPath.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FChildChangeAccumulator.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FCompleteChildSource.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FRangedFilter.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FChildrenNode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/FTypedefs.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FEmptyNode.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionary.h \
+  /Users/ronak/Ronak/Git/flutter/my_app/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBNode.h
