@@ -19,7 +19,7 @@ jobs:
             cd my_app
             npm install -g firebase-tools
             flutter channel dev
-            # flutter upgrade
+            flutter upgrade
             # flutter doctor
             flutter config --enable-web            
             flutter clean            
