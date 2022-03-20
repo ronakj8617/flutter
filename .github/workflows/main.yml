@@ -23,6 +23,7 @@ jobs:
             flutter config --enable-web            
             flutter clean            
             flutter build web 
+            firebase deploy --token "$FIREBASE_TOKEN"
           working-directory: ./
 
         # Deploy Firebase Hosting
