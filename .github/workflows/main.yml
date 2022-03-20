@@ -23,6 +23,7 @@ jobs:
             flutter config --enable-web            
             flutter clean
             flutter run -d web-server          
+            q
             flutter build web 
           working-directory: ./
 
