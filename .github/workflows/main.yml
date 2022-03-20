@@ -1,4 +1,4 @@
-name: Build and Release
+name: Build and Release(Web and Android)
 on: push
 jobs:
     hosting:
@@ -22,6 +22,7 @@ jobs:
             flutter config --enable-web
             flutter pub get
             flutter build web --release
+            flutter build apk
           working-directory: ./
 
         # Deploy Firebase Hosting
