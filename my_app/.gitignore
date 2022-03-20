@@ -7,7 +7,7 @@
 .atom/
 .buildlog/
 .history
-.svn/
+.svn/ 
 
 # IntelliJ related
 *.iml
@@ -15,6 +15,7 @@
 *.iws
 .idea/
 
+build/*
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
@@ -45,7 +46,6 @@ build/app/tmp
 # build/kotlin
 # build/macos
 # build/shared_preferences_android
-/build/
 
 
 
