@@ -152,7 +152,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Test'), backgroundColor: Colors.red),
+      appBar: AppBar(title: Text('Test-1.0'), backgroundColor: Colors.red),
       // body: CircularProgressIndicator(),
       body: Center(child: CircularProgressIndicator()),
       floatingActionButton: FloatingActionButton(
