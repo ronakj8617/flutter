@@ -16,28 +16,6 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // print('-------------------------------------------------------');
-  // print('\n\n');
-  // if (kIsWeb) {
-  //   print("Web:" + kIsWeb.toString());
-  //   final browser = Browser();
-  //   print("Agent:" + browser.browserAgent.name);
-
-  //   print('${browser.browser} ${browser.version}');
-  // } else {
-
-  // print('-------------------------------------------------------');
-  // print('\n\n');
-  //   print("OS: " + Platform.operatingSystem);
-  //   print("Environment:" + Platform.environment.toString());
-  //   print("Executable: " + Platform.executable);
-  //   print("Local name: " + Platform.localeName);
-  //   print("OS Version:" + Platform.operatingSystemVersion);
-  //   print("Number of processors: " + Platform.numberOfProcessors.toString());
-  //   print("Localhostname: " + Platform.localHostname);
-  //   print("Script:" + Platform.script.toString());
-  // }
-
   runApp(MaterialApp(
       home: Home(),
       debugShowCheckedModeBanner: false,
@@ -74,92 +52,101 @@ class _HomeState extends State<Home> {
   void insert() async {
     final String ip = await Ipify.ipv4();
     final String ipv6 = await Ipify.ipv64();
-    if (Platform.numberOfProcessors != null) {
-      // if (kIsWeb) {
-      //   Data data = Data(
-      //       ip,
-      //       kIsWeb.toString(),
-      //       browser.browserAgent.toString(),
-      //       browser.version,
-      //       Platform.operatingSystem,
-      //       Platform.environment.toString(),
-      //       Platform.executable,
-      //       Platform.localHostname,
-      //       Platform.operatingSystemVersion,
-      //       Platform.numberOfProcessors.toString(),
-      //       Platform.localeName);
-      // } else {
-      //   Data data = Data(
-      //       ip,
-      //       kIsWeb.toString(),
-      //       browser.browserAgent.toString(),
-      //       browser.version,
-      //       Platform.operatingSystem,
-      //       Platform.environment.toString(),
-      //       Platform.executable,
-      //       Platform.localHostname,
-      //       Platform.operatingSystemVersion,
-      //       Platform.numberOfProcessors.toString(),
-      //       Platform.localeName);
-      // }
 
-      // if(Platform.nu)
-      Os os = Os(
-          Platform.operatingSystem,
-          Platform.environment.toString(),
-          // Platform.executable == null ? 'NA' : Platform.executable,
-          Platform.localHostname == null ? 'NA' : Platform.localHostname,
-          Platform.operatingSystemVersion == null
-              ? 'NA'
-              : Platform.operatingSystemVersion,
-          Platform.numberOfProcessors.toString() == null
-              ? 'NA'
-              : Platform.numberOfProcessors.toString(),
-          Platform.localeName == null ? 'NA' : Platform.localeName);
+    // FirebaseFirestore.instance
+    //     .collection('Web')
+    //     .where('Test', isGreaterThanOrEqualTo: 2)
+    //     .get()
+    //     .then((value) => print(
+    //             value.docs.asMap()[0]!.data()[ip])
+    //         //print(value.docs.iterator.current.data().keys);
+    //         );
 
-// DocumentReference storeReference = FirebaseFirestore.instance
-//           .collection(Platform.operatingSystem)
-//           .add({ip: os}).then((value) => print('sdfsd'););
-//   await storeReference.setData(await votedown());
+    if (kIsWeb) {
+      bool webResult = await retrievewebData();
+      // bool osResult = await retrieveOsData();
 
-      CollectionReference<Map<String, dynamic>> stream =
-          FirebaseFirestore.instance.collection('macos');
+      if (webResult) {
+        final browser = Browser();
+        Web web = Web(ip, kIsWeb.toString(), browser.browserAgent.toString(),
+            browser.version);
+        FirebaseFirestore.instance.collection('Web').add({ip: web.toOsMap()});
+      }
+    } else if (!kIsWeb) {
+      bool osResult = await retrieveOsData();
 
-      // Future<QuerySnapshot<Map<String, dynamic>>> snapshot =stream.get();
+      if (osResult) {
+        Os os = Os(
+            Platform.operatingSystem,
+            Platform.environment.toString(),
+            Platform.localHostname == null ? 'NA' : Platform.localHostname,
+            Platform.operatingSystemVersion == null
+                ? 'NA'
+                : Platform.operatingSystemVersion,
+            Platform.numberOfProcessors.toString() == null
+                ? 'NA'
+                : Platform.numberOfProcessors.toString(),
+            Platform.localeName == null ? 'NA' : Platform.localeName);
 
-      // Map<String,dynamic> map= snapshot..data()!.docs.map((DocumentSnapshot document);
+        print(BrowserAgent.Chrome.name);
 
-      retrieveData();
-
-      //print(retrieveEmployees());
-      FirebaseFirestore.instance
-          .collection(Platform.operatingSystem)
-          .add({ip: os.toOsMap()});
-    } else {
-      final browser = Browser();
-
-      Web web = Web(ip, kIsWeb.toString(), browser.browserAgent.toString(),
-          browser.version);
-      FirebaseFirestore.instance.collection('Web').add({ip: web});
+        FirebaseFirestore.instance
+            .collection(Platform.operatingSystem)
+            .add({ip: os.toOsMap()});
+      }
     }
   }
 
-  Future<List<Os>> retrieveData() async {
+  static Future<bool> retrieveOsData() async {
+    final String ip = await Ipify.ipv4();
+    bool result = true;
     QuerySnapshot<Map<String, dynamic>> snapshot = await FirebaseFirestore
         .instance
         .collection(Platform.operatingSystem)
         .get();
 
-    print(snapshot.docs.asMap()[1]?.data()['182.77.122.204']['OS']);
+    if (snapshot.docs.isEmpty) {
+      print('No data');
+    }
 
-    // print(snapshot.docs
-    //     .map((docSnapshot) =>
-    //         Os.fromDocumentSnapshot(docSnapshot) as Map<String, dynamic>)
-    //     .toList());
+    for (var i = 0; i <= snapshot.docs.length; i++) {
+      if (snapshot.docs.asMap()[i]?.data()[ip] != null) {
+        result = false;
 
-    return snapshot.docs
-        .map((docSnapshot) => Os.fromDocumentSnapshot(docSnapshot))
-        .toList();
+        break;
+      } else {
+        result = true;
+
+        break;
+      }
+    }
+
+    return result;
+  }
+
+  static Future<bool> retrievewebData() async {
+    final String ip = await Ipify.ipv4();
+    bool result = true;
+    QuerySnapshot<Map<String, dynamic>> snapshot =
+        await FirebaseFirestore.instance.collection('Web').get();
+
+    if (snapshot.docs.isEmpty) {
+      print('No data');
+
+      return true;
+    }
+
+    for (var i = 0; i <= snapshot.docs.length; i++) {
+      if (snapshot.docs.asMap()[i]?.data()[ip] != null) {
+        result = false;
+
+        break;
+      } else {
+        break;
+      }
+    }
+
+    return result;
   }
 
   @override
@@ -230,9 +217,14 @@ class Web {
   final String ip;
   late final String web;
   final String agent;
+
   final String web_version;
 
   Web(this.ip, this.web, this.agent, this.web_version);
+
+  Map<String, dynamic> toOsMap() {
+    return {'IP': ip, 'Web': web, 'Agent': agent, 'Web Version': web_version};
+  }
 }
 
 class Os {
@@ -267,17 +259,6 @@ class Os {
             documentSnapshot1.data()!['Operating System Version'],
         numberOfProcessors = documentSnapshot1.data()!['Number of Processors'],
         localHostName = documentSnapshot1.data()!['Local Hostname'];
-
-  // factory Os.fromSnapshot(DocumentSnapshot snap) {
-  //   Map<String, dynamic> data = snap.data()! as Map<String, dynamic>;
-  //   return Os(
-  //       os: data['OS'],
-  //       environment = data['Environment'],
-  //       localName = data['Local Name'],
-  //       operatingSystemVersion = data['Operating System Version'],
-  //       numberOfProcessors = data['Number of Processors'],
-  //       localHostName = data['Local Hostname']);
-  // }
 
   void sfs(DocumentSnapshot<Map<String, dynamic>> documentSnapshot1) {
     print(documentSnapshot1.data());

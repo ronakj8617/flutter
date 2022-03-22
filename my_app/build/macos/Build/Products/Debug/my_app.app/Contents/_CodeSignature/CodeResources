@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			BPkp1ARsh2JL8LdsbXVnsMapi3I=
+			kUESa4s0mDO6KDcuybQSwxud5pw=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"04f929d4046c87624bf0b76c6d7567b0c6a98b72"</string>
+			<string>cdhash H"9141126b8b349833ba28372ec9b412c31b9de69c"</string>
 		</dict>
 		<key>Frameworks/FBLPromises.framework</key>
 		<dict>
