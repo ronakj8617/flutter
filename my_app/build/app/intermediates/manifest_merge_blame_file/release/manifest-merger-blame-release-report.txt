@@ -9,14 +9,14 @@
 8-->/Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="31" />
 9-->/Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml
-10    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-11    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:5-79
-12-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:22-76
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:5-67
-13-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:22-64
+10
+11    <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+11-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:10:5-67
+11-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:10:22-64
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:25:5-79
+13-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:25:22-76
 14    <uses-permission android:name="android.permission.WAKE_LOCK" />
 14-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:24:5-68
 14-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:24:22-65
@@ -89,127 +89,169 @@
 54-->/Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml:32:13-30
 55
 56        <service
-56-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+56-->[:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
 57            android:name="com.google.firebase.components.ComponentDiscoveryService"
-57-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+57-->[:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
 58            android:directBootAware="true"
 58-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
 59            android:exported="false" >
-59-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:19:13-37
+59-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:17:13-37
 60            <meta-data
-60-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
-61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-61-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:10:17-127
+60-->[:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+61-->[:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:10:17-130
 62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+62-->[:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
 63            <meta-data
-63-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
-64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-64-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:10:17-134
+63-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+64-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:10:17-127
 65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+65-->[:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
 66            <meta-data
-66-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
-67                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-67-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+66-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+67                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+67-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:10:17-134
 68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+68-->[:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
 69            <meta-data
-69-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:20:13-22:85
-70                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-70-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:21:17-111
+69-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+70                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+70-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:22:17-82
+71-->[:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
 72            <meta-data
-72-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
-73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-73-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:33:17-109
+72-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:18:13-20:85
+73                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+73-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:19:17-115
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:34:17-82
+74-->[com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:20:17-82
 75            <meta-data
-75-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:30:13-32:85
-76                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-76-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:31:17-139
+75-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:20:13-22:85
+76                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+76-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:21:17-111
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:32:17-82
+77-->[com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:22:17-82
 78            <meta-data
-78-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
-79                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-79-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+78-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
+79                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+79-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:33:17-109
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
-81        </service>
-82
-83        <uses-library
-83-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-84            android:name="androidx.window.extensions"
-84-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-85            android:required="false" />
-85-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-86        <uses-library
-86-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-87            android:name="androidx.window.sidecar"
-87-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-88            android:required="false" />
-88-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-89
-90        <provider
-90-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
-91            android:name="com.google.firebase.provider.FirebaseInitProvider"
-91-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
-92            android:authorities="com.example.my_app.firebaseinitprovider"
-92-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
-93            android:directBootAware="true"
-93-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
-94            android:exported="false"
-94-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
-95            android:initOrder="100" />
-95-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
-96
-97        <receiver
-97-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:29:9-33:20
-98            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-98-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:30:13-85
-99            android:enabled="true"
-99-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:31:13-35
-100            android:exported="false" >
-100-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:32:13-37
-101        </receiver>
-102
+80-->[com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:34:17-82
+81            <meta-data
+81-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:30:13-32:85
+82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+82-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:31:17-139
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:32:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+85                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+85-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+87        </service>
+88
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+90            android:name="androidx.window.extensions"
+90-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+92        <uses-library
+92-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+93            android:name="androidx.window.sidecar"
+93-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+94            android:required="false" />
+94-->[androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+95
+96        <service
+96-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:29:9-35:19
+97            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+97-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:30:13-103
+98            android:exported="false" >
+98-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:31:13-37
+99            <meta-data
+99-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:32:13-34:39
+100                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+100-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:33:17-94
+101                android:value="cct" />
+101-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:34:17-36
+102        </service>
 103        <service
-103-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:35:9-38:40
-104            android:name="com.google.android.gms.measurement.AppMeasurementService"
-104-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:36:13-84
-105            android:enabled="true"
-105-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:37:13-35
-106            android:exported="false" />
-106-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:38:13-37
-107        <service
-107-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:39:9-43:72
-108            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-108-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:40:13-87
-109            android:enabled="true"
-109-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:41:13-35
-110            android:exported="false"
-110-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:42:13-37
-111            android:permission="android.permission.BIND_JOB_SERVICE" />
-111-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:43:13-69
+103-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:26:9-30:19
+104            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+104-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:27:13-117
+105            android:exported="false"
+105-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:28:13-37
+106            android:permission="android.permission.BIND_JOB_SERVICE" >
+106-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:29:13-69
+107        </service>
+108
+109        <receiver
+109-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:32:9-34:40
+110            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+110-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:33:13-132
+111            android:exported="false" />
+111-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:34:13-37
 112
-113        <activity
-113-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-114-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-115            android:exported="false"
-115-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-116-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-117
-118        <meta-data
-118-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-119            android:name="com.google.android.gms.version"
-119-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-120            android:value="@integer/google_play_services_version" />
-120-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-121    </application>
-122
-123</manifest>
+113        <provider
+113-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+114            android:name="com.google.firebase.provider.FirebaseInitProvider"
+114-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+115            android:authorities="com.example.my_app.firebaseinitprovider"
+115-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+117            android:exported="false"
+117-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+118            android:initOrder="100" />
+118-->[com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+119
+120        <receiver
+120-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:29:9-33:20
+121            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+121-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:30:13-85
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:31:13-35
+123            android:exported="false" >
+123-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:32:13-37
+124        </receiver>
+125
+126        <service
+126-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:35:9-38:40
+127            android:name="com.google.android.gms.measurement.AppMeasurementService"
+127-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:36:13-84
+128            android:enabled="true"
+128-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:37:13-35
+129            android:exported="false" />
+129-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:38:13-37
+130        <service
+130-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:39:9-43:72
+131            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+131-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:40:13-87
+132            android:enabled="true"
+132-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:41:13-35
+133            android:exported="false"
+133-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:42:13-37
+134            android:permission="android.permission.BIND_JOB_SERVICE" />
+134-->[com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:43:13-69
+135
+136        <activity
+136-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+137            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+137-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+138            android:exported="false"
+138-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+139-->[com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+140
+141        <meta-data
+141-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+142            android:name="com.google.android.gms.version"
+142-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+143            android:value="@integer/google_play_services_version" />
+143-->[com.google.android.gms:play-services-basement:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/4a1e8147c3db656939cfc830651ce63e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+144    </application>
+145
+146</manifest>

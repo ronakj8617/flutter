@@ -7,7 +7,7 @@
 .atom/
 .buildlog/
 .history
-.svn/
+.svn/ 
 
 # IntelliJ related
 *.iml
@@ -15,6 +15,7 @@
 *.iws
 .idea/
 
+build/*
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
@@ -29,6 +30,24 @@
 .packages
 .pub-cache/
 .pub/
+
+build/app/generated
+build/app/intermediaries
+build/app/kotlin
+build/app/kotlinToolingMetadata
+build/app/reports
+build/app/tmp
+
+# build/cloud_firestore
+# build/firebase_core
+# build/firebase_crashlytics
+# build/databse
+# build/ios
+# build/kotlin
+# build/macos
+# build/shared_preferences_android
+
+
 
 # Web related
 lib/generated_plugin_registrant.dart

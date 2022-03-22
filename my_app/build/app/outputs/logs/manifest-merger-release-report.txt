@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 application
 INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml:3:4-33:19
+MERGED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
@@ -11,18 +13,24 @@ MERGED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/tr
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-analytics:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dedfd15ddf26cc1433c611e2c52e3644/jetified-firebase-analytics-20.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dedfd15ddf26cc1433c611e2c52e3644/jetified-firebase-analytics-20.1.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/ronak/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/ronak/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:24:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/99a92b2ad0813c0e282941fbb8914e22/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/99a92b2ad0813c0e282941fbb8914e22/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:28:5-44:19
@@ -64,6 +72,7 @@ INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/Android
 INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
 INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml:1:1-34:12
 MERGED from [:shared_preferences_android] /Users/ronak/Ronak/Git/flutter/my_app/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
@@ -71,18 +80,22 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ronak/.gradle/cach
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-analytics:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dedfd15ddf26cc1433c611e2c52e3644/jetified-firebase-analytics-20.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea6aeaf598b9566c9ddae5cb5a7c55d/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/ronak/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/99a92b2ad0813c0e282941fbb8914e22/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:15:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/e4f5334c28133410eb1d96d8870ca67e/jetified-play-services-measurement-sdk-20.1.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b0bd26d975251e4d3f9a8e50f0fd17fe/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/792b83f7598e217a9b6c594e7c245460/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/a43530664da0f7ba7bc0bf4fca47495b/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:17:1-27:12
@@ -104,6 +117,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ronak/.gradle/c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/0e73c827728350d15714a2d8006721b6/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3b4820e24d46e21c89efa32f5c2d6e2e/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/ec6296229eae19dc5c3c5881dab00540/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/597222039f0715c7401267f68f1f9e7c/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -136,6 +150,8 @@ INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/Android
 INJECTED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml
 MERGED from [:shared_preferences_android] /Users/ronak/Ronak/Git/flutter/my_app/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences_android] /Users/ronak/Ronak/Git/flutter/my_app/build/shared_preferences_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
@@ -150,30 +166,38 @@ MERGED from [com.google.firebase:firebase-analytics:20.1.0] /Users/ronak/.gradle
 MERGED from [com.google.firebase:firebase-analytics:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dedfd15ddf26cc1433c611e2c52e3644/jetified-firebase-analytics-20.1.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/02d04e6dfdbeb319e115f5728d226784/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea6aeaf598b9566c9ddae5cb5a7c55d/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea6aeaf598b9566c9ddae5cb5a7c55d/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/ronak/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/ronak/.gradle/caches/transforms-2/files-2.1/14618db3d0804b47739e3f1a54d17be3/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/99a92b2ad0813c0e282941fbb8914e22/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/99a92b2ad0813c0e282941fbb8914e22/jetified-firebase-auth-interop-19.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/e4f5334c28133410eb1d96d8870ca67e/jetified-play-services-measurement-sdk-20.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/e4f5334c28133410eb1d96d8870ca67e/jetified-play-services-measurement-sdk-20.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b0bd26d975251e4d3f9a8e50f0fd17fe/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b0bd26d975251e4d3f9a8e50f0fd17fe/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/1c0769389455a4c14b7a50bc2530cb4a/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/dc25d65ee8f966667bd67ae362ef0da4/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/792b83f7598e217a9b6c594e7c245460/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/792b83f7598e217a9b6c594e7c245460/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:20:5-44
@@ -216,6 +240,8 @@ MERGED from [androidx.tracing:tracing:1.0.0] /Users/ronak/.gradle/caches/transfo
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3b4820e24d46e21c89efa32f5c2d6e2e/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/ec6296229eae19dc5c3c5881dab00540/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/ec6296229eae19dc5c3c5881dab00540/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/2a7f1fd9e53de4d9b5d232b69f7dc1ae/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
@@ -283,11 +309,15 @@ ADDED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidMan
 	android:name
 		ADDED from /Users/ronak/Ronak/Git/flutter/my_app/android/app/src/main/AndroidManifest.xml:31:13-44
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] /Users/ronak/Ronak/Git/flutter/my_app/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:15:9-21:19
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:29:9-35:19
@@ -299,13 +329,19 @@ MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gr
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:33:9-37:35
 MERGED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:19:13-37
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:17:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:37:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/b25e52f5739b5665d39d607baa2467f6/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_crashlytics] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_crashlytics/intermediates/library_manifest/release/AndroidManifest.xml:10:17-130
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_database] /Users/ronak/Ronak/Git/flutter/my_app/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -336,26 +372,12 @@ ADDED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/tra
 		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea45e25bbe77c9713c39e234ccfd7bd/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:5-79
-MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:24:5-79
-MERGED from [io.grpc:grpc-android:1.44.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb034e126f121bd1853821de7e6d9777/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.44.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb034e126f121bd1853821de7e6d9777/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:5-67
+ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:22:5-67
@@ -369,7 +391,63 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:14:22-64
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:10:22-64
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bbb27cf0cd3e48793d006cdda2381959/jetified-firebase-crashlytics-18.2.9/AndroidManifest.xml:19:17-115
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.0.4] /Users/ronak/.gradle/caches/transforms-2/files-2.1/3aaec8cccfc1e6786d61a6bda7fb7f75/jetified-firebase-database-20.0.4/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/f0e8c4af6bafde84973cda4466a1e679/jetified-play-services-measurement-api-20.1.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/5c0bcaf225cb7771e65a14163b1c7474/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/03391d50a256ac963c05cf67bfc528a4/jetified-play-services-measurement-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/90878a1fe0d888fbce3e6b35520d70eb/jetified-play-services-measurement-impl-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.0] /Users/ronak/.gradle/caches/transforms-2/files-2.1/785d39496e67f69079007d1e8ba3b6df/jetified-play-services-measurement-sdk-api-20.1.0/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb034e126f121bd1853821de7e6d9777/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb034e126f121bd1853821de7e6d9777/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/bb93a83ae7a17300dc7d0df42d00655c/jetified-transport-runtime-3.1.2/AndroidManifest.xml:33:13-132
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:24.0.2] /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/AndroidManifest.xml:20:13-22:85
 	android:value

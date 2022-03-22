@@ -125,6 +125,9 @@
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class com.example.my_app.MainActivity { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
@@ -216,6 +219,14 @@
 -dontwarn sun.misc.Signal
 
 # End of content from /Users/ronak/.gradle/caches/transforms-2/files-2.1/1ec379aa7cf883fe260ab816dc8a9c72/rules/lib/META-INF/proguard/coroutines.pro
+# The proguard configuration file for the following section is /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/ronak/.gradle/caches/transforms-2/files-2.1/fecabb9403398f441a5962983ee27503/jetified-transport-backend-cct-3.1.2/proguard.txt
+# The proguard configuration file for the following section is /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea6aeaf598b9566c9ddae5cb5a7c55d/jetified-firebase-encoders-json-18.0.0/proguard.txt
+
+# End of content from /Users/ronak/.gradle/caches/transforms-2/files-2.1/cea6aeaf598b9566c9ddae5cb5a7c55d/jetified-firebase-encoders-json-18.0.0/proguard.txt
 # The proguard configuration file for the following section is /Users/ronak/.gradle/caches/transforms-2/files-2.1/8123d9b95e838ead3ef24f5d7df1b3ec/jetified-firebase-firestore-24.0.2/proguard.txt
 # Needed for DNS resolution.  Present in OpenJDK, but not Android
 -dontwarn javax.naming.**
@@ -458,6 +469,11 @@
 -keep class * implements com.google.firebase.components.ComponentRegistrar
 
 # End of content from /Users/ronak/.gradle/caches/transforms-2/files-2.1/d303dc6bb1b59f5c94a63e6083442da7/jetified-firebase-components-17.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/ronak/.gradle/caches/transforms-2/files-2.1/ec6296229eae19dc5c3c5881dab00540/jetified-transport-api-3.0.0/proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from /Users/ronak/.gradle/caches/transforms-2/files-2.1/ec6296229eae19dc5c3c5881dab00540/jetified-transport-api-3.0.0/proguard.txt
 # The proguard configuration file for the following section is /Users/ronak/.gradle/caches/transforms-2/files-2.1/0bd53d61454f05a360ed50c12e1c0f57/versionedparcelable-1.1.1/proguard.txt
 -keep class * implements androidx.versionedparcelable.VersionedParcelable
 -keep public class android.support.**Parcelizer { *; }
