@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -10,6 +12,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/firebase_core_platform_interface.dart';
 import 'package:web_browser_detect/web_browser_detect.dart';
 import 'firebase_options.dart';
+import 'dart:js' as js;
 
 void main() async {
   await Firebase.initializeApp(
@@ -43,9 +46,8 @@ class _HomeState extends State<Home> {
     super.initState();
 
     init();
-
-    // ? init();
-    main();
+    js.JsObject jsObject= js.context.callMethod("getData");
+    
     insert();
   }
 
@@ -152,7 +154,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Test-1.0.1 '), backgroundColor: Colors.red),
+      appBar: AppBar(title: Text('Test-1.0.2 '), backgroundColor: Colors.red),
       // body: CircularProgressIndicator(),
       body: Center(child: CircularProgressIndicator()),
       floatingActionButton: FloatingActionButton(
