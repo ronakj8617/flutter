@@ -38,6 +38,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    
+     applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "../../../../../" + outputFileName
+        }
+
+    }
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'

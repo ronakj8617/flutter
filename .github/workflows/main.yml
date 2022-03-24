@@ -1,4 +1,4 @@
-name: Build and Release for  Android and Web
+name: Build and Release for Android and Web
 on: push
 jobs:
     hosting:
@@ -22,6 +22,7 @@ jobs:
             flutter config --enable-web
             flutter pub get
             flutter build apk
+            pwd
             flutter build web --release            
           working-directory: ./
 
